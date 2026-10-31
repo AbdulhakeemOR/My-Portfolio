@@ -55,12 +55,23 @@
         },
         {
           "caption": "Static Ad 2",
-          "image": "/assets/uploads/access-static-ad-2.png",
-          "video": "/assets/uploads/access-ad-cutdown.mp4"
+          "image": "/assets/uploads/access-static-ad-2.png"
         },
         {
           "caption": "Accessibility Checklist",
           "image": "/assets/uploads/accessibility-checklist.png"
+        },
+        {
+          "caption": "Campaign Video",
+          "video": "/assets/uploads/campaign-video.mp4"
+        },
+        {
+          "caption": "Ad",
+          "video": "/assets/uploads/access-ad.mp4"
+        },
+        {
+          "caption": "Ad Cutdown",
+          "video": "/assets/uploads/access-ad-cutdown.mp4"
         }
       ],
       "status": "concept",
@@ -68,7 +79,7 @@
       "tool": "Canva — graphic design, content layouts, video assembly, animation, and exports.",
       "title": "Access for All — Make Learning Accessible",
       "brief": "Develop a campaign encouraging tutors, education coordinators, student groups, and small training providers to review their learning materials and make one practical improvement. The campaign focused on clearer layouts, meaningful image descriptions, and accurate captions, supported by an accessibility checklist.",
-      "video": "/assets/uploads/campaign-video.mp4",
+      "video": "",
       "image": "/assets/uploads/campaign-poster.png",
       "categories": [
         "pr-media-campaign"
