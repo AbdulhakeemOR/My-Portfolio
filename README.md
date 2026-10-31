@@ -29,7 +29,6 @@ Open `http://localhost:8000` in your browser. This serves the public deployment 
 | Colours, spacing, cards, and responsive layouts | `index.css` |
 | Menus, themes, filters, and form behavior | `index.js` |
 | Homepage work wheel (generated from project content) | `scripts/hero_wheels.py`, `index.js`, and `index.css` |
-| CMS editor fields | `admin/config.yml` |
 
 After changing JSON content, the shared header, or the shared footer, run:
 
@@ -43,7 +42,7 @@ Netlify runs the content sync as part of `python scripts/build_site.py` during d
 
 Only the homepage hero includes the WorksWheel ring-to-drum interaction, adapted to native JavaScript and the existing CSS tokens. It supports scrolling, dragging, keyboard arrows, previous/next buttons, reduced motion, and linked cards without JavaScript. The content sync regenerates the cards from the first nine projects with cover images and translates them for Arabic. No React, TypeScript, Tailwind, or shadcn setup is required for this implementation.
 
-The existing CMS authentication backend still needs your repository and hosting setup. Its Git Gateway configuration is deprecated for new sites; see `CMS_SETUP.md` before enabling CMS login.
+Content is maintained directly in the repository; no CMS editor or CMS authentication is included. Add projects to `content/projects.json` and articles to `content/articles.json`. Put new public media in `assets/uploads/` and reference it from those entries. Keep private originals outside the public assets folders. Build locally to review the result, then commit and push the content and media together.
 
 ## Finish the content
 
@@ -94,7 +93,7 @@ Projects with more than two media items show one cover on their card and a **Vie
 
 Run `python scripts/sync_content.py` to generate `project-<slug>.html` pages and both language versions from `content/projects.json`. Do not edit generated collection pages directly. The build includes these pages automatically, and production metadata includes them in the sitemap. Run `python scripts/check_collections.py` to check the item-count rule and gallery contents.
 
-In `content/projects.json`, the `gallery` list contains each additional item. An image item uses `image`, `image_alt`, and `caption`; a video item uses `video`, `poster`, and `caption`. The same fields are available in the CMS under **Collection images and videos**.
+In `content/projects.json`, the `gallery` list contains each additional item. An image item uses `image`, `image_alt`, and `caption`; a video item uses `video`, `poster`, and `caption`.
 
 The original source files and folder names are preserved. Smaller images are in `assets/images/`. These works are labelled as concept or practice projects; no client commission, tool, role, or measured result has been invented.
 
@@ -164,7 +163,7 @@ To regenerate artwork masks, run `python scripts/redact_images.py` (Pillow requi
 
 After reviewing new or changed media for personal details, run `python scripts/check_privacy.py --record-review` to record the reviewed file hashes. The build refuses changed or unreviewed media until reviewed. `python scripts/check_privacy.py --documents` checks certificate coverage, searchable IDs, links, metadata, and attachments with PyMuPDF installed. `python scripts/check_privacy.py` validates the packaged public files, paths, reviewed hashes, and exclusion of private originals.
 
-Deploy `dist/` only. `scripts/build_site.py` copies public HTML, JavaScript, CSS, assets, browser content JSON, and the CMS entry/config. It excludes source artwork, original videos/certificates, Python helpers, local audit reports, and temporary tools. The existing anti-framing response headers continue to apply on Netlify.
+Deploy `dist/` only. `scripts/build_site.py` copies public HTML, JavaScript, CSS, assets, and browser content JSON. It excludes the entire `admin/` folder, source artwork, original videos/certificates, Python helpers, local audit reports, and temporary tools. Requests under `/admin/` return 404 on Netlify. The existing anti-framing response headers continue to apply.
 
 ## English and Arabic
 

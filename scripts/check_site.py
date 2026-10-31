@@ -1,4 +1,4 @@
-"""Check document structure, local links, CMS data, and fallback content."""
+"""Check document structure, local links, content data, and fallback content."""
 
 from html.parser import HTMLParser
 from pathlib import Path

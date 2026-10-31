@@ -1,4 +1,4 @@
-"""Refresh readable HTML fallbacks after editing the CMS content files.
+"""Refresh readable HTML fallbacks after editing the JSON content files.
 
 Run from the project folder with: python scripts/sync_content.py
 The browser still loads the latest JSON when served over HTTP.

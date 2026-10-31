@@ -41,9 +41,6 @@ def main():
     (output / 'content').mkdir()
     for name in ('projects.json', 'articles.json'):
         shutil.copy2(ROOT / 'content' / name, output / 'content' / name)
-    (output / 'admin').mkdir()
-    for name in ('index.html', 'config.yml'):
-        shutil.copy2(ROOT / 'admin' / name, output / 'admin' / name)
     print('Public site packaged in dist/. Original media, certificates, scripts, and audit files are excluded.')
 
 

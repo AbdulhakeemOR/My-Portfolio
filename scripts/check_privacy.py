@@ -34,7 +34,7 @@ def verify_review(root=ROOT):
 def check_package():
     public = ROOT / 'dist'
     verify_review(public)
-    assert {p.name for p in (public / 'admin').iterdir()} == {'index.html', 'config.yml'}
+    assert not (public / 'admin').exists(), 'The editor and private originals must not be deployed.'
     assert not list(public.rglob('.tmp*'))
     assert not (public / 'scripts').exists()
     assert not (public / 'content/courses.json').exists()
