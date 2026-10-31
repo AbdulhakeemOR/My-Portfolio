@@ -86,6 +86,70 @@
       ],
       "description": "A fictional educational campaign combining practical accessibility guidance, social media content, and video ads to encourage clearer, more inclusive learning materials.",
       "category": "pr-media-campaign"
+    },
+    {
+      "slug": "bridge-arabic",
+      "image_fit": "contain",
+      "featured": true,
+      "process": "I centred the campaign on “Start with a word,” presenting a small first step that a beginner could imagine taking. The messaging connected learning Arabic with everyday communication and gradual progress.\n\nI developed Arabic and English content with attention to reading direction, visual hierarchy, and consistency. Across the campaign and ad materials, I kept the message focused on the learner’s starting point, using concise copy and clear calls to action.",
+      "outcome": "The project produced a bilingual campaign and advertising portfolio sample with a consistent message across its creative materials. It demonstrates my ability to connect audience needs, language knowledge, copywriting, and visual communication.\n\nI learned that bilingual design requires more than translating words: both languages need space, readable layouts, and an appropriate tone. The project also reinforced the value of encouraging realistic first steps without promising instant fluency.",
+      "gallery": [
+        {
+          "image": "/assets/uploads/b.a-story-frame-1.png",
+          "caption": "Story Frame 1"
+        },
+        {
+          "caption": "Story Frame 2",
+          "image": "/assets/uploads/b.a-story-frame-2.png"
+        },
+        {
+          "caption": "Story Frame 3",
+          "image": "/assets/uploads/b.a-story-frame-3.png"
+        },
+        {
+          "caption": "Story Frame 4",
+          "image": "/assets/uploads/b.a-story-frame-4.png"
+        },
+        {
+          "caption": "Static Ad 1",
+          "image": "/assets/uploads/b.a-static-ad-a.png"
+        },
+        {
+          "caption": "Static Ad 2",
+          "image": "/assets/uploads/b.a-static-ad-b.png"
+        },
+        {
+          "video": "/assets/uploads/bridge-arabic-sample-lesson.mp4",
+          "caption": "Sample Lesson"
+        },
+        {
+          "video": "/assets/uploads/bridge-arabic-program.mp4",
+          "caption": "Program Plan"
+        },
+        {
+          "video": "/assets/uploads/b.a-promotional-video.mp4",
+          "caption": "Promotional Video"
+        },
+        {
+          "video": "/assets/uploads/b.a-ad-a.mp4",
+          "caption": "Video Ad 1"
+        },
+        {
+          "caption": "Video Ad 2",
+          "video": "/assets/uploads/b.a-ad-b.mp4"
+        }
+      ],
+      "status": "concept",
+      "role": "I developed the campaign direction, audience messaging, bilingual copy, visual content, and advertising concepts. I brought together my background in Arabic and communication to shape an accessible introduction to the learning offer.",
+      "tool": "Canva — bilingual layouts, campaign graphics, and advertising assets.",
+      "title": "Bridge Arabic — Start with a Word",
+      "brief": "Create a promotional campaign for a fictional Arabic-learning offer aimed at beginners who speak other languages. The campaign needed to introduce the offer clearly, reduce hesitation about starting, and encourage potential learners to explore it through approachable messages and supporting visuals.",
+      "image": "/assets/uploads/bridge-arabic-poster.png",
+      "categories": [
+        "pr-media-campaign"
+      ],
+      "description": "A bilingual campaign and advertising concept designed to make beginner Arabic learning feel welcoming, practical, and achievable.",
+      "category": "pr-media-campaign"
     }
   ]
 }
