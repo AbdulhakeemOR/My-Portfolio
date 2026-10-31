@@ -1,0 +1,38 @@
+{
+  "images": {
+    "assets/images/design-samples-05-public.webp": [[0.37, 0.89, 0.51, 0.065], [0.9, 0.38, 0.065, 0.56]],
+    "assets/images/design-samples-08-public.webp": [[0.37, 0.89, 0.51, 0.065], [0.9, 0.38, 0.065, 0.56]],
+    "assets/images/design-samples-07-public.webp": [[0.08, 0.865, 0.3, 0.075]],
+    "assets/images/truhaq-concept-01-public.webp": [[0.33, 0.63, 0.53, 0.25]],
+    "assets/images/truhaq-concept-04-public.webp": [[0.125, 0.65, 0.555, 0.255]],
+    "assets/images/truhaq-concept-12-public.webp": [[0.175, 0.86, 0.43, 0.13]],
+    "assets/images/truhaq-concept-13-public.webp": [[0.115, 0.88, 0.77, 0.075]],
+    "assets/images/truhaq-concept-14-public.webp": [[0.14, 0.93, 0.765, 0.062]]
+  },
+  "videos": {
+    "A-intro.mp4": {"output": "assets/videos/identity-a-intro.mp4", "regions": []},
+    "A-outro.mp4": {"output": "assets/videos/identity-a-outro.mp4", "regions": []},
+    "admin/B/B-intro.mp4": {"output": "assets/videos/identity-b-intro.mp4", "regions": []},
+    "admin/B/B-outro.mp4": {"output": "assets/videos/identity-b-outro.mp4", "regions": []},
+    "admin/C/C-intro.mp4": {"output": "assets/videos/identity-c-intro.mp4", "regions": []},
+    "admin/C/0409.mp4": {"output": "assets/videos/identity-c-additional.mp4", "regions": []},
+    "admin/videos/Signal Studio Walkthrough.mp4": {"output": "assets/videos/signal-studio-walkthrough.mp4", "regions": []},
+    "admin/videos/Clearcopy_Lab_Walkthrough.mp4": {"output": "assets/videos/clearcopy-lab-walkthrough.mp4", "regions": []},
+    "admin/videos/Evergreen_Catalog_Walkthrough.mp4": {"output": "assets/videos/evergreen-catalog-walkthrough.mp4", "regions": []},
+    "admin/videos/Poster_Type_Studio_Walkthrough.mp4": {"output": "assets/videos/poster-type-studio-walkthrough.mp4", "regions": []},
+    "admin/videos/Launch_Quality_Pass_Walkthrough.mp4": {"output": "assets/videos/launch-quality-pass-walkthrough.mp4", "regions": []},
+    "admin/materilas 2/pattern 1.mp4": {
+      "output": "assets/videos/student-services-portal-walkthrough.mp4",
+      "regions": [
+        {"box": [0, 0, 1, 0.17], "start": 19, "end": 81.5, "purpose": "Browser address bar, bookmarks, profile and account email"},
+        {"box": [0, 0, 0.95, 0.33], "start": 20, "end": 25.5, "purpose": "Browser autocomplete history"},
+        {"box": [0.53, 0.48, 0.315, 0.15], "start": 28, "end": 35.5, "purpose": "University username and password fields"},
+        {"box": [0.83, 0.53, 0.15, 0.245], "start": 32, "end": 37.6, "purpose": "Account profile, student identifier, phone and student email"},
+        {"box": [0.45, 0.33, 0.12, 0.08], "start": 35, "end": 40.5, "purpose": "Second login form credentials"},
+        {"box": [0.50, 0.46, 0.49, 0.045], "start": 38.5, "end": 44.5, "purpose": "Account welcome and last-login information"},
+        {"box": [0.66, 0.265, 0.145, 0.065], "start": 52, "end": 62, "purpose": "Student identifier and account session information"}
+      ]
+    },
+    "admin/materilas 2/pattern 2.mp4": {"output": "assets/videos/student-services-presentation.mp4", "regions": []}
+  }
+}
