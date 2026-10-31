@@ -55,8 +55,8 @@ def collection(folder, prefix, captions, cover_index, title, description, status
         media.append({'image': target, 'image_alt': caption, 'caption': caption})
     cover = media.pop(cover_index)
     return {
-        'title': title, 'description': description, 'category': 'designs',
-        'categories': ['designs', 'communication'], 'status': status,
+        'title': title, 'description': description, 'category': 'ad-design-video',
+        'categories': ['ad-design-video', 'pr-media-campaign'], 'status': status,
         'slug': prefix, 'image': cover['image'], 'image_alt': cover['image_alt'],
         'image_fit': 'contain', 'featured': False, 'gallery': media,
     }

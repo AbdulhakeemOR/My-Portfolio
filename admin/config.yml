@@ -38,20 +38,24 @@ collections:
                 label: Category
                 widget: select
                 options:
-                  - websites
-                  - designs
-                  - communication
-                  - videos
+                  - label: Websites
+                    value: websites
+                  - label: AD Design & Video
+                    value: ad-design-video
+                  - label: PR & Media Campaign
+                    value: pr-media-campaign
               - name: categories
                 label: Filter categories
                 widget: select
                 multiple: true
                 required: false
                 options:
-                  - websites
-                  - designs
-                  - communication
-                  - videos
+                  - label: Websites
+                    value: websites
+                  - label: AD Design & Video
+                    value: ad-design-video
+                  - label: PR & Media Campaign
+                    value: pr-media-campaign
               - name: status
                 label: Project status
                 widget: select
@@ -167,11 +171,12 @@ collections:
                 label: Category
                 widget: select
                 options:
-                  - communication
-                  - web-development
-                  - tutorials
-                  - personal-growth
-                  - research
+                  - label: Communication & Research
+                    value: communication-research
+                  - label: Web Development
+                    value: web-development
+                  - label: Learning & Growth
+                    value: learning-growth
               - name: date
                 label: Publish date
                 widget: datetime

@@ -195,7 +195,7 @@ def main():
                     count = browser.evaluate("document.querySelector('[data-filter=communication]').click(); document.querySelectorAll('.filter-card:not([hidden])').length")
                     assert count == 7, ('communication category', count)
 
-                    for category, expected in (('websites', 6), ('designs videos', 12)):
+                    for category, expected in (('websites', 6), ('ad-design-video', 12)):
                         count = browser.evaluate(f"document.querySelector('[data-filter=\"{category}\"]').click(); document.querySelectorAll('.filter-card:not([hidden])').length")
                         assert count == expected, (category, count)
 
@@ -227,7 +227,7 @@ def main():
                         assert not browser.evaluate('document.documentElement.scrollWidth > window.innerWidth'), ('collection cards', width)
 
                 if name == 'articles':
-                    for category, expected in (('communication research', 3), ('web-development', 1), ('personal-growth tutorials', 1)):
+                    for category, expected in (('communication-research', 3), ('web-development', 1), ('learning-growth', 1)):
                         count = browser.evaluate(f"document.querySelector('[data-filter=\"{category}\"]').click(); document.querySelectorAll('.filter-card:not([hidden])').length")
                         assert count == expected, (category, count)
 
