@@ -84,7 +84,7 @@ def check_documents():
                 outputs.append(ROOT / output)
     originals = set((ROOT / 'admin/Certificates').iterdir()) | set((ROOT / 'admin').glob('*.pdf'))
     assert set(sources) == {p.resolve() for p in originals if p.is_file()}
-    assert len(sources) == len(set(sources)) == 29
+    assert len(sources) == len(set(sources)) == 30
     for path in outputs:
         assert path.exists()
         if path.suffix != '.pdf':
@@ -95,7 +95,7 @@ def check_documents():
             for page in document:
                 assert not re.search(r'(?<!\d)\d{10}(?!\d)', page.get_text()), path
                 assert not page.get_links(), path
-    print('PASS: all 29 certificate sources accounted for exactly once; public PDFs have no searchable personal IDs, external links, XML metadata, or attachments.')
+    print('PASS: all 30 certificate sources accounted for exactly once; public PDFs have no searchable personal IDs, external links, XML metadata, or attachments.')
 
 
 if __name__ == '__main__':

@@ -101,7 +101,11 @@ def render():
                 lines.append('            <span class="certificate-note">Issuer verification available on request</span>')
             lines += ['          </div>', '        </li>']
         lines += ['      </ul>', '    </article>']
-    lines += ['  </div>', '  <details class="additional-training">', '    <summary>Additional training previously listed</summary>', '    <p>Certificates and dates are not available for the following entries.</p>', '    <ul>']
-    lines += [f'      <li>{escape(item["en"])}</li>' for item in data['additional_training']]
-    lines += ['    </ul>', '  </details>', '</section>']
+    lines += ['  </div>']
+    additional_training = data.get('additional_training', [])
+    if additional_training:
+        lines += ['  <details class="additional-training">', '    <summary>Additional training previously listed</summary>', '    <p>Certificates and dates are not available for the following entries.</p>', '    <ul>']
+        lines += [f'      <li>{escape(item["en"])}</li>' for item in additional_training]
+        lines += ['    </ul>', '  </details>']
+    lines += ['</section>']
     return '\n'.join(lines)
