@@ -29,3 +29,9 @@ for = "/assets/images/*"
 
   [headers.values]
   Cache-Control = "public, max-age=86400"
+
+[[headers]]
+for = "/assets/uploads/*"
+
+  [headers.values]
+  Cache-Control = "public, max-age=604800, immutable"

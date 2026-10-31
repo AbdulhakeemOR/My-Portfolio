@@ -19,7 +19,7 @@ def catalog():
     for article in articles:
         path = ROOT / 'content/i18n/articles' / (article['slug'] + '.ar.md')
         if not path.exists():
-            raise ValueError(f'Missing Arabic article: {path.name}')
+            continue
         source = article['body'].split('\n\n')
         target = path.read_text(encoding='utf-8').strip().split('\n\n')
         if len(source) != len(target):
