@@ -1,0 +1,197 @@
+backend:
+  name: github
+  repo: AbdulhakeemOR/My-Portfolio
+  branch: main
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+
+media_folder: assets/uploads
+public_folder: /assets/uploads
+publish_mode: simple
+locale: en
+
+collections:
+  - name: projects
+    label: Projects
+    files:
+      - name: project_library
+        label: Project library
+        file: content/projects.json
+        fields:
+          - name: projects
+            label: Projects
+            widget: list
+            summary: '{{fields.title}} · {{fields.category}}'
+            fields:
+              - name: title
+                label: Project title
+                widget: string
+              - name: slug
+                label: Permanent link name
+                widget: string
+                pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$', 'Use lowercase letters, numbers, and hyphens.']
+                hint: Keep this unique and unchanged after sharing a project link.
+              - name: description
+                label: Short description
+                widget: text
+              - name: category
+                label: Category
+                widget: select
+                options:
+                  - websites
+                  - designs
+                  - communication
+                  - videos
+              - name: categories
+                label: Filter categories
+                widget: select
+                multiple: true
+                required: false
+                options:
+                  - websites
+                  - designs
+                  - communication
+                  - videos
+              - name: status
+                label: Project status
+                widget: select
+                options:
+                  - concept
+                  - practice
+                  - completed
+              - name: image
+                label: Cover image
+                widget: image
+                required: false
+              - name: image_alt
+                label: Image description
+                widget: string
+                required: false
+              - name: image_fit
+                label: Image layout
+                widget: select
+                default: contain
+                options:
+                  - contain
+                  - cover
+              - name: poster
+                label: Video preview image
+                widget: image
+                required: false
+              - name: brief
+                label: Project brief
+                widget: text
+                required: false
+              - name: role
+                label: Your role
+                widget: text
+                required: false
+              - name: process
+                label: Process and decisions
+                widget: text
+                required: false
+              - name: outcome
+                label: Outcome and lessons
+                widget: text
+                required: false
+              - name: video
+                label: Video file
+                widget: file
+                required: false
+              - name: tool
+                label: Tool used
+                widget: string
+                required: false
+              - name: external_url
+                label: Project link
+                widget: string
+                required: false
+              - name: featured
+                label: Feature on homepage
+                widget: boolean
+                default: false
+              - name: gallery
+                label: Collection images and videos
+                widget: list
+                required: false
+                summary: '{{fields.caption}}'
+                fields:
+                  - name: caption
+                    label: Caption
+                    widget: string
+                  - name: image
+                    label: Image
+                    widget: image
+                    required: false
+                  - name: image_alt
+                    label: Image description
+                    widget: string
+                    required: false
+                  - name: video
+                    label: Video
+                    widget: file
+                    required: false
+                  - name: poster
+                    label: Video preview image
+                    widget: image
+                    required: false
+  - name: articles
+    label: Articles
+    files:
+      - name: article_library
+        label: Article library
+        file: content/articles.json
+        fields:
+          - name: articles
+            label: Articles
+            widget: list
+            summary: '{{fields.title}} · {{fields.category}}'
+            fields:
+              - name: title
+                label: Article title
+                widget: string
+              - name: slug
+                label: Permanent link name
+                widget: string
+                pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$', 'Use lowercase letters, numbers, and hyphens.']
+                hint: Keep this unique and unchanged after sharing an article link.
+              - name: published
+                label: Article ready to read
+                widget: boolean
+                default: false
+                hint: Enable when the article text is complete. Empty articles show Coming soon.
+              - name: summary
+                label: Short summary
+                widget: text
+              - name: category
+                label: Category
+                widget: select
+                options:
+                  - communication
+                  - web-development
+                  - tutorials
+                  - personal-growth
+                  - research
+              - name: date
+                label: Publish date
+                widget: datetime
+                date_format: YYYY-MM-DD
+                time_format: false
+                picker_utc: true
+              - name: image
+                label: Cover image
+                widget: image
+                required: false
+              - name: image_alt
+                label: Image description
+                widget: string
+                required: false
+              - name: featured
+                label: Feature on homepage
+                widget: boolean
+                default: false
+              - name: body
+                label: Article text
+                widget: text
+                required: false
+                hint: Separate paragraphs with a blank line. Use '## Heading' for sections, '### Heading' for subsections, and '- Item' for bullet lists. No HTML needed.

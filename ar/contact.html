@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="تواصل مع عبد الحكيم أولادابو راجي بشأن مشاريع الاتصال والتصميم والبحث والمشاريع الرقمية.">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="color-scheme" content="light dark">
+    <title>تواصل معي | AOR</title>
+    <meta property="og:title" content="تواصل معي | AOR">
+    <meta property="og:description" content="تواصل بشأن مشاريع الاتصال والتصميم والبحث والمشاريع الرقمية.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <script src="../assets/js/theme.js"></script>
+    <script src="../assets/js/translations-ar.js"></script>
+    <script src="../assets/js/language.js" defer></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+  
+    <link rel="alternate" hreflang="en" href="../en/contact.html">
+    <link rel="alternate" hreflang="ar" href="../ar/contact.html">
+    <link rel="alternate" hreflang="x-default" href="../en/contact.html">
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main-content">انتقل إلى المحتوى الرئيسي</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <nav class="nav" aria-label="التنقل الرئيسي">
+          <div class="nav-button">
+            <a class="site-logo-link" href="index.html#home" aria-label="الصفحة الرئيسية لموقع AOR">
+
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+              <span aria-hidden="true">☰</span> القائمة
+            </button>
+            <div class="nav-labels" id="primary-navigation">
+              <a href="index.html#home">الرئيسية</a>
+              <a href="projects.html#projects">المشاريع</a>
+              <a href="services.html#services">الخدمات</a>
+              <a href="articles.html#articles">المقالات</a>
+              <a href="about.html#about">نبذة عني</a>
+              <a aria-current="page" href="contact.html#contact">تواصل معي</a>
+            </div>
+            <a class="header-cta" aria-current="page" href="contact.html#contact-form">لنتحدث</a>
+
+            <nav class="language-switcher" aria-label="اللغة">
+              <a href="../en/contact.html" data-language="en" lang="en" hreflang="en">English</a>
+              <a href="../ar/contact.html" data-language="ar" lang="ar" hreflang="ar" aria-current="true">العربية</a>
+            </nav>
+
+            <button class="theme-toggle" type="button" aria-pressed="false">المظهر الداكن</button>
+          </div>
+        </nav>
+        <div class="scroll-progress" aria-hidden="true">
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="contact">
+        <h1>تواصل معي</h1>
+        <p>هل لديك مشروع أو فكرة للنقاش أو فرصة للتعاون؟ أخبرني بما تحتاج إليه ولنبدأ التواصل.</p>
+
+        <a class="primary-cta" href="#contact-form">أرسل رسالة</a>
+      </section>
+
+      <div class="contact-layout">
+
+        <section class="contact-form-section" id="contact-form" aria-labelledby="contact-form-title">
+          <h2 id="contact-form-title">أرسل رسالة</h2>
+          <form class="contact-form" id="email-contact-form" name="contact" action="contact-success.html" method="post" data-netlify="true" netlify-honeypot="bot-field" aria-describedby="contact-form-note">
+            <input type="hidden" name="form-name" value="contact">
+
+            <p class="honeypot" aria-hidden="true">
+              <label for="bot-field">اترك هذا الحقل فارغًا</label>
+              <input id="bot-field" name="bot-field" tabindex="-1" autocomplete="off">
+            </p>
+
+            <label for="name">الاسم الكامل</label>
+            <input type="text" id="name" name="name" autocomplete="name" minlength="2" maxlength="100" required>
+
+            <label for="email">البريد الإلكتروني</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+
+            <label for="subject">الموضوع</label>
+            <input type="text" id="subject" name="subject" maxlength="160" required>
+
+            <label for="service">الخدمة (اختياري)</label>
+            <select id="service" name="service">
+              <option value="">اختر خدمة</option>
+              <option value="Website Development">تطوير المواقع</option>
+              <option value="Ad Design &amp; Video">????? ????????? ????????</option>
+              <option value="PR &amp; Media Campaigns">????? ???????? ?????? ????????</option>
+              <option value="Tutoring">التدريس</option>
+              <option value="Consultancy">الاستشارات</option>
+              <option value="Website feedback or suggestion">ملاحظة أو اقتراح بشأن الموقع</option>
+              <option value="Other collaboration">تعاون آخر</option>
+            </select>
+
+            <label for="timeline">المدة الزمنية المفضلة (اختياري)</label>
+            <input type="text" id="timeline" name="timeline" maxlength="160" placeholder="مثلًا: خلال أربعة أسابيع">
+
+            <label for="message">الرسالة</label>
+            <textarea id="message" name="message" rows="6" maxlength="5000" aria-describedby="message-counter" required></textarea>
+            <p id="message-counter">0 / 5000 حرف</p>
+
+            <button type="submit">إرسال الرسالة</button>
+            <p id="contact-form-note">يُستخدم اسمك وبريدك الإلكتروني ورسالتك للرد على استفسارك. يمكنك أيضًا التواصل معي مباشرة عبر البريد الإلكتروني.</p>
+            <p id="contact-form-status" role="status" aria-live="polite"></p>
+          </form>
+        </section>
+
+        <section class="contact-details" aria-label="بيانات التواصل">
+          <div class="contact-detail">
+
+            <h2>التوفر</h2>
+            <p>أنا متاح حاليًا للمشاريع المستقلة والتعاونات.</p>
+          </div>
+
+          <div class="contact-detail">
+
+            <h2>المنطقة الزمنية</h2>
+            <p>التوقيت العربي (غرينتش +3)، جدة، المملكة العربية السعودية.</p>
+          </div>
+
+          <div class="contact-detail">
+
+            <h2>البريد الإلكتروني</h2>
+            <p><a href="mailto:abdulhakeemoladaporaji@gmail.com">abdulhakeemoladaporaji@gmail.com</a></p>
+          </div>
+
+          <div class="contact-detail">
+            <h2>التواصل الاجتماعي</h2>
+
+            <nav class="social-links" aria-label="حسابات التواصل الاجتماعي">
+              <a href="https://www.linkedin.com/in/abdulhakeem-oladapo-raji-3970a0154/" rel="me">LinkedIn</a>
+              <a href="https://www.facebook.com/share/18XrfyhE8R/" rel="me">Facebook</a>
+              <a href="https://x.com/ola_abdulhakeem" rel="me">X</a>
+              <a href="https://www.threads.com/@orajiabdulhakeem" rel="me">Threads</a>
+              <a href="https://www.snapchat.com/add/araji360" rel="me">Snapchat</a>
+              <a href="https://www.tiktok.com/@raji.abdulhakeem" rel="me">TikTok</a>
+              <a href="https://www.instagram.com/orajiabdulhakeem/" rel="me">Instagram</a>
+              <a href="https://www.reddit.com/user/Abdulhakeem321/" rel="me">Reddit</a>
+            </nav>
+          </div>
+
+        </section>
+      </div>
+
+    </main>
+
+    <button class="back-to-top" type="button" tabindex="-1" aria-hidden="true" aria-label="العودة إلى الأعلى" title="العودة إلى الأعلى">
+      <span aria-hidden="true">↑</span>
+    </button>
+    <div class="toast-region" role="status" aria-live="polite"></div>
+
+    <footer class="site-footer" id="site-footer">
+      <div class="footer-main">
+        <section class="footer-identity" aria-labelledby="footer-name">
+          <h2 id="footer-name">عبد الحكيم أولادابو راجي</h2>
+          <p>الاتصال والتصميم الإبداعي والخدمات الرقمية.</p>
+          <p class="footer-availability">متاح لمشاريع وتعاونات مختارة.</p>
+        </section>
+
+        <nav class="footer-links" aria-label="روابط سريعة">
+          <h2>روابط سريعة</h2>
+          <div class="footer-link-list">
+            <a href="index.html#home">الرئيسية</a>
+            <a href="projects.html#projects">المشاريع</a>
+            <a href="services.html#services">الخدمات</a>
+            <a href="articles.html#articles">المقالات</a>
+            <a href="about.html#about">نبذة عني</a>
+            <a href="contact.html#contact">تواصل معي</a>
+          </div>
+        </nav>
+
+        <section class="footer-contact" aria-labelledby="footer-contact-title">
+          <h2 id="footer-contact-title">تواصل معي</h2>
+          <a href="mailto:abdulhakeemoladaporaji@gmail.com">abdulhakeemoladaporaji@gmail.com</a>
+
+          <nav class="social-links" aria-label="حسابات التواصل الاجتماعي">
+            <a href="https://www.linkedin.com/in/abdulhakeem-oladapo-raji-3970a0154/" rel="me">LinkedIn</a>
+            <a href="https://www.facebook.com/share/18XrfyhE8R/" rel="me">Facebook</a>
+            <a href="https://x.com/ola_abdulhakeem" rel="me">X</a>
+            <a href="https://www.threads.com/@orajiabdulhakeem" rel="me">Threads</a>
+            <a href="https://www.snapchat.com/add/araji360" rel="me">Snapchat</a>
+            <a href="https://www.tiktok.com/@raji.abdulhakeem" rel="me">TikTok</a>
+            <a href="https://www.instagram.com/orajiabdulhakeem/" rel="me">Instagram</a>
+            <a href="https://www.reddit.com/user/Abdulhakeem321/" rel="me">Reddit</a>
+          </nav>
+        </section>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 عبد الحكيم أولادابو راجي</p>
+      </div>
+    </footer>
+    <script src="../assets/js/script.js" defer></script>
+  </body>
+</html>

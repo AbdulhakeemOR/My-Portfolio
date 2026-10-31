@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.tmp-certificate-*/
+certificate-extraction.json
+.tmp-privacy/
+dist/
