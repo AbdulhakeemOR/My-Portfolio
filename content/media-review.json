@@ -1,3 +1,33 @@
 {
-  "sha256": {}
+  "sha256": {
+    "assets/certificates/career-future.pdf": "fa0289b60cb282291a80980fe9d5d62840aa1f2f79d43f346e32a6936622f13f",
+    "assets/certificates/career-interests-1.pdf": "9c9d2591e533f63237b41b3b0198df93cac784f562aa3a2cb68ed93c0a8b2aac",
+    "assets/certificates/career-interests-2.pdf": "2d461f43892ee969b9d036332e127741c86679f349a3cd9708eb0901a8780945",
+    "assets/certificates/cisco-get-connected.pdf": "97bc6aca0b4c7856514af5159b56e623a8c9146344edb5ecb0cae14721f2eb09",
+    "assets/certificates/cover-letter.pdf": "51d444d177accec1511299be5090e1f0985e336b7dafc27a98582bc0d338c174",
+    "assets/certificates/cultivating-passion.pdf": "9cc1659cd7993bca3773827a4be8091136952acfb8a17718445380abae36e54e",
+    "assets/certificates/digital-citizenship.pdf": "d52378ade3d3936fa05c60e889ad56bf4fab14ff5558049ad5cf8cdf148c7c73",
+    "assets/certificates/effective-communication.pdf": "97ea3211b6bd1e920349840fe05a3bb24ce1c06621b9a78b8ee8683b8e643da0",
+    "assets/certificates/future-digital-transformation.pdf": "8142ba269cb2e91aa6181b87db32bc41d6fae9061f58a47238b842731936ce4d",
+    "assets/certificates/general-teaching-approaches.pdf": "633152fef4f938adf2b3064c52387e73120d630f24f6603eef9e87335f56bee3",
+    "assets/certificates/general-teaching-methods.pdf": "e9ad7c91713d1d23c0472fc67f0ca79f77d11a8035d4476d2b39da9c84ebb684",
+    "assets/certificates/goal-setting.pdf": "2d5d8a785ae1583270d3ab9ee72b7a9f11dae5746bbfe8469fd2b2cf0ee4ad21",
+    "assets/certificates/introduction-data-analysis.pdf": "51ca6602b0e1ecd4396d524d78b6cd8a9f357f1f83db658d1fd3c06b68774ca7",
+    "assets/certificates/job-interviews.pdf": "c520cfe1cbc07902144faa533180f135ba5d12b232dde7ff201bd3d3abc1665f",
+    "assets/certificates/linux-basics.jpeg": "52ff7b9ab7bbc2e9fcaf992117cc483e97debd91b1bee5b73138bbdd068be728",
+    "assets/certificates/professional-certifications-introduction-19-october.pdf": "14a4f382a4bf447ab2def3db3da4b26ab570820c4d427cd96a2b978639c57f0c",
+    "assets/certificates/professional-certifications-introduction.pdf": "f3cab33699accce83684a91d7a99564f763a71db63b3bc34f5ed8152eba16f97",
+    "assets/certificates/ramadan-volunteering.pdf": "fe8d7b69db01f5eea4ca3cb65e8a2ef8752573d8400f4ff36e0d0a9aaaf4b1cd",
+    "assets/certificates/safeer-programme.pdf": "d6f4f8c7b6c0b785714985ca7201425fe517d6d8312704f1ca70d151ad93772f",
+    "assets/certificates/student-activities.pdf": "368f7956492ac0f173712ca47d4653d72e5b7c2b48bd8a30a5d6a26ca1b77c82",
+    "assets/certificates/talent-empowerment.pdf": "0db0534cdf65b10a45614a353bdd5e0830610941620322c0f9c3b021f22f230b",
+    "assets/certificates/tell-me-competition.pdf": "d5645ee2587d255ddcef445bd11b8bc45db7204f51ad60becf6e41087361a7a8",
+    "assets/certificates/thinking-compass-1.pdf": "61ad23a35c683f74c8923b7d956c37c75f730994f2c61690a6fdf5f47a75b3d7",
+    "assets/certificates/thinking-compass-2.pdf": "6995c4ae1bb178f74b5154d3d7423cc98b6915eb10ace3e0bc17c998688eb716",
+    "assets/certificates/thinking-compass-3.pdf": "30324ab17938e87ee5852ec574f2f82efad935923fc99766d7e5441a5edb0424",
+    "assets/certificates/thuluth-calligraphy-award.pdf": "284a693625553410c8ff81311330e2e74ef71c264994c6b715dcca71eae8c566",
+    "assets/certificates/using-linkedin.pdf": "a2cf5697a014422bff4f4fb5b02845ada1497d47bf15d72d327989b4179004b1",
+    "assets/certificates/visual-blogging.pdf": "5e4bd14ab094933b87b415983c3d1e16590e80b787edfa9813ecf7356682e2a0",
+    "assets/certificates/welcome-to-gemini-era.jpeg": "1ae48eb14fa2a68e9fa7091d201efd0bd2f28450193d404ae0b003f77ea8f3fa"
+  }
 }

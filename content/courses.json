@@ -1,4 +1,74 @@
 {
-  "groups": [],
-  "additional_training": []
+  "groups": [
+    {
+      "title": {"en": "Digital Skills & Creative Media", "ar": "المهارات الرقمية والإعلام الإبداعي"},
+      "items": [
+        {"slug": "linux-basics", "title": {"en": "Linux Basics", "ar": "أساسيات لينكس"}, "issuer": {"en": "Cybersecurity Club, King Faisal University", "ar": "نادي الأمن السيبراني، جامعة الملك فيصل"}, "date": {"en": "29–30 September 2026", "ar": "29–30 سبتمبر 2026"}, "start": "2026-09-29", "end": "2026-09-30", "hours": 4, "type": "attendance", "source": "Linux OS.jpeg"},
+        {"slug": "welcome-to-gemini-era", "title": {"en": "Welcome to Gemini Era", "ar": "مرحبًا بعصر Gemini"}, "issuer": {"en": "Google Developer Group, University of Taif", "ar": "نادي Google Developer Group، جامعة الطائف"}, "date": {"en": "30 September — year not stated", "ar": "30 سبتمبر — السنة غير مذكورة"}, "type": "attendance", "source": "Gemini Uses.jpeg"},
+        {"slug": "future-digital-transformation", "title": {"en": "The Future and Digital and Technological Transformation", "ar": "المستقبل والتحول الرقمي والتقني"}, "issuer": "hrdf", "date": {"en": "6 October 2026", "ar": "6 أكتوبر 2026"}, "start": "2026-10-06", "hours": 1, "type": "attendance", "delivery": "remote", "source": "التحول الرقمي.pdf"},
+        {"slug": "visual-blogging", "title": {"en": "Visual Blogging (Sketchnotes)", "ar": "التدوين البصري (سكوتش نوتس)"}, "issuer": "hrdf", "date": {"en": "29 September 2026", "ar": "29 سبتمبر 2026"}, "start": "2026-09-29", "hours": 1, "type": "attendance", "delivery": "kau", "source": "التدوين البصري.pdf"},
+        {"slug": "digital-citizenship", "title": {"en": "Digital Citizenship", "ar": "المواطنة الرقمية"}, "issuer": "hrdf", "date": {"en": "28 September 2026", "ar": "28 سبتمبر 2026"}, "start": "2026-09-28", "hours": 1, "type": "attendance", "delivery": "remote", "source": "المواطنة الرقمية.pdf"},
+        {"slug": "cisco-get-connected", "title": {"en": "Get Connected", "ar": "Get Connected — الاتصال الرقمي"}, "issuer": {"en": "Cisco Networking Academy", "ar": "أكاديمية سيسكو للشبكات"}, "date": {"en": "19 December 2019", "ar": "19 ديسمبر 2019"}, "start": "2019-12-19", "type": "completion", "source": "Get Connected.pdf"}
+      ]
+    },
+    {
+      "title": {"en": "Communication & Public Relations", "ar": "الاتصال والعلاقات العامة"},
+      "items": [
+        {"slug": "cover-letter", "title": {"en": "The Art of Writing a Cover Letter", "ar": "فن كتابة رسالة الغلاف"}, "issuer": "hrdf", "date": {"en": "1 October 2026", "ar": "1 أكتوبر 2026"}, "start": "2026-10-01", "hours": 1, "type": "attendance", "delivery": "remote", "source": "فن كتابة رسالة الغلاف.pdf"},
+        {"slug": "effective-communication", "title": {"en": "Effective Communication Skills", "ar": "مهارة الاتصال الفعال"}, "issuer": "hrdf", "date": {"en": "30 September 2026", "ar": "30 سبتمبر 2026"}, "start": "2026-09-30", "hours": 1, "type": "attendance", "delivery": "remote", "source": "مهارة الاتصال الفعال.pdf"},
+        {"slug": "using-linkedin", "title": {"en": "Using LinkedIn", "ar": "كيف تستخدم منصة LinkedIn"}, "issuer": "hrdf", "date": {"en": "28 September 2026", "ar": "28 سبتمبر 2026"}, "start": "2026-09-28", "hours": 1, "type": "attendance", "delivery": "remote", "source": "استحدام لينكدإن.pdf"}
+      ]
+    },
+    {
+      "title": {"en": "Research, Education & Teaching", "ar": "البحث والتعليم والتدريس"},
+      "items": [
+        {"slug": "general-teaching-approaches", "title": {"en": "General Teaching Approaches", "ar": "مداخل التدريس العامة"}, "issuer": "niepd", "date": {"en": "3 October 2026", "ar": "3 أكتوبر 2026"}, "start": "2026-10-03", "hours": 6, "type": "professional-development", "delivery": "self-paced", "source": "مداخل التدريس العامة.pdf", "verification_url": "https://niepd.futurex.sa/certificates/d6120676f0bf4852ad977802abb80de5"},
+        {"slug": "introduction-data-analysis", "title": {"en": "Introduction to Data Analysis", "ar": "مقدمة في تحليل البيانات"}, "issuer": {"en": "Satr, Tuwaiq Academy", "ar": "منصة سطر، أكاديمية طويق"}, "date": {"en": "Issued 3 October 2026", "ar": "صدرت في 3 أكتوبر 2026"}, "start": "2026-10-03", "hours": 1, "type": "completion", "note": {"en": "Beginner level", "ar": "المستوى: مبتدئ"}, "source": "مقدمة في تحليل البيانات.pdf"},
+        {"slug": "general-teaching-methods", "title": {"en": "General Teaching Methods", "ar": "طرق التدريس العامة"}, "issuer": "niepd", "date": {"en": "2 October 2026", "ar": "2 أكتوبر 2026"}, "start": "2026-10-02", "hours": 12, "type": "professional-development", "delivery": "self-paced", "source": "طرق التدريس.pdf", "verification_url": "https://niepd.futurex.sa/certificates/8148f511b3324a71bd1cc519bd0e53c9"}
+      ]
+    },
+    {
+      "title": {"en": "Career & Personal Development", "ar": "التطوير المهني والشخصي"},
+      "items": [
+        {"slug": "cultivating-passion", "title": {"en": "Cultivating Passion", "ar": "صناعة الشغف"}, "issuer": "hrdf", "date": {"en": "6 October 2026", "ar": "6 أكتوبر 2026"}, "start": "2026-10-06", "hours": 1, "type": "attendance", "delivery": "remote", "source": "صناعة الشغف.pdf"},
+        {"slug": "professional-certifications-introduction", "title": {"en": "Introduction to Professional Certifications — two sessions", "ar": "التعريف بالشهادات الاحترافية — جلستان"}, "issuer": "hrdf", "date": {"en": "5 & 19 October 2026", "ar": "5 و19 أكتوبر 2026"}, "hours": 2, "type": "attendance", "delivery": "remote", "sources": [{"file": "التعريف بالشهادات الاحترافية.pdf", "label": {"en": "5 October certificate", "ar": "شهادة 5 أكتوبر"}, "public_file": "professional-certifications-introduction.pdf"}, {"file": "الشهادات الاحترافية.pdf", "directory": "admin", "label": {"en": "19 October certificate", "ar": "شهادة 19 أكتوبر"}, "public_file": "professional-certifications-introduction-19-october.pdf"}]},
+        {"slug": "career-interests", "title": {"en": "Career Interests — two sessions", "ar": "الميول المهنية — جلستان"}, "issuer": "hrdf", "date": {"en": "7 & 13 October 2026", "ar": "7 و13 أكتوبر 2026"}, "hours": 2, "type": "attendance", "delivery": "remote", "sources": [{"file": "الميول المهنية.pdf", "directory": "admin", "label": {"en": "7 October certificate", "ar": "شهادة 7 أكتوبر"}}, {"file": "الميول المهنية 2.pdf", "directory": "admin", "label": {"en": "13 October certificate", "ar": "شهادة 13 أكتوبر"}}]},
+        {"slug": "job-interviews", "title": {"en": "The Art of Succeeding in Job Interviews", "ar": "فن اجتياز المقابلات الشخصية"}, "issuer": "hrdf", "date": {"en": "12 October 2026", "ar": "12 أكتوبر 2026"}, "start": "2026-10-12", "hours": 1, "type": "attendance", "delivery": "remote", "source": "فن اجتياز المقابلات.pdf", "source_directory": "admin"},
+        {"slug": "career-future", "title": {"en": "Career Future: Between Anxiety and Planning", "ar": "المستقبل المهني بين القلق والتخطيط"}, "issuer": "hrdf", "date": {"en": "4 October 2026", "ar": "4 أكتوبر 2026"}, "start": "2026-10-04", "hours": 1, "type": "attendance", "delivery": "remote", "source": "المستقبل.pdf"},
+        {"slug": "goal-setting", "title": {"en": "Goal Setting", "ar": "صناعة الأهداف"}, "issuer": "hrdf", "date": {"en": "4 October 2026", "ar": "4 أكتوبر 2026"}, "start": "2026-10-04", "hours": 1, "type": "attendance", "delivery": "remote", "source": "صناعة الأهداف.pdf"},
+        {"slug": "talent-empowerment", "title": {"en": "Talent: From Discovery to Empowerment", "ar": "الموهبة من الاكتشاف إلى التمكين"}, "issuer": "hrdf", "date": {"en": "30 September 2026", "ar": "30 سبتمبر 2026"}, "start": "2026-09-30", "hours": 1, "type": "attendance", "delivery": "remote", "source": "الموهبة.pdf"},
+        {"slug": "thinking-compass", "title": {"en": "Thinking Compass — three sessions", "ar": "بوصلة التفكير — ثلاث جلسات"}, "issuer": "hrdf", "date": {"en": "29 September, 1 & 5 October 2026", "ar": "29 سبتمبر و1 و5 أكتوبر 2026"}, "hours": 3, "type": "attendance", "note": {"en": "One hour per session; first at King Abdulaziz University, then two remote sessions.", "ar": "ساعة لكل جلسة؛ الأولى بجامعة الملك عبد العزيز، ثم جلستان عن بُعد."}, "sources": [{"file": "بوصلة التفكير.pdf", "label": {"en": "29 September certificate", "ar": "شهادة 29 سبتمبر"}}, {"file": "بوصلة التفكير 2.pdf", "label": {"en": "1 October certificate", "ar": "شهادة 1 أكتوبر"}}, {"file": "بوصلة التفكير-3.pdf", "label": {"en": "5 October certificate", "ar": "شهادة 5 أكتوبر"}}]}
+      ]
+    },
+    {
+      "title": {"en": "Leadership & Project Development", "ar": "القيادة وتطوير المشاريع"},
+      "items": [
+        {"slug": "safeer-programme", "title": {"en": "Safeer Scholarship Student Preparation Programme", "ar": "برنامج سفير لتأهيل طلاب المنح"}, "issuer": {"en": "Bonyan Training Co. Ltd. at King Abdulaziz University", "ar": "شركة بنيان للتدريب بجامعة الملك عبد العزيز"}, "date": {"en": "25 September–14 December 2019", "ar": "25 سبتمبر–14 ديسمبر 2019"}, "start": "2019-09-25", "end": "2019-12-14", "hours": 55, "type": "attendance", "source": "Safeer.pdf", "modules": [
+          {"title": {"en": "Personal Strategic Planning", "ar": "التخطيط الاستراتيجي الشخصي"}, "date": "2019-09-25"},
+          {"title": {"en": "Modern Perspectives on Islamic Constants", "ar": "رؤى معاصرة حول الثوابت الإسلامية"}, "date": "2019-10-05"},
+          {"title": {"en": "Problem-Solving and Decision-Making Skills", "ar": "مهارات حل المشكلات واتخاذ القرار"}, "date": "2019-10-12"},
+          {"title": {"en": "Institutional Work", "ar": "العمل المؤسسي"}, "date": "2019-10-19"},
+          {"title": {"en": "An Introduction to Building Projects", "ar": "مقدمة في بناء المشاريع"}, "date": "2019-10-26"},
+          {"title": {"en": "Priority Management", "ar": "إدارة الأولويات"}, "date": "2019-11-02"},
+          {"title": {"en": "The Art of Dealing with Others", "ar": "فن التعامل مع الآخرين"}, "date": "2019-11-16"},
+          {"title": {"en": "Report-Writing Skills", "ar": "مهارات كتابة التقارير"}, "date": "2019-11-23"},
+          {"title": {"en": "Essential Technology Skills", "ar": "المهارات التقنية الأساسية"}, "date": "2019-11-30"},
+          {"title": {"en": "Prophetic Approaches to Problem Solving", "ar": "الأساليب النبوية في حل المشكلات"}, "date": "2019-12-07"},
+          {"title": {"en": "Situational Leadership", "ar": "القيادة الموقفية"}, "date": "2019-12-14"}
+        ]}
+      ]
+    },
+    {
+      "title": {"en": "Recognition, Volunteering & Participation", "ar": "التكريم والتطوع والمشاركة"},
+      "items": [
+        {"slug": "ramadan-volunteering", "title": {"en": "Crowd Coordination for Worshippers and Umrah Pilgrims", "ar": "تنظيم المصلين والمعتمرين"}, "issuer": {"en": "Volunteering Administration, Deanship of Student Affairs, King Abdulaziz University", "ar": "إدارة العمل التطوعي، عمادة شؤون الطلاب، جامعة الملك عبد العزيز"}, "date": {"en": "Ramadan 1443 AH", "ar": "رمضان 1443هـ"}, "type": "appreciation", "note": {"en": "Recognition for volunteering at the Grand Mosque in Makkah.", "ar": "تقدير للجهود التطوعية في الحرم المكي الشريف."}, "source": "Volunteer.pdf"},
+        {"slug": "thuluth-calligraphy-award", "title": {"en": "Arabic Calligraphy Competition — Thuluth Category Winner", "ar": "الفوز في مسابقة الخط العربي — فرع خط الثلث"}, "issuer": {"en": "King Abdulaziz University", "ar": "جامعة الملك عبد العزيز"}, "date": {"en": "Academic year 1442 AH", "ar": "العام الدراسي 1442هـ"}, "type": "award", "note": {"en": "Competition for students in the Makkah region.", "ar": "مسابقة لطلاب وطالبات منطقة مكة المكرمة."}, "source": "Calligraphy.pdf"},
+        {"slug": "tell-me-competition", "title": {"en": "Tell Me Competition — Volunteering Experiences", "ar": "المشاركة في مسابقة قل لي — تجارب التطوع"}, "issuer": {"en": "Qiyam Al-Huda Association and King Abdulaziz University", "ar": "جمعية قيم الهدى وجامعة الملك عبد العزيز"}, "date": {"en": "Rabi al-Awwal 1441 AH", "ar": "ربيع الأول 1441هـ"}, "type": "participation", "note": {"en": "Sharing volunteering experiences, challenges, and how they were overcome.", "ar": "مشاركة تجارب التطوع والتحديات وكيفية تجاوزها."}, "source": "قل لي.pdf"},
+        {"slug": "student-activities", "title": {"en": "Student Activities Participation", "ar": "المشاركة في الأنشطة الطلابية"}, "issuer": {"en": "Arabic Language Institute for Non-Native Speakers, King Abdulaziz University", "ar": "معهد اللغة العربية للناطقين بغيرها، جامعة الملك عبد العزيز"}, "date": {"en": "Date not stated on certificate", "ar": "التاريخ غير مذكور في الشهادة"}, "type": "appreciation", "source": "أنشطة.pdf"}
+      ]
+    }
+  ],
+  "additional_training": [
+    {"en": "Multiple Intelligences", "ar": "الذكاءات المتعددة"}
+  ]
 }
