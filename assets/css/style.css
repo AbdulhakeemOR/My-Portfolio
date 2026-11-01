@@ -133,6 +133,7 @@ h2 {
 }
 
 .nav-button {
+  direction: ltr;
   display: grid;
   grid-template-areas: "logo links cta language theme";
   grid-template-columns: auto minmax(0, 1fr) auto auto auto;
@@ -147,6 +148,7 @@ h2 {
 
 .site-logo-link {
   grid-area: logo;
+  justify-self: start;
   padding-block: 10px;
   text-decoration: none;
 }
@@ -197,6 +199,29 @@ h2 {
   display: block;
   width: 120px;
   height: auto;
+}
+
+[dir="rtl"] .nav-labels,
+[dir="rtl"] .language-switcher {
+  direction: rtl;
+}
+
+.card-icon {
+  display: block;
+  width: 48px;
+  height: 48px;
+  padding: 8px;
+  margin-block-end: 16px;
+  border-radius: var(--radius);
+  background: #f7ece6;
+  object-fit: contain;
+}
+
+.skill-card .card-icon {
+  width: 64px;
+  height: 64px;
+  padding: 12px;
+  margin-block-end: 0;
 }
 
 .header-cta {
