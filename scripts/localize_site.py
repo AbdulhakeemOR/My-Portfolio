@@ -5,6 +5,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlsplit
 import json
+import hashlib
 import re
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -159,10 +160,15 @@ def localize_json(value, language, messages, field=''):
 
 def build_languages():
     messages = catalog()
-    (ROOT / 'assets' / 'js' / 'translations-ar.js').write_text('window.AOR_AR = ' + json.dumps(messages, ensure_ascii=False) + ';\n', encoding='utf-8')
+    translations = 'window.AOR_AR = ' + json.dumps(messages, ensure_ascii=False) + ';\n'
+    (ROOT / 'assets' / 'js' / 'translations-ar.js').write_text(translations, encoding='utf-8')
+    translation_version = hashlib.sha256(translations.encode('utf-8')).hexdigest()[:12]
+    language_version = hashlib.sha256((ROOT / 'assets/js/language.js').read_bytes()).hexdigest()[:12]
     for name in PAGES:
         path = ROOT / name
         text = path.read_text(encoding='utf-8')
+        # Recalculate versions on each build rather than retaining an old URL.
+        text = re.sub(r'(src="assets/js/language\.js)(?:\?[^" ]*)?"', r'\1"', text)
         text = re.sub(r'\s*<link rel="alternate"[^>]*hreflang[^>]*>', '', text)
         if 'src="assets/js/language.js"' not in text:
             text = text.replace('<script src="assets/js/theme.js"></script>', '<script src="assets/js/theme.js"></script>\n    <script src="assets/js/language.js" defer></script>')
@@ -181,8 +187,11 @@ def build_languages():
             parser.feed(text)
             localized = ''.join(parser.output)
             if language == 'ar':
-                localized = localized.replace('<script src="../assets/js/language.js"', '<script src="../assets/js/translations-ar.js"></script>\n    <script src="../assets/js/language.js"')
+                localized = localized.replace('<script src="../assets/js/language.js"', f'<script src="../assets/js/translations-ar.js?v={translation_version}"></script>\n    <script src="../assets/js/language.js"')
+            localized = localized.replace('src="../assets/js/language.js"', f'src="../assets/js/language.js?v={language_version}"')
             (folder / name).write_text(localized, encoding='utf-8', newline='\r\n')
+        text = text.replace('src="assets/js/language.js"', f'src="assets/js/language.js?v={language_version}"')
+        path.write_text(text, encoding='utf-8', newline='\r\n')
     for language in ('en', 'ar'):
         folder = ROOT / language / 'content'
         folder.mkdir(exist_ok=True)

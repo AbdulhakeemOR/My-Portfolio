@@ -4,6 +4,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 import json
+import hashlib
 import re
 import shutil
 import tempfile
@@ -50,6 +51,9 @@ class Page(HTMLParser):
 
 def main():
     messages = catalog()
+    translation_script = (ROOT / 'assets/js/translations-ar.js').read_text(encoding='utf-8')
+    translation_version = hashlib.sha256(translation_script.encode('utf-8')).hexdigest()[:12]
+    language_version = hashlib.sha256((ROOT / 'assets/js/language.js').read_bytes()).hexdigest()[:12]
     assert not [key for key, value in messages.items() if '???' in value], 'Arabic catalog contains corrupted question-mark text.'
     missing = set()
     for name in PAGES:
@@ -67,8 +71,12 @@ def main():
             assert markup.headings == 1, path
             assert f'lang="{language}"' in text
             assert f'dir="{"rtl" if language == "ar" else "ltr"}"' in text
+            assert f'src="../assets/js/language.js?v={language_version}"' in text, (path, 'Stale language script URL')
+            if language == 'ar':
+                assert f'src="../assets/js/translations-ar.js?v={translation_version}"' in text, (path, 'Stale Arabic dictionary URL')
             page = Page()
             page.feed(text)
+            assert not any('???' in value for value in page.texts), (path, 'Corrupted visible text')
             for link in page.links:
                 parsed = urlsplit(link)
                 if parsed.scheme or parsed.netloc:
