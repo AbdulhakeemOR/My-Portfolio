@@ -29,14 +29,38 @@ def catalog():
             # Static article markup separates headings and individual list items.
             for en_line, ar_line in zip(english.splitlines(), arabic.splitlines()):
                 messages[re.sub(r'^(?:#{2,3}|-)\s+', '', en_line)] = re.sub(r'^(?:#{2,3}|-)\s+', '', ar_line)
+    for source, target in list(messages.items()):
+        messages.setdefault(translation_key(source), target)
     return messages
+
+
+def translation_key(text):
+    return text.strip().translate(str.maketrans({
+        '\u2018': "'", '\u2019': "'", '\u201c': '"', '\u201d': '"', '\u00a0': ' ',
+    }))
 
 
 def translate(text, messages):
     stripped = text.strip()
     if stripped in messages:
         return text.replace(stripped, messages[stripped])
+    normalized = translation_key(stripped)
+    # Content editors can change quotation marks without changing the message.
+    if normalized in messages:
+        return text.replace(stripped, messages[normalized])
+    # Article bodies contain Markdown headings and occasionally grouped lines.
+    if '\n' in stripped:
+        return '\n'.join(translate(line, messages) for line in text.split('\n'))
+    prefix = re.match(r'^(#{2,3}|-)\s+(.+)$', stripped)
+    if prefix:
+        return text.replace(stripped, prefix[1] + ' ' + translate(prefix[2], messages))
     patterns = [
+        (r'Carousel (\d+)', r'منشور متعدد الشرائح \1'),
+        (r'Learning Carousel (\d+)', r'منشور تعليمي متعدد الشرائح \1'),
+        (r'Graphic (\d+)', r'تصميم \1'),
+        (r'Static Ad (\d+)', r'إعلان ثابت \1'),
+        (r'Video Ad (\d+)', r'إعلان فيديو \1'),
+        (r'Story Frame (\d+)', r'شريحة قصة \1'),
         (r'Explore collection \((\d+) items\)', r'استعرض المجموعة (\1 عنصرًا)'),
         (r'View collection \((\d+) items\)', r'عرض المجموعة (\1 عنصرًا)'),
         (r'(\d+) items', r'\1 عنصرًا'),

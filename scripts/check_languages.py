@@ -50,6 +50,7 @@ class Page(HTMLParser):
 
 def main():
     messages = catalog()
+    assert not [key for key, value in messages.items() if '???' in value], 'Arabic catalog contains corrupted question-mark text.'
     missing = set()
     for name in PAGES:
         source = Page()
@@ -76,7 +77,7 @@ def main():
                 assert target.exists(), (path, link)
     # These intentionally retain their original spelling in both languages.
     allowed = {
-        'CSS', 'CSS.', 'Canva', 'CapCut', 'Clearcopy Lab', 'English',
+        'AOR', 'CSS', 'CSS.', 'Canva', 'CapCut', 'Clearcopy Lab', 'English',
         'Evergreen Catalog', 'Excel.', 'Facebook', 'Google Workspace',
         'HTML', 'HTML.', 'HTML, CSS and JavaScript',
         'HTML, CSS, JavaScript, Canva', 'HTML, CSS, JavaScript, SVG, Canva',

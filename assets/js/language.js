@@ -23,7 +23,15 @@
   });
   if (language !== 'ar') return;
   const messages = window.AOR_AR || {};
+  const translationKey = text => text.trim().replace(/[\u2018\u2019]/g, "'").replace(/[\u201c\u201d]/g, '"').replace(/\u00a0/g, ' ');
+  const normalizedMessages = Object.fromEntries(Object.entries(messages).map(([key, value]) => [translationKey(key), value]));
   const patterns = [
+    [/^Carousel (\d+)$/, 'منشور متعدد الشرائح $1'],
+    [/^Learning Carousel (\d+)$/, 'منشور تعليمي متعدد الشرائح $1'],
+    [/^Graphic (\d+)$/, 'تصميم $1'],
+    [/^Static Ad (\d+)$/, 'إعلان ثابت $1'],
+    [/^Video Ad (\d+)$/, 'إعلان فيديو $1'],
+    [/^Story Frame (\d+)$/, 'شريحة قصة $1'],
     [/^Explore collection \((\d+) items\)$/, 'استعرض المجموعة ($1 عنصرًا)'],
     [/^View collection \((\d+) items\)$/, 'عرض المجموعة ($1 عنصرًا)'],
     [/^(\d+) items$/, '$1 عنصرًا'],
@@ -35,7 +43,7 @@
   ];
   function translate(text) {
     const key = text.trim();
-    let result = messages[key];
+    let result = messages[key] || normalizedMessages[translationKey(key)];
     if (!result) {
       for (const [pattern, replacement] of patterns) {
         if (pattern.test(key)) { result = key.replace(pattern, replacement); break; }
