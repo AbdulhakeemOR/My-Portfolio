@@ -4,7 +4,23 @@ This is my portfolio website for communication, creative design, research, and d
 
 ## Preview the website
 
-From this folder, run:
+For everyday editing, open this project folder in VS Code, open the root `index.html`, and select **Go Live** in the status bar (or right-click the file and choose **Open with Live Server**).
+
+- Home: `http://127.0.0.1:5500/index.html`
+- English: `http://127.0.0.1:5500/en/index.html`
+- Arabic: `http://127.0.0.1:5500/ar/index.html`
+
+Live Server refreshes the browser when you save. Edit the root HTML files, shared templates, stylesheet, and content sources. After editing templates, JSON content, or translations, regenerate the language pages:
+
+```powershell
+python scripts/sync_content.py
+```
+
+The `en/` and `ar/` pages are generated; changes made directly in those folders are replaced by the next sync. Local contact-form submissions open an email draft for review and sending.
+
+Local preview works independently of GitHub and Netlify. To disconnect automatic Netlify deployments, use **Project configuration → Developer settings → Continuous deployment → Repository → Manage repository → Unlink the current repository** in Netlify. Deleting local hosting configuration does not disconnect that integration.
+
+To preview the public deployment package instead, run:
 
 ```powershell
 python scripts/build_site.py
