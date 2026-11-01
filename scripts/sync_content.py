@@ -268,9 +268,6 @@ def main():
 
     generate_pages(projects, project_gallery)
 
-    from hero_wheels import integrate
-    integrate(ROOT, projects)
-
     from localize_site import build_languages
     build_languages()
 

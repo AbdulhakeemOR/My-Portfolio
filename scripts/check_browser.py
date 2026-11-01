@@ -275,19 +275,7 @@ def main():
                 browser.evaluate("new Promise(resolve => { const ready = () => document.readyState === 'complete' && document.documentElement ? setTimeout(resolve, 250) : setTimeout(ready, 50); ready(); })")
                 assert browser.evaluate('document.documentElement.lang') == language
                 assert browser.evaluate('document.documentElement.dir') == ('rtl' if language == 'ar' else 'ltr')
-                assert browser.evaluate("document.querySelectorAll('.works-wheel').length") == (1 if name == 'index' else 0)
-                if name == 'index':
-                    assert browser.evaluate("document.querySelectorAll('.hero .works-wheel.is-enhanced').length") == 1
-                    browser.call('Emulation.setEmulatedMedia', {'features': [{'name': 'prefers-reduced-motion', 'value': 'reduce'}]})
-                    browser.evaluate("document.querySelector('[data-wheel-next]').click()")
-                    browser.evaluate("new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)))")
-                    assert browser.evaluate("document.querySelectorAll('.works-wheel .is-front').length") == 1, (language, name, browser.errors)
-                    first = browser.evaluate("document.querySelector('.works-wheel .is-front').href")
-                    browser.evaluate("document.querySelector('.works-wheel-stage').dispatchEvent(new KeyboardEvent('keydown', {key: 'ArrowDown', bubbles: true}))")
-                    browser.evaluate("new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)))")
-                    assert browser.evaluate("document.querySelector('.works-wheel .is-front').href") != first
-                    assert browser.evaluate("[...document.querySelectorAll('.works-wheel-card')].filter(c => c.inert).length") > 0
-                    browser.call('Emulation.setEmulatedMedia', {'features': []})
+                assert browser.evaluate("document.querySelectorAll('.works-wheel').length") == 0
                 for width in (320, 375, 768, 1440):
                     browser.call('Emulation.setDeviceMetricsOverride', {'width': width, 'height': 900, 'deviceScaleFactor': 1, 'mobile': False})
                     assert not browser.evaluate('document.documentElement.scrollWidth > window.innerWidth'), (language, name, width)

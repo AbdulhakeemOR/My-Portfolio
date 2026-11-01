@@ -46,7 +46,6 @@ The About page's Courses & Training section uses interactive glass folders. Open
 | Social profile URLs in the footer and Contact page | `templates/social-links.html` |
 | Colours, spacing, cards, and responsive layouts | `index.css` |
 | Menus, themes, filters, and form behavior | `index.js` |
-| Homepage work wheel (generated from project content) | `scripts/hero_wheels.py`, `index.js`, and `index.css` |
 
 After changing JSON content, the shared header, or the shared footer, run:
 
@@ -58,7 +57,7 @@ This updates the HTML copies for visitors without JavaScript and for previews op
 
 Netlify runs the content sync as part of `python scripts/build_site.py` during deployment.
 
-Only the homepage hero includes the WorksWheel ring-to-drum interaction, adapted to native JavaScript and the existing CSS tokens. It supports scrolling, dragging, keyboard arrows, previous/next buttons, reduced motion, and linked cards without JavaScript. The content sync regenerates the cards from up to six featured projects with cover images and translates them for Arabic. No React, TypeScript, Tailwind, or shadcn setup is required for this implementation.
+The homepage hero is a static introduction with links to the featured projects and contact form. The featured projects section displays up to six projects, in catalog order.
 
 Content is maintained directly in the repository; no CMS editor or CMS authentication is included. Add projects to `content/projects.json` and articles to `content/articles.json`. Put new public media in `assets/uploads/` and reference it from those entries. Keep private originals outside the public assets folders. Build locally to review the result, then commit and push the content and media together.
 
@@ -73,7 +72,7 @@ Content is maintained directly in the repository; no CMS editor or CMS authentic
 
 ## Images and videos
 
-The scholarship student services graduation campaign uses public media in `assets/images/scholarship-student-services-campaign/` and `assets/videos/scholarship-student-services-campaign/`. Its original uploads are archived under `admin/project-originals/scholarship-student-services-campaign/`. Keep the approval/not-implemented status when updating its portfolio entry. The homepage project section and work wheel display up to six featured projects, in their catalog order. The Projects page displays the full catalog.
+The scholarship student services graduation campaign uses public media in `assets/images/scholarship-student-services-campaign/` and `assets/videos/scholarship-student-services-campaign/`. Its original uploads are archived under `admin/project-originals/scholarship-student-services-campaign/`. Keep the approval/not-implemented status when updating its portfolio entry. The homepage project section displays up to six featured projects, in their catalog order. The Projects page displays the full catalog.
 
 Smaller web images are in `assets/images/`. The original files remain in the project folder.
 

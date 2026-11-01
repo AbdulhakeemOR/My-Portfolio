@@ -701,7 +701,7 @@ h2 {
 
 .contact-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1.4fr) minmax(0, 0.8fr);
+  grid-template-columns: minmax(0, 1fr);
   align-items: start;
   gap: clamp(24px, 5vw, 64px);
   max-width: calc(var(--content) + 48px);
@@ -889,98 +889,13 @@ h2 {
 
 .home-hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.4fr) minmax(0, 0.8fr);
+  grid-template-columns: minmax(0, 1fr);
   align-items: center;
   gap: clamp(32px, 5vw, 72px);
 }
 
 .hero-content {
   min-width: 0;
-}
-
-/* Shared work wheel: readable linked cards before JavaScript enhances it. */
-.works-wheel {
-  width: 100%;
-  min-width: 0;
-  grid-column: 1 / -1;
-  margin-block-start: 2rem;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  background: var(--surface-soft);
-  overflow: hidden;
-}
-.works-wheel-rotor { display: flex; gap: 1rem; overflow-x: auto; padding: 1rem; }
-.works-wheel-card { flex: 0 0 15rem; color: var(--ink); }
-.works-wheel-card > span:first-child { display: block; width: 100%; height: 100%; }
-.works-wheel:not(.is-enhanced) .works-wheel-card > span:first-child { height: auto; aspect-ratio: 1.45; }
-.works-wheel-card img { width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius); }
-.works-wheel-label, .works-wheel-controls { display: none; }
-.works-wheel.is-enhanced .works-wheel-stage {
-  position: relative;
-  height: clamp(24rem, 65vh, 42rem);
-  overflow: hidden;
-  cursor: grab;
-  touch-action: pan-x;
-  user-select: none;
-}
-.works-wheel-stage:focus-visible { outline: 2px solid var(--accent); outline-offset: -4px; }
-.works-wheel.is-enhanced .works-wheel-rotor {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  display: block;
-  padding: 0;
-  overflow: visible;
-  transform-style: preserve-3d;
-}
-.works-wheel.is-enhanced .works-wheel-card { position: absolute; backface-visibility: hidden; text-decoration: none; }
-.works-wheel.is-enhanced .works-wheel-card > span:first-child {
-  overflow: hidden;
-  border-radius: var(--radius);
-  background: var(--surface);
-  box-shadow: var(--shadow);
-}
-.works-wheel.is-enhanced .works-wheel-card-title {
-  position: absolute;
-  inset-inline: 0;
-  top: calc(100% + 0.75rem);
-  text-align: center;
-  font-size: 0.875rem;
-  opacity: 0;
-}
-.works-wheel.is-enhanced .is-front .works-wheel-card-title { opacity: 1; }
-.works-wheel.is-enhanced .works-wheel-label {
-  display: grid;
-  position: absolute;
-  inset: 0;
-  place-items: center;
-  pointer-events: none;
-  font-size: clamp(1rem, 2vw, 1.5rem);
-}
-.works-wheel.is-enhanced .works-wheel-controls {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  padding: 1rem;
-  border-top: 1px solid var(--border);
-}
-.hero .works-wheel-controls p { margin: 0; font-size: 0.8rem; color: var(--muted); }
-.works-wheel-controls button {
-  background: var(--surface);
-  color: var(--ink);
-  border: 1px solid var(--border);
-  border-radius: 50%;
-  width: 2.75rem;
-  height: 2.75rem;
-  flex-shrink: 0;
-  cursor: pointer;
-}
-.works-wheel-controls button:disabled { opacity: 0.4; cursor: default; }
-.home-hero .works-wheel { margin-block-start: 0; }
-.home-hero .hero-content { grid-column: 1 / -1; }
-@media (max-width: 600px) {
-  .works-wheel.is-enhanced .works-wheel-stage { height: 25rem; }
 }
 
 .hero-actions {
