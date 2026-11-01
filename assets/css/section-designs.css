@@ -1,0 +1,97 @@
+/* Distinct section treatments using the site's shared colours and typography. */
+
+/* Experience: a continuous chronological rail. */
+.experience > div { position: relative; gap: 0; margin-inline-start: 10px; padding-inline-start: 30px; }
+.experience > div::before { content: ''; position: absolute; inset-block: 12px 36px; inset-inline-start: 0; width: 2px; background: var(--border); }
+.experience .experience-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 4px 20px 30px;
+  margin-block-end: 28px;
+  border: 0;
+  border-block-end: 1px solid var(--border);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.experience-card::before { content: ''; position: absolute; top: 13px; inset-inline-start: -36px; width: 14px; height: 14px; border: 3px solid var(--page); border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 2px var(--accent); }
+.experience-card h3 { margin: 14px 0 4px; font-size: clamp(1.15rem, 2vw, 1.5rem); }
+.experience-card p { max-width: 78ch; margin-block: 6px; }
+.experience-card > p:first-of-type { color: var(--muted); }
+.experience-card ul { margin-block: 12px 0; padding-inline-start: 20px; }
+.experience-card li + li { margin-top: 10px; }
+.experience-card .experience-dates { order: -1; padding: 4px 12px; border: 1px solid var(--border); border-radius: 99px; background: var(--surface); color: var(--accent); font-size: .85rem; }
+
+/* Education: numbered academic records. */
+.education > div { grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); counter-reset: education; }
+.education .education-card { position: relative; padding: 78px 26px 24px; border-radius: 18px; border-block-start: 4px solid var(--accent); background: linear-gradient(140deg, var(--surface), var(--surface-soft)); }
+.education-card::before { counter-increment: education; content: counter(education, decimal-leading-zero); position: absolute; top: 20px; inset-inline-start: 26px; font-size: 1.5rem; font-weight: 700; color: var(--accent); opacity: .7; }
+.education-card h3 { margin: 0 0 18px; line-height: 1.4; }
+.education-card > p:first-of-type { color: var(--muted); font-size: .9rem; }
+.education-card .experience-dates { display: inline-block; padding: 5px 10px; border-radius: 8px; background: var(--surface-soft); font-size: .85rem; }
+
+/* Languages: proficiency labels, without invented numerical scores. */
+.languages > ul { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); gap: 18px; padding: 0; list-style: none; }
+.languages > ul > li { display: grid; grid-template-columns: 68px minmax(0, 1fr); column-gap: 18px; align-items: center; padding: 24px; border: 1px solid var(--border); border-radius: 18px; background: var(--surface); box-shadow: var(--shadow); }
+.language-mark { display: grid; place-items: center; grid-row: span 2; width: 68px; height: 68px; border: 1px solid var(--border); border-radius: 20px 8px 20px 8px; background: var(--surface-soft); color: var(--accent); font-size: 1.4rem; font-weight: 700; }
+.languages h3 { margin: 0; font-size: 1.1rem; line-height: 1.5; }
+.languages li p { margin: 6px 0 0; color: var(--muted); font-size: .9rem; }
+
+/* Form: a spacious enquiry panel with paired fields. */
+.contact-layout { grid-template-columns: minmax(0, 1.35fr) minmax(0, .85fr); gap: 30px; }
+.contact-layout .contact-form-section { padding: clamp(22px, 3vw, 40px); border: 1px solid var(--border); border-radius: 22px; background: var(--surface); box-shadow: var(--shadow); }
+.contact-form-section h2 { margin-bottom: 28px; }
+#email-contact-form { width: 100%; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 18px; }
+.form-field { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.form-field-wide, #email-contact-form > p, #email-contact-form > button { grid-column: 1 / -1; }
+#email-contact-form .form-field label { margin: 0; font-size: .9rem; }
+#email-contact-form .form-field input, #email-contact-form .form-field select, #email-contact-form .form-field textarea { width: 100%; min-width: 0; margin: 0; padding: 13px 14px; border-radius: 10px; border: 1px solid var(--border); background: var(--page); color: var(--ink); }
+#email-contact-form .form-field:focus-within label { color: var(--accent); }
+#email-contact-form .form-field input:focus, #email-contact-form .form-field select:focus, #email-contact-form .form-field textarea:focus { background: var(--surface); outline: 3px solid color-mix(in srgb, var(--accent) 22%, transparent); outline-offset: 1px; border-color: var(--accent); }
+#email-contact-form button[type="submit"] { justify-self: stretch; padding-block: 14px; border-radius: 10px; font-weight: 700; }
+#email-contact-form #message-counter { margin: -14px 0 0; text-align: end; color: var(--muted); font-size: .8rem; }
+#email-contact-form #contact-form-note { margin: 0; color: var(--muted); font-size: .85rem; }
+
+/* Contact: separate channel cards rather than one enclosing list. */
+.contact-layout .contact-details { gap: 18px; padding: 0; border: 0; border-radius: 0; background: transparent; }
+.contact-channel { display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 10px 18px; padding: 24px; border: 1px solid var(--border); border-radius: 18px; background: var(--surface); box-shadow: var(--shadow); }
+.contact-channel > img { grid-column: 1; grid-row: span 2; margin: 0; align-self: start; }
+.contact-channel h2 { grid-column: 2; margin: 0; font-size: 1.15rem; }
+.contact-channel > p { grid-column: 2; min-width: 0; margin: 0; color: var(--muted); font-size: .9rem; overflow-wrap: anywhere; }
+.contact-channel:first-child h2::after { content: ''; display: inline-block; width: 8px; height: 8px; margin-inline-start: 10px; border-radius: 50%; background: #30966a; box-shadow: 0 0 0 4px #30966a18; }
+.contact-channel:last-child { background: var(--surface-soft); }
+.contact-channel:last-child h2, .contact-channel > nav { grid-column: 1 / -1; }
+.contact-channel .social-links { gap: 8px; margin-top: 4px; }
+.contact-channel .social-links a { background: var(--surface); }
+
+/* Gallery: framed artwork with numbered captions and a native image viewer. */
+.collection-grid { gap: 24px; counter-reset: gallery; }
+.collection-grid figure { position: relative; overflow: hidden; padding: 0; border-radius: 18px; box-shadow: var(--shadow); }
+.collection-grid figure::before { counter-increment: gallery; content: counter(gallery, decimal-leading-zero); position: absolute; inset-inline-start: 14px; top: 14px; z-index: 1; display: grid; place-items: center; width: 34px; height: 34px; border: 1px solid var(--border); border-radius: 50%; background: var(--surface); color: var(--ink); font-size: .75rem; font-weight: 700; pointer-events: none; }
+.collection-grid figure > a { display: block; overflow: hidden; background: var(--surface-soft); }
+.collection-grid figure img { width: 100%; height: 360px; padding: 18px; object-fit: contain; transition: transform .3s ease; }
+.collection-grid figure > a:hover img { transform: scale(1.035); }
+.collection-grid figcaption { margin: 0; padding: 18px 20px; border-top: 1px solid var(--border); color: var(--ink); font-size: .9rem; }
+.collection-grid figure video { display: block; background: #121815; }
+.gallery-lightbox { width: min(1100px, calc(100vw - 32px)); height: calc(100dvh - 40px); max-width: none; max-height: none; padding: 20px; border: 1px solid var(--border); border-radius: 20px; background: var(--surface); color: var(--ink); }
+.gallery-lightbox::backdrop { background: rgb(8 14 11 / 85%); backdrop-filter: blur(8px); }
+.gallery-lightbox[open] { display: grid; grid-template-rows: auto minmax(0, 1fr) auto; gap: 14px; }
+.gallery-lightbox-header { display: flex; justify-content: flex-end; }
+.gallery-lightbox button { min-width: 44px; min-height: 44px; padding: 8px 14px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface-soft); color: var(--ink); cursor: pointer; }
+.gallery-lightbox img { width: 100%; height: 100%; object-fit: contain; min-height: 0; }
+.gallery-lightbox-footer { display: grid; grid-template-columns: 44px minmax(0, 1fr) 44px; align-items: center; gap: 16px; text-align: center; }
+.gallery-lightbox-caption { margin: 0; font-size: .9rem; }
+.gallery-lightbox-counter { display: block; margin-top: 4px; color: var(--muted); font-size: .8rem; direction: ltr; unicode-bidi: isolate; }
+.gallery-is-open { overflow: hidden; }
+
+@media (max-width: 980px) { .contact-layout { grid-template-columns: minmax(0, 1fr); } .contact-layout .contact-details { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) {
+  #email-contact-form { grid-template-columns: minmax(0, 1fr); }
+  .contact-layout .contact-details { grid-template-columns: minmax(0, 1fr); }
+  .gallery-lightbox { width: calc(100vw - 16px); height: calc(100dvh - 16px); padding: 12px; border-radius: 12px; }
+  .gallery-lightbox-footer { gap: 8px; }
+  .experience .experience-card { padding-inline-end: 0; }
+}
+@media (prefers-reduced-motion: reduce) { .collection-grid figure img { transition: none; } .collection-grid figure > a:hover img { transform: none; } }

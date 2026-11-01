@@ -376,6 +376,42 @@ h2 {
   box-shadow: 0 14px 30px rgb(24 33 31 / 14%);
 }
 
+.motion-card {
+  position: relative;
+  isolation: isolate;
+  transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+}
+
+.motion-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background: radial-gradient(240px circle at var(--card-pointer-x, 50%) var(--card-pointer-y, 50%), color-mix(in srgb, var(--accent) 13%, transparent), transparent 80%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 220ms ease;
+}
+
+.motion-card:focus-within::after { opacity: 1; }
+.motion-card .card-icon { transition: transform 220ms ease; }
+
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .motion-card:hover {
+    transform: translateY(-5px);
+    border-color: color-mix(in srgb, var(--accent) 45%, var(--border));
+    box-shadow: 0 18px 36px rgb(24 33 31 / 15%);
+  }
+  .motion-card:hover::after { opacity: 1; }
+  .motion-card:hover .card-icon { transform: translateY(-2px) scale(1.06); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .motion-card, .motion-card .card-icon, .motion-card::after { transition: none; }
+  .motion-card:hover { transform: none; }
+}
+
 .project-card img {
   display: block;
   width: 100%;

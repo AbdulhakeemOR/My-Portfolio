@@ -14,6 +14,7 @@
     <script src="../assets/js/theme.js"></script>
     <script src="../assets/js/language.js?v=14fc52856e8e" defer></script>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/section-designs.css">
   
     <link rel="alternate" hreflang="en" href="../en/contact.html">
     <link rel="alternate" hreflang="ar" href="../ar/contact.html">
@@ -75,32 +76,44 @@
               <input id="bot-field" name="bot-field" tabindex="-1" autocomplete="off">
             </p>
 
-            <label for="name">Full name</label>
-            <input type="text" id="name" name="name" autocomplete="name" minlength="2" maxlength="100" required>
+            <div class="form-field">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" autocomplete="name" minlength="2" maxlength="100" required>
+            </div>
 
-            <label for="email">Email address</label>
-            <input type="email" id="email" name="email" autocomplete="email" required>
+            <div class="form-field">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
 
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" maxlength="160" required>
+            <div class="form-field">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" maxlength="160" required>
+            </div>
 
-            <label for="service">Service (optional)</label>
-            <select id="service" name="service">
-              <option value="">Choose a service</option>
-              <option value="Website Development">Website Development</option>
-              <option value="Ad Design &amp; Video">Ad Design &amp; Video</option>
-              <option value="PR &amp; Media Campaigns">PR &amp; Media Campaigns</option>
-              <option value="Tutoring">Tutoring</option>
-              <option value="Consultancy">Consultancy</option>
-              <option value="Website feedback or suggestion">Website feedback or suggestion</option>
-              <option value="Other collaboration">Other collaboration</option>
-            </select>
+            <div class="form-field">
+              <label for="service">Service (optional)</label>
+              <select id="service" name="service">
+                <option value="">Choose a service</option>
+                <option value="Website Development">Website Development</option>
+                <option value="Ad Design &amp; Video">Ad Design &amp; Video</option>
+                <option value="PR &amp; Media Campaigns">PR &amp; Media Campaigns</option>
+                <option value="Tutoring">Tutoring</option>
+                <option value="Consultancy">Consultancy</option>
+                <option value="Website feedback or suggestion">Website feedback or suggestion</option>
+                <option value="Other collaboration">Other collaboration</option>
+              </select>
+            </div>
 
-            <label for="timeline">Preferred timeline (optional)</label>
-            <input type="text" id="timeline" name="timeline" maxlength="160" placeholder="For example, within four weeks">
+            <div class="form-field form-field-wide">
+              <label for="timeline">Preferred timeline (optional)</label>
+              <input type="text" id="timeline" name="timeline" maxlength="160" placeholder="For example, within four weeks">
+            </div>
 
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="6" maxlength="5000" aria-describedby="message-counter" required></textarea>
+            <div class="form-field form-field-wide">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" maxlength="5000" aria-describedby="message-counter" required></textarea>
+            </div>
             <p id="message-counter">0 / 5000 characters</p>
 
             <button type="submit">Send message</button>
@@ -110,28 +123,28 @@
         </section>
 
         <section class="contact-details" aria-label="Contact details">
-          <div class="contact-detail">
+          <div class="contact-detail contact-channel">
             <img class="card-icon uploaded-icon" src="../assets/icons/availability.jpg" alt="" width="48" height="48" loading="lazy" decoding="async">
 
             <h2>Availability</h2>
             <p>I am currently available for freelance projects and collaborations.</p>
           </div>
 
-          <div class="contact-detail">
+          <div class="contact-detail contact-channel">
             <img class="card-icon uploaded-icon" src="../assets/icons/location.png" alt="" width="48" height="48" loading="lazy" decoding="async">
 
             <h2>Time zone</h2>
             <p>AST (GMT+3), Jeddah, Saudi Arabia.</p>
           </div>
 
-          <div class="contact-detail">
+          <div class="contact-detail contact-channel">
             <img class="card-icon uploaded-icon" src="../assets/icons/email.webp" alt="" width="48" height="48" loading="lazy" decoding="async">
 
             <h2>Email</h2>
             <p><a href="mailto:abdulhakeemoladaporaji@gmail.com">abdulhakeemoladaporaji@gmail.com</a></p>
           </div>
 
-          <div class="contact-detail">
+          <div class="contact-detail contact-channel">
             <h2>Social media</h2>
 
             <nav class="social-links" aria-label="Social media profiles">

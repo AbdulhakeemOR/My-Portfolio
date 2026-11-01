@@ -60,6 +60,8 @@ def generate_pages(projects, render_gallery):
         # Expanding catalog cards belong only to projects.html, not its galleries.
         page = re.sub(r'\s*<link[^>]+href="assets/css/projects-expanding\.css"[^>]*>', '', page)
         page = re.sub(r'\s*<script[^>]+src="assets/js/projects-expanding\.js"[^>]*></script>', '', page)
+        page = page.replace('<link rel="stylesheet" href="assets/css/style.css">', '<link rel="stylesheet" href="assets/css/style.css">\n    <link rel="stylesheet" href="assets/css/section-designs.css">')
+        page = page.replace('</body>', '<script src="assets/js/gallery-viewer.js" defer></script>\n  </body>')
         page = re.sub(r'<title>.*?</title>', lambda _: f'<title>{title}</title>', page, count=1, flags=re.S)
         page = re.sub(r'(<meta (?:name="description"|property="og:description") content=")[^"]*(")', lambda match: match[1] + escape(project['description'], quote=True) + match[2], page)
         page = re.sub(r'(<meta property="og:title" content=")[^"]*(")', lambda match: match[1] + escape(project['title'], quote=True) + match[2], page)

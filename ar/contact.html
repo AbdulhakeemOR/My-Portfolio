@@ -12,9 +12,10 @@
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary">
     <script src="../assets/js/theme.js"></script>
-    <script src="../assets/js/translations-ar.js?v=20575847f832"></script>
+    <script src="../assets/js/translations-ar.js?v=d4c9d640c05f"></script>
     <script src="../assets/js/language.js?v=14fc52856e8e" defer></script>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/section-designs.css">
   
     <link rel="alternate" hreflang="en" href="../en/contact.html">
     <link rel="alternate" hreflang="ar" href="../ar/contact.html">
@@ -76,32 +77,44 @@
               <input id="bot-field" name="bot-field" tabindex="-1" autocomplete="off">
             </p>
 
-            <label for="name">الاسم الكامل</label>
-            <input type="text" id="name" name="name" autocomplete="name" minlength="2" maxlength="100" required>
+            <div class="form-field">
+              <label for="name">الاسم الكامل</label>
+              <input type="text" id="name" name="name" autocomplete="name" minlength="2" maxlength="100" required>
+            </div>
 
-            <label for="email">البريد الإلكتروني</label>
-            <input type="email" id="email" name="email" autocomplete="email" required>
+            <div class="form-field">
+              <label for="email">البريد الإلكتروني</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
 
-            <label for="subject">الموضوع</label>
-            <input type="text" id="subject" name="subject" maxlength="160" required>
+            <div class="form-field">
+              <label for="subject">الموضوع</label>
+              <input type="text" id="subject" name="subject" maxlength="160" required>
+            </div>
 
-            <label for="service">الخدمة (اختياري)</label>
-            <select id="service" name="service">
-              <option value="">اختر خدمة</option>
-              <option value="Website Development">تطوير المواقع</option>
-              <option value="Ad Design &amp; Video">تصميم الإعلانات والفيديو</option>
-              <option value="PR &amp; Media Campaigns">العلاقات العامة والحملات الإعلامية</option>
-              <option value="Tutoring">التدريس</option>
-              <option value="Consultancy">الاستشارات</option>
-              <option value="Website feedback or suggestion">ملاحظة أو اقتراح بشأن الموقع</option>
-              <option value="Other collaboration">تعاون آخر</option>
-            </select>
+            <div class="form-field">
+              <label for="service">الخدمة (اختياري)</label>
+              <select id="service" name="service">
+                <option value="">اختر خدمة</option>
+                <option value="Website Development">تطوير المواقع</option>
+                <option value="Ad Design &amp; Video">تصميم الإعلانات والفيديو</option>
+                <option value="PR &amp; Media Campaigns">العلاقات العامة والحملات الإعلامية</option>
+                <option value="Tutoring">التدريس</option>
+                <option value="Consultancy">الاستشارات</option>
+                <option value="Website feedback or suggestion">ملاحظة أو اقتراح بشأن الموقع</option>
+                <option value="Other collaboration">تعاون آخر</option>
+              </select>
+            </div>
 
-            <label for="timeline">المدة الزمنية المفضلة (اختياري)</label>
-            <input type="text" id="timeline" name="timeline" maxlength="160" placeholder="مثلًا: خلال أربعة أسابيع">
+            <div class="form-field form-field-wide">
+              <label for="timeline">المدة الزمنية المفضلة (اختياري)</label>
+              <input type="text" id="timeline" name="timeline" maxlength="160" placeholder="مثلًا: خلال أربعة أسابيع">
+            </div>
 
-            <label for="message">الرسالة</label>
-            <textarea id="message" name="message" rows="6" maxlength="5000" aria-describedby="message-counter" required></textarea>
+            <div class="form-field form-field-wide">
+              <label for="message">الرسالة</label>
+              <textarea id="message" name="message" rows="6" maxlength="5000" aria-describedby="message-counter" required></textarea>
+            </div>
             <p id="message-counter">0 / 5000 حرف</p>
 
             <button type="submit">إرسال الرسالة</button>
@@ -111,28 +124,28 @@
         </section>
 
         <section class="contact-details" aria-label="بيانات التواصل">
-          <div class="contact-detail">
+          <div class="contact-detail contact-channel">
             <img class="card-icon uploaded-icon" src="../assets/icons/availability.jpg" alt="" width="48" height="48" loading="lazy" decoding="async">
 
             <h2>التوفر</h2>
             <p>أنا متاح حاليًا للمشاريع المستقلة والتعاونات.</p>
           </div>
 
-          <div class="contact-detail">
+          <div class="contact-detail contact-channel">
             <img class="card-icon uploaded-icon" src="../assets/icons/location.png" alt="" width="48" height="48" loading="lazy" decoding="async">
 
             <h2>المنطقة الزمنية</h2>
             <p>التوقيت العربي (غرينتش +3)، جدة، المملكة العربية السعودية.</p>
           </div>
 
-          <div class="contact-detail">
+          <div class="contact-detail contact-channel">
             <img class="card-icon uploaded-icon" src="../assets/icons/email.webp" alt="" width="48" height="48" loading="lazy" decoding="async">
 
             <h2>البريد الإلكتروني</h2>
             <p><a href="mailto:abdulhakeemoladaporaji@gmail.com">abdulhakeemoladaporaji@gmail.com</a></p>
           </div>
 
-          <div class="contact-detail">
+          <div class="contact-detail contact-channel">
             <h2>التواصل الاجتماعي</h2>
 
             <nav class="social-links" aria-label="حسابات التواصل الاجتماعي">

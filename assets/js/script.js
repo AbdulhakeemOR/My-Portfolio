@@ -3,6 +3,31 @@ root.classList.add("js");
 
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
+// Small, local enhancements for information cards; no build tooling required.
+const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)");
+document.querySelectorAll(".service-card, .skill-card, .contact-detail").forEach((card) => {
+	card.classList.add("motion-card");
+	let frame = 0;
+	let pointer = null;
+	card.addEventListener("pointermove", (event) => {
+		if (!finePointer.matches || reducedMotion.matches || event.pointerType === "touch") return;
+		pointer = { x: event.clientX, y: event.clientY };
+		if (frame) return;
+		frame = requestAnimationFrame(() => {
+			frame = 0;
+			const bounds = card.getBoundingClientRect();
+			card.style.setProperty("--card-pointer-x", `${pointer.x - bounds.left}px`);
+			card.style.setProperty("--card-pointer-y", `${pointer.y - bounds.top}px`);
+		});
+	});
+	card.addEventListener("pointerleave", () => {
+		cancelAnimationFrame(frame);
+		frame = 0;
+		card.style.removeProperty("--card-pointer-x");
+		card.style.removeProperty("--card-pointer-y");
+	});
+});
+
 const toastRegion = document.querySelector(".toast-region");
 let toastTimer;
 
