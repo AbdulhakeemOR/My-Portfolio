@@ -165,6 +165,41 @@ function safeMediaUrl(path) {
 	}
 }
 
+function createFeaturedProjectList(projects) {
+	const list = document.createElement("ul");
+	list.className = "home-fan-list";
+	projects.forEach((project) => {
+		const slug = contentSlug(project);
+		const item = document.createElement("li");
+		item.className = "home-fan-item";
+		const link = document.createElement("a");
+		link.className = "home-fan-card";
+		link.title = project.title;
+		link.href = `projects.html#project-${slug}`;
+		link.setAttribute("aria-labelledby", `featured-${slug}-title featured-${slug}-category`);
+		const image = document.createElement("img");
+		const imageUrl = safeMediaUrl(project.image);
+		if (imageUrl) image.src = imageUrl;
+		image.alt = ""; image.width = 600; image.height = 800;
+		image.loading = "lazy"; image.decoding = "async";
+		const caption = document.createElement("div");
+		caption.className = "home-fan-caption";
+		const category = document.createElement("span");
+		category.className = "home-fan-category";
+		category.id = `featured-${slug}-category`;
+		category.textContent = (project.category || "").replaceAll("-", " ");
+		const title = document.createElement("h3");
+		title.id = `featured-${slug}-title`; title.textContent = project.title;
+		const action = document.createElement("span");
+		action.className = "home-fan-action";
+		const text = document.createElement("span"); text.textContent = "View project";
+		const arrow = document.createElement("span"); arrow.textContent = String.fromCodePoint(8599); arrow.setAttribute("aria-hidden", "true");
+		action.append(text, arrow); caption.append(category, title, action);
+		link.append(image, caption); item.append(link); list.append(item);
+	});
+	return list;
+}
+
 function createProjectCard(project) {
 	const card = document.createElement("article");
 	card.className = "project-card filter-card";
@@ -372,7 +407,11 @@ if (projectContainers.length && window.location.protocol !== "file:") {
 				const projects = container.dataset.projectsSource === "featured"
 					? content.projects.filter((project) => project.featured).slice(0, 6)
 					: content.projects;
-				container.replaceChildren(...projects.map(createProjectCard));
+				if (container.classList.contains("home-project-fan")) {
+					container.replaceChildren(createFeaturedProjectList(projects));
+				} else {
+					container.replaceChildren(...projects.map(createProjectCard));
+				}
 			});
 			document.dispatchEvent(new Event("aor:projects-updated"));
 			restoreContentAnchor();

@@ -64,6 +64,24 @@ def article_body(text, indent):
     return '\n\n'.join(lines)
 
 
+def featured_project_card(project):
+    slug = value(project['slug'])
+    title = value(project['title'])
+    category = value(project.get('category', '').replace('-', ' '))
+    return '\n'.join([
+        '<li class="home-fan-item">',
+        f'  <a class="home-fan-card" href="projects.html#project-{slug}" title="{title}" aria-labelledby="featured-{slug}-title featured-{slug}-category">',
+        f'    <img src="{value(project.get("image", ""))}" alt="" width="600" height="800" loading="lazy" decoding="async">',
+        '    <div class="home-fan-caption">',
+        f'      <span class="home-fan-category" id="featured-{slug}-category">{category}</span>',
+        f'      <h3 id="featured-{slug}-title">{title}</h3>',
+        '      <span class="home-fan-action"><span>View project</span> <span aria-hidden="true">&#8599;</span></span>',
+        '    </div>',
+        '  </a>',
+        '</li>'
+    ])
+
+
 def project_card(project):
     items = media_items(project)
     categories = project.get('categories') or [project.get('category', 'other')]
@@ -215,7 +233,16 @@ def replace_collection(text, attribute, items, render):
     selected = [item for item in items if not featured or item.get('featured')]
     if featured and attribute == 'data-projects-source':
         selected = selected[:6]
-    body = '\n\n'.join(render(item, not featured) for item in selected)
+    if featured and attribute == 'data-projects-source':
+        middle = (len(selected) - 1) / 2
+        cards = []
+        for index, item in enumerate(selected):
+            offset = index - middle
+            style = f'--fan-offset:{offset:g};--fan-y:{abs(offset) * 20:g}px;--fan-rotation:{offset * 9:g}deg;--fan-stack:{100 - round(abs(offset) * 10)}'
+            cards.append(featured_project_card(item).replace('<li class="home-fan-item">', f'<li class="home-fan-item" style="{style}">'))
+        body = '<ul class="home-fan-list">\n' + '\n'.join(cards) + '\n</ul>'
+    else:
+        body = '\n\n'.join(render(item, not featured) for item in selected)
     return text[:match.end()] + '\n' + body + '\n      ' + text[end:]
 
 
