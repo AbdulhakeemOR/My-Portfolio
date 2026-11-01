@@ -8,6 +8,8 @@ The current portfolio is a static HTML site previewed with Live Server. Its acti
 
 The original carousel, demo, and Badge source are preserved here. For a future React migration, shadcn initialization supplies `@/lib/utils`; install the carousel's additional packages with `npm install motion class-variance-authority`. The current Live Server implementation needs none of those packages.
 
+The full Projects page also adapts `expanding-cards.tsx` using `assets/js/projects-expanding.js` and `assets/css/projects-expanding.css`. It expands on hover, focus, or selection; uses horizontal panels on desktop and vertical panels on mobile; and keeps case studies, filters, and gallery links functional. Homepage cards and gallery pages do not load these assets. The original React source and demo are preserved here; that version additionally needs `npm install lucide-react` after shadcn setup. The active static adaptation has no external package dependencies.
+
 No React, Tailwind, or TypeScript setup is needed for this static adaptation. To use the original TSX component in a future React app, install Node.js, create a TypeScript React project, and initialize shadcn/Tailwind there:
 
 ```sh

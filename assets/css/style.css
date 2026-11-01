@@ -224,6 +224,12 @@ h2 {
   margin-block-end: 0;
 }
 
+.card-icon.uploaded-icon {
+  padding: 0;
+  background: transparent;
+  object-fit: contain;
+}
+
 .header-cta {
   grid-area: cta;
   padding: 10px 16px;
