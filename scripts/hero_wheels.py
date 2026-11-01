@@ -5,7 +5,8 @@ from site_html import format_html
 
 
 def integrate(root, projects):
-    items = [p for p in projects if p.get('image')][:9]
+    items = [p for p in projects if p.get('featured')][:6]
+    items = [p for p in items if p.get('image')]
     cards = []
     for item in items:
         title = escape(item['title'])

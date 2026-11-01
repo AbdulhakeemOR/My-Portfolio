@@ -1,6 +1,63 @@
 {
   "projects": [
     {
+      "slug": "scholarship-student-services-campaign",
+      "title": "Scholarship Student Services Awareness Campaign — Graduation Project",
+      "description": "An independently planned and designed graduation campaign introducing international scholarship students to university services and opportunities. Developed from January to June 2024 and approved by the Scholarship Office at King Abdulaziz University, the campaign was not implemented.",
+      "brief": "This graduation project proposed an awareness campaign about the services, programmes, and opportunities available to international scholarship students at King Abdulaziz University.\n\nThe campaign aimed to increase awareness of scholarship student support, encourage communication and participation, and strengthen students’ sense of belonging. Its materials introduced the Scholarship Administration and highlighted services such as visas and travel tickets, alongside student programmes and activities.\n\nDeveloped between January and June 2024, the project combined campaign planning, Arabic content, graphic design, and video elements into a coordinated communication package.",
+      "role": "I independently planned and designed the entire project. My responsibilities covered the campaign concept, objectives, content planning, Arabic copy, logo design, visual direction, poster production, and preparation of the video introduction and outro.\n\nI developed the materials from the initial idea through to the completed campaign package, which received approval from the Scholarship Office.",
+      "process": "I organised the campaign around the information needs of international scholarship students. General campaign materials introduced its purpose and encouraged participation, while an institutional overview presented the administration’s services, programmes, and activities. Dedicated posters explained individual services, including visas and travel tickets.\n\nI used recurring colours, geometric elements, institutional imagery, and consistent visual details to connect the materials. Each poster had a specific communication purpose within the wider campaign, helping move the audience from a general introduction to more focused service information.\n\nI designed the project’s logo in Inkscape, created the video introduction and outro using Renderforest, and used Adobe Express and Canva for the remaining designs.",
+      "outcome": "The project resulted in a coordinated campaign package that received approval from the Scholarship Office. It was not implemented, so its outcomes relate to the completed planning and creative materials rather than measured audience reach, participation, or awareness.\n\nPlanning and designing the project independently gave me practical experience in connecting communication objectives with visual outputs. It strengthened my ability to organise Arabic information, maintain consistency across multiple materials, and select tools for different production tasks.\n\nThe project also highlighted the value of concise copy, clear visual hierarchy, and an evaluation plan for assessing campaign effectiveness if implemented.",
+      "tools": "Inkscape — logo design.\n\nRenderforest — video introduction and outro.\n\nAdobe Express and Canva — campaign graphics and remaining designs.",
+      "details": "Period: January–June 2024.\n\nProject type: Academic graduation project.\n\nInstitutional context: King Abdulaziz University.\n\nStatus: Approved by the Scholarship Office; not implemented.",
+      "tool": "Inkscape, Renderforest, Adobe Express, Canva",
+      "category": "pr-media-campaign",
+      "categories": [
+        "pr-media-campaign"
+      ],
+      "status": "approved-not-implemented",
+      "featured": true,
+      "image": "../assets/images/scholarship-student-services-campaign/poster-4.webp",
+      "image_alt": "Poster 4 — scholarship student services campaign introduction",
+      "image_fit": "contain",
+      "gallery": [
+        {
+          "image": "../assets/images/scholarship-student-services-campaign/poster-1.webp",
+          "caption": "Poster 1 — visa service"
+        },
+        {
+          "image": "../assets/images/scholarship-student-services-campaign/poster-2.webp",
+          "caption": "Poster 2 — travel ticket service"
+        },
+        {
+          "image": "../assets/images/scholarship-student-services-campaign/poster-3.webp",
+          "caption": "Poster 3 — campaign objectives and participation"
+        },
+        {
+          "image": "../assets/images/scholarship-student-services-campaign/poster-5.webp",
+          "caption": "Poster 5 — campaign invitation concept"
+        },
+        {
+          "image": "../assets/images/scholarship-student-services-campaign/poster-6.webp",
+          "caption": "Poster 6 — Scholarship Administration services and programmes"
+        },
+        {
+          "image": "../assets/images/scholarship-student-services-campaign/background.webp",
+          "caption": "Campaign background design"
+        },
+        {
+          "video": "../assets/videos/scholarship-student-services-campaign/pattern-1.mp4",
+          "poster": "../assets/images/scholarship-student-services-campaign/pattern-1-preview.webp",
+          "caption": "Pattern 1 — student services walkthrough"
+        },
+        {
+          "video": "../assets/videos/scholarship-student-services-campaign/pattern-2.mp4",
+          "poster": "../assets/images/scholarship-student-services-campaign/pattern-2-preview.webp",
+          "caption": "Pattern 2 — campaign awareness video"
+        }
+      ]
+    },
+    {
       "image_alt": "Campaign Poster",
       "slug": "access-for-all",
       "image_fit": "cover",
@@ -155,7 +212,7 @@
       "image_alt": "Arabic Calligraphy Workshop Concept",
       "slug": "calligraphy-make-your-first-mark",
       "image_fit": "cover",
-      "featured": false,
+      "featured": true,
       "process": "I used “Make Your First Mark” as the central campaign message. The campaign video, “Every practice page starts with one mark,” introduced progress through practice. The main ad addressed a different moment: the beginner’s reaction, “That looks complicated. Where do I start?”\n\nThe selected advertising concept, “Start Small,” answered that hesitation with “Begin with one stroke.” I carried this progression into an eight-second cutdown and used the call to action “Explore the sample workshop details.” The videos used concise on-screen text to communicate without voiceover, with clear fictional-workshop disclosure.",
       "outcome": "I completed a coordinated workshop campaign and advertising sample, including social content, a campaign video, a main ad, a short cutdown, and static advertising materials.\n\nThe project strengthened my ability to turn a perceived barrier into a creative message. I learned how pacing, short text, and a simple visual progression can make an unfamiliar activity feel approachable without overstating what a beginner can achieve.",
       "gallery": [
@@ -240,7 +297,7 @@
       "image_alt": "Campaign Poster",
       "slug": "evergreen-catalog",
       "image_fit": "cover",
-      "featured": false,
+      "featured": true,
       "process": "I built the broader campaign around “Find a useful starting point,” supported by the call to action “Browse the kits.” This positioned the catalog around a practical audience need.\n\nFor the main ad, I selected the concept “What will you post next?” and focused on the 30-Day Social Calendar sample. This gave the advertising a specific problem and resource to introduce. Supporting content showed the wider range, including podcast, crisis-statement, and brand-voice resources.\n\nI developed graphics, a carousel, Stories, and a campaign video, followed by an approximately 26-second main ad, an eight-second cutdown, and two static ads. Final checks covered mobile readability, message consistency, video presentation, and accurate sample disclosure.",
       "outcome": "I completed a campaign and advertising package that connects a broad catalog offer with a focused promotional message. The project demonstrates my ability to organise related assets while giving each format a clear purpose.\n\nI learned that a catalog becomes easier to communicate when the main ad highlights one recognisable audience problem. The project also strengthened my ability to maintain consistency between awareness content, resource promotion, and calls to action. Outcomes relate to the completed portfolio materials; no sales or engagement results are claimed.",
       "gallery": [

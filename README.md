@@ -31,6 +31,8 @@ Open `http://localhost:8000` in your browser. This serves the public deployment 
 
 ## Where to make changes
 
+The About page's Courses & Training section uses interactive glass folders. Open a category to browse individual courses in a stacked card carousel. Drag/swipe or use the previous/next buttons and arrow keys; press Escape to close the folder. Each card preserves the certificate links, issuer, dates, hours, and any programme modules. Course records are maintained in `content/courses.json` and regenerated with `python scripts/sync_content.py`. The Live Server implementation is in `assets/js/course-folders.js`, `assets/js/course-carousel.js`, and `assets/css/course-folders.css`. Original React references and optional migration notes are preserved in `components/ui/`.
+
 | What I want to change | Where to edit |
 | --- | --- |
 | Homepage introduction and service previews | `index.html` |
@@ -56,7 +58,7 @@ This updates the HTML copies for visitors without JavaScript and for previews op
 
 Netlify runs the content sync as part of `python scripts/build_site.py` during deployment.
 
-Only the homepage hero includes the WorksWheel ring-to-drum interaction, adapted to native JavaScript and the existing CSS tokens. It supports scrolling, dragging, keyboard arrows, previous/next buttons, reduced motion, and linked cards without JavaScript. The content sync regenerates the cards from the first nine projects with cover images and translates them for Arabic. No React, TypeScript, Tailwind, or shadcn setup is required for this implementation.
+Only the homepage hero includes the WorksWheel ring-to-drum interaction, adapted to native JavaScript and the existing CSS tokens. It supports scrolling, dragging, keyboard arrows, previous/next buttons, reduced motion, and linked cards without JavaScript. The content sync regenerates the cards from up to six featured projects with cover images and translates them for Arabic. No React, TypeScript, Tailwind, or shadcn setup is required for this implementation.
 
 Content is maintained directly in the repository; no CMS editor or CMS authentication is included. Add projects to `content/projects.json` and articles to `content/articles.json`. Put new public media in `assets/uploads/` and reference it from those entries. Keep private originals outside the public assets folders. Build locally to review the result, then commit and push the content and media together.
 
@@ -70,6 +72,8 @@ Content is maintained directly in the repository; no CMS editor or CMS authentic
 - English and Arabic versions are available through the header language links. Keep Arabic translations up to date when changing English content.
 
 ## Images and videos
+
+The scholarship student services graduation campaign uses public media in `assets/images/scholarship-student-services-campaign/` and `assets/videos/scholarship-student-services-campaign/`. Its original uploads are archived under `admin/project-originals/scholarship-student-services-campaign/`. Keep the approval/not-implemented status when updating its portfolio entry. The homepage project section and work wheel display up to six featured projects, in their catalog order. The Projects page displays the full catalog.
 
 Smaller web images are in `assets/images/`. The original files remain in the project folder.
 

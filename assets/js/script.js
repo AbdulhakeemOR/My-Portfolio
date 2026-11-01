@@ -24,7 +24,7 @@ document.querySelectorAll(".works-wheel").forEach((wheel) => {
 		stage.style.perspective = `${cardH * 2.7}px`;
 		rotor.style.transform = `translateZ(${-m * radius}px)`;
 		cards.forEach((card, i) => {
-			const d = i - pos, degrees = d * 40;
+			const d = i - pos, degrees = d * (360 / cards.length);
 			const hidden = m > 0.5 && Math.abs(d) > 1.6;
 			card.style.width = `${cardW}px`;
 			card.style.height = `${cardH}px`;
@@ -302,7 +302,9 @@ function createProjectCard(project) {
 		["Brief", project.brief],
 		["My role", project.role],
 		["Process", project.process],
-		["Outcome and lessons", project.outcome]
+		["Outcome and lessons", project.outcome],
+		["Tools used", project.tools],
+		["Project information", project.details]
 	];
 
 	caseStudyFields.forEach(([label, value]) => {
@@ -424,7 +426,7 @@ if (projectContainers.length && window.location.protocol !== "file:") {
 			if (!Array.isArray(content.projects)) throw new Error("Project data has an invalid format.");
 			projectContainers.forEach((container) => {
 				const projects = container.dataset.projectsSource === "featured"
-					? content.projects.filter((project) => project.featured)
+					? content.projects.filter((project) => project.featured).slice(0, 6)
 					: content.projects;
 				container.replaceChildren(...projects.map(createProjectCard));
 			});

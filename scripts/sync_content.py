@@ -94,7 +94,9 @@ def project_card(project):
         ('Brief', 'brief'),
         ('My role', 'role'),
         ('Process', 'process'),
-        ('Outcome and lessons', 'outcome')
+        ('Outcome and lessons', 'outcome'),
+        ('Tools used', 'tools'),
+        ('Project information', 'details')
     ]
 
     fields = [(label, project.get(field)) for label, field in case_study_fields]
@@ -211,6 +213,8 @@ def replace_collection(text, attribute, items, render):
 
     featured = match.group(1) == 'featured'
     selected = [item for item in items if not featured or item.get('featured')]
+    if featured and attribute == 'data-projects-source':
+        selected = selected[:6]
     body = '\n\n'.join(render(item, not featured) for item in selected)
     return text[:match.end()] + '\n' + body + '\n      ' + text[end:]
 
