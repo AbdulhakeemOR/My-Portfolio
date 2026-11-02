@@ -408,7 +408,7 @@ h2 {
 }
 
 /* Shared glossy button finish. Base and state colors stay with each control. */
-body :is(button, .primary-cta, .secondary-cta, .service-cta, .header-cta) {
+body :is(button:not(.gf-hit), .primary-cta, .secondary-cta, .service-cta, .header-cta) {
   border-radius: 999px;
   isolation: isolate;
   overflow: hidden;
@@ -421,7 +421,7 @@ body :is(button, .primary-cta, .secondary-cta, .service-cta, .header-cta) {
     background-color .3s ease, opacity .3s ease;
 }
 
-body :is(button, .primary-cta, .secondary-cta, .service-cta, .header-cta):not(.back-to-top) {
+body :is(button:not(.gf-hit), .primary-cta, .secondary-cta, .service-cta, .header-cta):not(.back-to-top) {
   position: relative;
 }
 
@@ -433,8 +433,8 @@ body :is(.primary-cta, .secondary-cta, .service-cta) {
   letter-spacing: -.4px;
 }
 
-body :is(button, .primary-cta, .secondary-cta, .service-cta, .header-cta)::before,
-body :is(button, .primary-cta, .secondary-cta, .service-cta, .header-cta)::after {
+body :is(button:not(.gf-hit), .primary-cta, .secondary-cta, .service-cta, .header-cta)::before,
+body :is(button:not(.gf-hit), .primary-cta, .secondary-cta, .service-cta, .header-cta)::after {
   content: "";
   position: absolute;
   border-radius: inherit;
@@ -443,13 +443,13 @@ body :is(button, .primary-cta, .secondary-cta, .service-cta, .header-cta)::after
   z-index: -1;
 }
 
-body :is(button, .primary-cta, .secondary-cta, .service-cta, .header-cta)::before {
+body :is(button:not(.gf-hit), .primary-cta, .secondary-cta, .service-cta, .header-cta)::before {
   inset: 2px;
   background: linear-gradient(180deg, rgb(255 255 255 / 22%),
     rgb(255 255 255 / 5%) 45%, transparent);
 }
 
-body :is(button, .primary-cta, .secondary-cta, .service-cta, .header-cta)::after {
+body :is(button:not(.gf-hit), .primary-cta, .secondary-cta, .service-cta, .header-cta)::after {
   inset: 0;
   background-image:
     radial-gradient(ellipse at bottom, rgb(255 255 255 / 42%) 0%,
@@ -464,7 +464,7 @@ body :is(button, .primary-cta, .secondary-cta, .service-cta, .header-cta)::after
 }
 
 @media (hover: hover) and (prefers-reduced-motion: no-preference) {
-  body :is(button, .primary-cta, .secondary-cta, .service-cta, .header-cta):hover:not(:disabled) {
+  body :is(button:not(.gf-hit), .primary-cta, .secondary-cta, .service-cta, .header-cta):hover:not(:disabled) {
     transform: translateY(-2px) scale(1.02);
     box-shadow:
       0 0 0 10px color-mix(in srgb, var(--accent) 16%, transparent),
@@ -474,7 +474,7 @@ body :is(button, .primary-cta, .secondary-cta, .service-cta, .header-cta)::after
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  body :is(button, .primary-cta, .secondary-cta, .service-cta, .header-cta):active:not(:disabled) {
+  body :is(button:not(.gf-hit), .primary-cta, .secondary-cta, .service-cta, .header-cta):active:not(:disabled) {
     transform: scale(.98);
   }
 }
