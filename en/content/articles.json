@@ -9,7 +9,7 @@
       "published": true,
       "date": "2026-10-13",
       "title": "Why Crisis Communication Matters in Universities",
-      "image": "/assets/uploads/university-illustration.webp",
+      "image": "../assets/uploads/university-illustration.webp",
       "category": "communication-research"
     },
     {
@@ -21,7 +21,7 @@
       "published": true,
       "date": "2026-10-31",
       "title": "From Research Questions to Evidence: Making Sense of Communication Research",
-      "image": "/assets/uploads/research-end-result.webp",
+      "image": "../assets/uploads/research-end-result.webp",
       "category": "communication-research"
     },
     {
@@ -33,7 +33,7 @@
       "published": true,
       "date": "2026-10-13",
       "title": "My Beginner’s Journey Building a Website with HTML, CSS, and JavaScript",
-      "image": "/assets/uploads/practicing-knowledge.webp",
+      "image": "../assets/uploads/practicing-knowledge.webp",
       "category": "web-development"
     },
     {
@@ -45,7 +45,7 @@
       "published": true,
       "date": "2026-10-31",
       "title": "Beyond Appearance: Building Websites That Communicate Clearly",
-      "image": "/assets/uploads/learning-new-things.webp",
+      "image": "../assets/uploads/learning-new-things.webp",
       "category": "web-development"
     },
     {
@@ -57,7 +57,7 @@
       "published": true,
       "date": "2026-10-13",
       "title": "Learning by Creating: Turning Practice into Portfolio Projects",
-      "image": "/assets/uploads/growing.webp",
+      "image": "../assets/uploads/growing.webp",
       "category": "learning-growth"
     },
     {
@@ -69,7 +69,7 @@
       "published": true,
       "date": "2026-10-31",
       "title": "Making Progress While You Are Still a Beginner",
-      "image": "/assets/uploads/moving-forward.webp",
+      "image": "../assets/uploads/moving-forward.webp",
       "category": "learning-growth"
     }
   ]

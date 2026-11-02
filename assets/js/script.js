@@ -165,6 +165,7 @@ backToTop?.addEventListener("click", () => {
 
 function safeMediaUrl(path) {
 	if (typeof path !== "string" || !path.trim()) return null;
+	path = path.replace(/^\/(?=assets\/)/, "");
 	try {
 		const url = new URL(path, document.baseURI);
 		if (!["http:", "https:", "file:"].includes(url.protocol)) return null;
