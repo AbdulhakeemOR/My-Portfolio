@@ -1491,35 +1491,62 @@ main a:not(.primary-cta):not(.service-cta) {
   overflow-wrap: anywhere;
 }
 
-.social-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+.social-links.card {
+  width: fit-content;
+  max-width: 100%;
   margin-top: 20px;
+  background: transparent;
+  box-shadow: none;
 }
-
-.social-links a {
-  display: inline-flex;
+.social-links.card ul {
+  display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 44px;
-  min-height: 44px;
-  padding: 8px 12px;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  font-size: 0.875rem;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 0;
+  padding: 25px;
+  list-style: none;
+}
+.social-links.card a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  overflow: hidden;
+  border-radius: 50%;
+  background: rgb(44 44 44);
   text-decoration: none;
+  transition: background-color 1s ease, transform .3s ease;
 }
-
-.social-links a:hover {
-  text-decoration: underline;
-  text-underline-offset: 4px;
+.social-links.card .svg {
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  object-fit: contain;
+  box-shadow: none;
 }
-
-.site-footer .social-links a {
-  border-color: #74817a;
+.social-links.card a > span { display: none; }
+.social-links.card a:hover, .social-links.card a:focus-visible {
+  background: var(--social-hover, #555);
+  transition-duration: .3s;
 }
-
+.social-links.card a[href*="instagram.com"] { --social-hover: #d62976; }
+.social-links.card a[href*="linkedin.com"] { --social-hover: #0072b1; }
+.social-links.card a[href*="facebook.com"] { --social-hover: #1877f2; }
+.social-links.card a[href*="x.com"] { --social-hover: #00acee; }
+.social-links.card a[href*="snapchat.com"] { --social-hover: #918500; }
+.social-links.card a[href*="tiktok.com"] { --social-hover: #a91844; }
+.social-links.card a:active { transform: scale(.9); }
+@keyframes social-slide-in-top {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .social-links.card a:hover .svg,
+  .social-links.card a:focus-visible .svg { animation: social-slide-in-top .3s both; }
+}
 .nav-labels a,
 .footer-link-list a {
   display: inline-flex;

@@ -3,6 +3,15 @@ root.classList.add("js");
 
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
+document.querySelectorAll(".skill-card").forEach((card) => {
+	const icon = card.querySelector("img");
+	if (!icon) return;
+	const visual = document.createElement("div");
+	visual.className = "skill-visual";
+	icon.before(visual);
+	visual.append(icon);
+});
+
 // Small, local enhancements for information cards; no build tooling required.
 const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)");
 document.querySelectorAll(".service-card, .skill-card, .contact-detail").forEach((card) => {
