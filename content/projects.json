@@ -67,68 +67,68 @@
       "gallery": [
         {
           "caption": "Review Process Graphic",
-          "image": "/assets/uploads/graphic-2.png"
+          "image": "assets/uploads/graphic-2.png"
         },
         {
           "caption": "Learning Carousel 1",
-          "image": "/assets/uploads/learning-carousel-1.png"
+          "image": "assets/uploads/learning-carousel-1.png"
         },
         {
           "caption": "Learning Carousel 2",
-          "image": "/assets/uploads/learning-carousel-2.png"
+          "image": "assets/uploads/learning-carousel-2.png"
         },
         {
           "caption": "Learning Carousel 3",
-          "image": "/assets/uploads/learning-carousel-3.png"
+          "image": "assets/uploads/learning-carousel-3.png"
         },
         {
           "caption": "Learning Carousel 4",
-          "image": "/assets/uploads/learning-carousel-4.png"
+          "image": "assets/uploads/learning-carousel-4.png"
         },
         {
           "caption": "Learning Carousel 5",
-          "image": "/assets/uploads/learning-carousel-5.png"
+          "image": "assets/uploads/learning-carousel-5.png"
         },
         {
           "caption": "Story Frame 1",
-          "image": "/assets/uploads/story-frame-1.png"
+          "image": "assets/uploads/story-frame-1.png"
         },
         {
           "caption": "Story Frame 2",
-          "image": "/assets/uploads/story-frame-2.png"
+          "image": "assets/uploads/story-frame-2.png"
         },
         {
           "caption": "Story Frame 3",
-          "image": "/assets/uploads/story-frame-3.png"
+          "image": "assets/uploads/story-frame-3.png"
         },
         {
           "caption": "Story Frame 4",
-          "image": "/assets/uploads/story-frame-4.png"
+          "image": "assets/uploads/story-frame-4.png"
         },
         {
           "caption": "Static Ad 1",
-          "image": "/assets/uploads/access-static-ad-1.png",
-          "video": "/assets/uploads/access-ad.mp4"
+          "image": "assets/uploads/access-static-ad-1.png",
+          "video": "assets/uploads/access-ad.mp4"
         },
         {
           "caption": "Static Ad 2",
-          "image": "/assets/uploads/access-static-ad-2.png"
+          "image": "assets/uploads/access-static-ad-2.png"
         },
         {
           "caption": "Accessibility Checklist",
-          "image": "/assets/uploads/accessibility-checklist.png"
+          "image": "assets/uploads/accessibility-checklist.png"
         },
         {
           "caption": "Campaign Video",
-          "video": "/assets/uploads/campaign-video.mp4"
+          "video": "assets/uploads/campaign-video.mp4"
         },
         {
           "caption": "Ad",
-          "video": "/assets/uploads/access-ad.mp4"
+          "video": "assets/uploads/access-ad.mp4"
         },
         {
           "caption": "Ad Cutdown",
-          "video": "/assets/uploads/access-ad-cutdown.mp4"
+          "video": "assets/uploads/access-ad-cutdown.mp4"
         }
       ],
       "status": "concept",
@@ -137,7 +137,7 @@
       "title": "Access for All — Make Learning Accessible",
       "brief": "Develop a campaign encouraging tutors, education coordinators, student groups, and small training providers to review their learning materials and make one practical improvement. The campaign focused on clearer layouts, meaningful image descriptions, and accurate captions, supported by an accessibility checklist.",
       "video": "",
-      "image": "/assets/uploads/campaign-poster.png",
+      "image": "assets/uploads/campaign-poster.png",
       "categories": [
         "pr-media-campaign"
       ],
@@ -152,48 +152,48 @@
       "outcome": "The project produced a bilingual campaign and advertising portfolio sample with a consistent message across its creative materials. It demonstrates my ability to connect audience needs, language knowledge, copywriting, and visual communication.\n\nI learned that bilingual design requires more than translating words: both languages need space, readable layouts, and an appropriate tone. The project also reinforced the value of encouraging realistic first steps without promising instant fluency.",
       "gallery": [
         {
-          "image": "/assets/uploads/b.a-story-frame-1.png",
+          "image": "assets/uploads/b.a-story-frame-1.png",
           "caption": "Story Frame 1"
         },
         {
           "caption": "Story Frame 2",
-          "image": "/assets/uploads/b.a-story-frame-2.png"
+          "image": "assets/uploads/b.a-story-frame-2.png"
         },
         {
           "caption": "Story Frame 3",
-          "image": "/assets/uploads/b.a-story-frame-3.png"
+          "image": "assets/uploads/b.a-story-frame-3.png"
         },
         {
           "caption": "Story Frame 4",
-          "image": "/assets/uploads/b.a-story-frame-4.png"
+          "image": "assets/uploads/b.a-story-frame-4.png"
         },
         {
           "caption": "Static Ad 1",
-          "image": "/assets/uploads/b.a-static-ad-a.png"
+          "image": "assets/uploads/b.a-static-ad-a.png"
         },
         {
           "caption": "Static Ad 2",
-          "image": "/assets/uploads/b.a-static-ad-b.png"
+          "image": "assets/uploads/b.a-static-ad-b.png"
         },
         {
-          "video": "/assets/uploads/bridge-arabic-sample-lesson.mp4",
+          "video": "assets/uploads/bridge-arabic-sample-lesson.mp4",
           "caption": "Sample Lesson"
         },
         {
-          "video": "/assets/uploads/bridge-arabic-program.mp4",
+          "video": "assets/uploads/bridge-arabic-program.mp4",
           "caption": "Program Plan"
         },
         {
-          "video": "/assets/uploads/b.a-promotional-video.mp4",
+          "video": "assets/uploads/b.a-promotional-video.mp4",
           "caption": "Promotional Video"
         },
         {
-          "video": "/assets/uploads/b.a-ad-a.mp4",
+          "video": "assets/uploads/b.a-ad-a.mp4",
           "caption": "Video Ad 1"
         },
         {
           "caption": "Video Ad 2",
-          "video": "/assets/uploads/b.a-ad-b.mp4"
+          "video": "assets/uploads/b.a-ad-b.mp4"
         }
       ],
       "status": "concept",
@@ -201,7 +201,7 @@
       "tool": "Canva — bilingual layouts, campaign graphics, and advertising assets.",
       "title": "Bridge Arabic — Start with a Word",
       "brief": "Create a promotional campaign for a fictional Arabic-learning offer aimed at beginners who speak other languages. The campaign needed to introduce the offer clearly, reduce hesitation about starting, and encourage potential learners to explore it through approachable messages and supporting visuals.",
-      "image": "/assets/uploads/bridge-arabic-poster.png",
+      "image": "assets/uploads/bridge-arabic-poster.png",
       "categories": [
         "pr-media-campaign"
       ],
@@ -217,68 +217,68 @@
       "outcome": "I completed a coordinated workshop campaign and advertising sample, including social content, a campaign video, a main ad, a short cutdown, and static advertising materials.\n\nThe project strengthened my ability to turn a perceived barrier into a creative message. I learned how pacing, short text, and a simple visual progression can make an unfamiliar activity feel approachable without overstating what a beginner can achieve.",
       "gallery": [
         {
-          "image": "/assets/uploads/c.-graphic-1.png",
+          "image": "assets/uploads/c.-graphic-1.png",
           "caption": "Graphic 1"
         },
         {
           "caption": "Graphic 2",
-          "image": "/assets/uploads/c.-graphic-2.png"
+          "image": "assets/uploads/c.-graphic-2.png"
         },
         {
           "caption": "Graphic 3",
-          "image": "/assets/uploads/c.-graphic-3.png"
+          "image": "assets/uploads/c.-graphic-3.png"
         },
         {
-          "image": "/assets/uploads/c.-carousel-1.png",
+          "image": "assets/uploads/c.-carousel-1.png",
           "caption": "Carousel 1"
         },
         {
           "caption": "Carousel 2",
-          "image": "/assets/uploads/c.-carousel-2.png"
+          "image": "assets/uploads/c.-carousel-2.png"
         },
         {
           "caption": "Carousel 3",
-          "image": "/assets/uploads/c.-carousel-3.png"
+          "image": "assets/uploads/c.-carousel-3.png"
         },
         {
           "caption": "Carousel 4",
-          "image": "/assets/uploads/c.-carousel-4.png"
+          "image": "assets/uploads/c.-carousel-4.png"
         },
         {
           "caption": "Carousel 5",
-          "image": "/assets/uploads/c.-carousel-5.png"
+          "image": "assets/uploads/c.-carousel-5.png"
         },
         {
           "caption": "Story Frame 1",
-          "image": "/assets/uploads/c.-story-1.png"
+          "image": "assets/uploads/c.-story-1.png"
         },
         {
           "caption": "Story Frame 2",
-          "image": "/assets/uploads/c.-story-2.png"
+          "image": "assets/uploads/c.-story-2.png"
         },
         {
           "caption": "Story Frame 3",
-          "image": "/assets/uploads/c.-story-3.png"
+          "image": "assets/uploads/c.-story-3.png"
         },
         {
           "caption": "Static Ad 1",
-          "image": "/assets/uploads/c.-static-ad-1.png"
+          "image": "assets/uploads/c.-static-ad-1.png"
         },
         {
           "caption": "Static Ad 2",
-          "image": "/assets/uploads/c.-static-ad-2.png"
+          "image": "assets/uploads/c.-static-ad-2.png"
         },
         {
-          "video": "/assets/uploads/c.-campaign-video.mp4",
+          "video": "assets/uploads/c.-campaign-video.mp4",
           "caption": "Campaign Video"
         },
         {
-          "video": "/assets/uploads/c.-ad-video.mp4",
+          "video": "assets/uploads/c.-ad-video.mp4",
           "caption": "Ad Video"
         },
         {
           "caption": "Ad Video Cutdown",
-          "video": "/assets/uploads/c.-ad-cutdown.mp4"
+          "video": "assets/uploads/c.-ad-cutdown.mp4"
         }
       ],
       "status": "concept",
@@ -286,7 +286,7 @@
       "tool": "Canva — campaign layouts, graphics, video editing, animation, and vertical video exports.",
       "title": "Calligraphy — Make Your First Mark",
       "brief": "Develop a campaign introducing Arabic calligraphy to beginners who are interested in the art but unsure where to start. The workshop concept focused on guided practice with basic strokes and letterforms. The communication needed to make the first step feel approachable while respecting the practice involved in developing the skill.",
-      "image": "/assets/uploads/arabic-calligraphy-workshop-concept.png",
+      "image": "assets/uploads/arabic-calligraphy-workshop-concept.png",
       "categories": [
         "pr-media-campaign"
       ],
@@ -302,44 +302,44 @@
       "outcome": "I completed a campaign and advertising package that connects a broad catalog offer with a focused promotional message. The project demonstrates my ability to organise related assets while giving each format a clear purpose.\n\nI learned that a catalog becomes easier to communicate when the main ad highlights one recognisable audience problem. The project also strengthened my ability to maintain consistency between awareness content, resource promotion, and calls to action. Outcomes relate to the completed portfolio materials; no sales or engagement results are claimed.",
       "gallery": [
         {
-          "image": "/assets/uploads/evergreen-graphic-2.png",
+          "image": "assets/uploads/evergreen-graphic-2.png",
           "caption": "Graphic 2"
         },
         {
           "caption": "Graphic 3",
-          "image": "/assets/uploads/evergreen-graphic-3.png"
+          "image": "assets/uploads/evergreen-graphic-3.png"
         },
         {
-          "image": "/assets/uploads/evergreen-story-frame-1.png",
+          "image": "assets/uploads/evergreen-story-frame-1.png",
           "caption": "Story Frame 1"
         },
         {
           "caption": "Story Frame 2",
-          "image": "/assets/uploads/evergreen-story-frame-2.png"
+          "image": "assets/uploads/evergreen-story-frame-2.png"
         },
         {
           "caption": "Story Frame 3",
-          "image": "/assets/uploads/evergreen-story-frame-3.png"
+          "image": "assets/uploads/evergreen-story-frame-3.png"
         },
         {
-          "image": "/assets/uploads/evergreen-static-ad-1.png",
+          "image": "assets/uploads/evergreen-static-ad-1.png",
           "caption": "Static Ad 1"
         },
         {
           "caption": "Static Ad 2",
-          "image": "/assets/uploads/evergreen-static-ad-2.png"
+          "image": "assets/uploads/evergreen-static-ad-2.png"
         },
         {
-          "video": "/assets/uploads/evergreen-promotional-video.mp4",
+          "video": "assets/uploads/evergreen-promotional-video.mp4",
           "caption": "Promotional Video"
         },
         {
-          "video": "/assets/uploads/evergreen-ad.mp4",
+          "video": "assets/uploads/evergreen-ad.mp4",
           "caption": "Ad Video"
         },
         {
           "caption": "Ad Cutdown",
-          "video": "/assets/uploads/evergreen-ad-cutdown.mp4"
+          "video": "assets/uploads/evergreen-ad-cutdown.mp4"
         }
       ],
       "status": "concept",
@@ -347,7 +347,7 @@
       "tool": "Canva — campaign graphics, social layouts, video production, and advertising exports.",
       "title": "Evergreen Catalog — Find a Useful Starting Point",
       "brief": "Create a campaign introducing Evergreen Catalog as a place to explore sample communication resources. The audience included solo creators and people managing communication for small teams. The campaign needed to explain the range clearly, while the advertising focused on a specific resource: the 30-Day Social Calendar sample.",
-      "image": "/assets/uploads/evergreen-campaign-poster.png",
+      "image": "assets/uploads/evergreen-campaign-poster.png",
       "categories": [
         "pr-media-campaign"
       ],

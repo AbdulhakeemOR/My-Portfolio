@@ -11,7 +11,7 @@ import tempfile
 import tomllib
 import xml.etree.ElementTree as ET
 
-from localize_site import ROOT, PAGES, catalog, translate
+from localize_site import ROOT, PAGES, catalog, translate, localize_json
 from check_site import Page as HTMLPage
 import configure_site
 
@@ -51,6 +51,8 @@ class Page(HTMLParser):
 
 def main():
     messages = catalog()
+    for language in ('en', 'ar'):
+        assert localize_json({'video': '', 'poster': '', 'external_url': ''}, language, messages) == {'video': '', 'poster': '', 'external_url': ''}, 'Empty media URLs must stay empty.'
     translation_script = (ROOT / 'assets/js/translations-ar.js').read_text(encoding='utf-8')
     translation_version = hashlib.sha256(translation_script.encode('utf-8')).hexdigest()[:12]
     language_version = hashlib.sha256((ROOT / 'assets/js/language.js').read_bytes()).hexdigest()[:12]

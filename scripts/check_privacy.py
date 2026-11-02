@@ -62,7 +62,9 @@ def check_package():
         def check(value):
             if isinstance(value, dict):
                 if value.get('video'):
-                    assert value['video'].lstrip('../').startswith('assets/videos/'), value['video']
+                    video = value['video'].lstrip('../')
+                    assert video.startswith(('assets/videos/', 'assets/uploads/')), value['video']
+                    assert (public / video).is_file(), value['video']
                 for child in value.values():
                     check(child)
             elif isinstance(value, list):

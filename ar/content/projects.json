@@ -67,68 +67,68 @@
       "gallery": [
         {
           "caption": "رسم توضيحي لخطوات المراجعة",
-          "image": "/assets/uploads/graphic-2.png"
+          "image": "../assets/uploads/graphic-2.png"
         },
         {
           "caption": "منشور تعليمي متعدد الشرائح 1",
-          "image": "/assets/uploads/learning-carousel-1.png"
+          "image": "../assets/uploads/learning-carousel-1.png"
         },
         {
           "caption": "منشور تعليمي متعدد الشرائح 2",
-          "image": "/assets/uploads/learning-carousel-2.png"
+          "image": "../assets/uploads/learning-carousel-2.png"
         },
         {
           "caption": "منشور تعليمي متعدد الشرائح 3",
-          "image": "/assets/uploads/learning-carousel-3.png"
+          "image": "../assets/uploads/learning-carousel-3.png"
         },
         {
           "caption": "منشور تعليمي متعدد الشرائح 4",
-          "image": "/assets/uploads/learning-carousel-4.png"
+          "image": "../assets/uploads/learning-carousel-4.png"
         },
         {
           "caption": "منشور تعليمي متعدد الشرائح 5",
-          "image": "/assets/uploads/learning-carousel-5.png"
+          "image": "../assets/uploads/learning-carousel-5.png"
         },
         {
           "caption": "شريحة قصة 1",
-          "image": "/assets/uploads/story-frame-1.png"
+          "image": "../assets/uploads/story-frame-1.png"
         },
         {
           "caption": "شريحة قصة 2",
-          "image": "/assets/uploads/story-frame-2.png"
+          "image": "../assets/uploads/story-frame-2.png"
         },
         {
           "caption": "شريحة قصة 3",
-          "image": "/assets/uploads/story-frame-3.png"
+          "image": "../assets/uploads/story-frame-3.png"
         },
         {
           "caption": "شريحة قصة 4",
-          "image": "/assets/uploads/story-frame-4.png"
+          "image": "../assets/uploads/story-frame-4.png"
         },
         {
           "caption": "إعلان ثابت 1",
-          "image": "/assets/uploads/access-static-ad-1.png",
-          "video": "/assets/uploads/access-ad.mp4"
+          "image": "../assets/uploads/access-static-ad-1.png",
+          "video": "../assets/uploads/access-ad.mp4"
         },
         {
           "caption": "إعلان ثابت 2",
-          "image": "/assets/uploads/access-static-ad-2.png"
+          "image": "../assets/uploads/access-static-ad-2.png"
         },
         {
           "caption": "قائمة التحقق من سهولة الوصول",
-          "image": "/assets/uploads/accessibility-checklist.png"
+          "image": "../assets/uploads/accessibility-checklist.png"
         },
         {
           "caption": "فيديو الحملة",
-          "video": "/assets/uploads/campaign-video.mp4"
+          "video": "../assets/uploads/campaign-video.mp4"
         },
         {
           "caption": "إعلان",
-          "video": "/assets/uploads/access-ad.mp4"
+          "video": "../assets/uploads/access-ad.mp4"
         },
         {
           "caption": "نسخة مختصرة من الإعلان",
-          "video": "/assets/uploads/access-ad-cutdown.mp4"
+          "video": "../assets/uploads/access-ad-cutdown.mp4"
         }
       ],
       "status": "concept",
@@ -136,8 +136,8 @@
       "tool": "Canva — graphic design, content layouts, video assembly, animation, and exports.",
       "title": "الإتاحة للجميع — تعلّم متاح للجميع",
       "brief": "تطوير حملة تشجع المدرّسين ومنسقي التعليم والمجموعات الطلابية ومقدمي التدريب الصغار على مراجعة موادهم التعليمية وإجراء تحسين عملي واحد. ركزت الحملة على وضوح التنسيق ووصف الصور وصفًا ذا معنى ودقة النصوص المصاحبة للفيديو، مع قائمة تحقق لسهولة الوصول.",
-      "video": "../",
-      "image": "/assets/uploads/campaign-poster.png",
+      "video": "",
+      "image": "../assets/uploads/campaign-poster.png",
       "categories": [
         "pr-media-campaign"
       ],
@@ -152,48 +152,48 @@
       "outcome": "أنتج المشروع نموذجًا لحملة وإعلانات بلغتين لملف الأعمال، برسالة متسقة في مواده الإبداعية. ويظهر قدرتي على الربط بين احتياجات الجمهور والمعرفة اللغوية وكتابة النصوص والاتصال البصري.\n\nتعلمت أن التصميم بلغتين يتطلب أكثر من ترجمة الكلمات؛ فكل لغة تحتاج مساحة وتنسيقًا مقروءًا ونبرة مناسبة. وأكد المشروع أهمية تشجيع خطوات أولى واقعية دون الوعد بالطلاقة الفورية.",
       "gallery": [
         {
-          "image": "/assets/uploads/b.a-story-frame-1.png",
+          "image": "../assets/uploads/b.a-story-frame-1.png",
           "caption": "شريحة قصة 1"
         },
         {
           "caption": "شريحة قصة 2",
-          "image": "/assets/uploads/b.a-story-frame-2.png"
+          "image": "../assets/uploads/b.a-story-frame-2.png"
         },
         {
           "caption": "شريحة قصة 3",
-          "image": "/assets/uploads/b.a-story-frame-3.png"
+          "image": "../assets/uploads/b.a-story-frame-3.png"
         },
         {
           "caption": "شريحة قصة 4",
-          "image": "/assets/uploads/b.a-story-frame-4.png"
+          "image": "../assets/uploads/b.a-story-frame-4.png"
         },
         {
           "caption": "إعلان ثابت 1",
-          "image": "/assets/uploads/b.a-static-ad-a.png"
+          "image": "../assets/uploads/b.a-static-ad-a.png"
         },
         {
           "caption": "إعلان ثابت 2",
-          "image": "/assets/uploads/b.a-static-ad-b.png"
+          "image": "../assets/uploads/b.a-static-ad-b.png"
         },
         {
-          "video": "/assets/uploads/bridge-arabic-sample-lesson.mp4",
+          "video": "../assets/uploads/bridge-arabic-sample-lesson.mp4",
           "caption": "درس نموذجي"
         },
         {
-          "video": "/assets/uploads/bridge-arabic-program.mp4",
+          "video": "../assets/uploads/bridge-arabic-program.mp4",
           "caption": "خطة البرنامج"
         },
         {
-          "video": "/assets/uploads/b.a-promotional-video.mp4",
+          "video": "../assets/uploads/b.a-promotional-video.mp4",
           "caption": "فيديو ترويجي"
         },
         {
-          "video": "/assets/uploads/b.a-ad-a.mp4",
+          "video": "../assets/uploads/b.a-ad-a.mp4",
           "caption": "إعلان فيديو 1"
         },
         {
           "caption": "إعلان فيديو 2",
-          "video": "/assets/uploads/b.a-ad-b.mp4"
+          "video": "../assets/uploads/b.a-ad-b.mp4"
         }
       ],
       "status": "concept",
@@ -201,7 +201,7 @@
       "tool": "Canva — bilingual layouts, campaign graphics, and advertising assets.",
       "title": "جسر العربية — ابدأ بكلمة",
       "brief": "إعداد حملة ترويجية لبرنامج افتراضي لتعليم العربية للمبتدئين الناطقين بلغات أخرى. هدفت الحملة إلى التعريف بالبرنامج بوضوح وتقليل التردد في البدء وتشجيع المهتمين على استكشافه برسائل بسيطة ومواد بصرية داعمة.",
-      "image": "/assets/uploads/bridge-arabic-poster.png",
+      "image": "../assets/uploads/bridge-arabic-poster.png",
       "categories": [
         "pr-media-campaign"
       ],
@@ -217,68 +217,68 @@
       "outcome": "أنجزت نموذجًا متكاملًا لحملة الورشة وإعلاناتها، يشمل محتوى اجتماعيًا وفيديو للحملة وإعلانًا رئيسيًا ونسخة مختصرة ومواد إعلانية ثابتة.\n\nعزز المشروع قدرتي على تحويل عائق متصور إلى رسالة إبداعية. وتعلمت كيف تجعل وتيرة العرض والنصوص القصيرة والتسلسل البصري البسيط نشاطًا غير مألوف أقرب للمبتدئ دون المبالغة فيما يستطيع تحقيقه.",
       "gallery": [
         {
-          "image": "/assets/uploads/c.-graphic-1.png",
+          "image": "../assets/uploads/c.-graphic-1.png",
           "caption": "تصميم 1"
         },
         {
           "caption": "تصميم 2",
-          "image": "/assets/uploads/c.-graphic-2.png"
+          "image": "../assets/uploads/c.-graphic-2.png"
         },
         {
           "caption": "تصميم 3",
-          "image": "/assets/uploads/c.-graphic-3.png"
+          "image": "../assets/uploads/c.-graphic-3.png"
         },
         {
-          "image": "/assets/uploads/c.-carousel-1.png",
+          "image": "../assets/uploads/c.-carousel-1.png",
           "caption": "منشور متعدد الشرائح 1"
         },
         {
           "caption": "منشور متعدد الشرائح 2",
-          "image": "/assets/uploads/c.-carousel-2.png"
+          "image": "../assets/uploads/c.-carousel-2.png"
         },
         {
           "caption": "منشور متعدد الشرائح 3",
-          "image": "/assets/uploads/c.-carousel-3.png"
+          "image": "../assets/uploads/c.-carousel-3.png"
         },
         {
           "caption": "منشور متعدد الشرائح 4",
-          "image": "/assets/uploads/c.-carousel-4.png"
+          "image": "../assets/uploads/c.-carousel-4.png"
         },
         {
           "caption": "منشور متعدد الشرائح 5",
-          "image": "/assets/uploads/c.-carousel-5.png"
+          "image": "../assets/uploads/c.-carousel-5.png"
         },
         {
           "caption": "شريحة قصة 1",
-          "image": "/assets/uploads/c.-story-1.png"
+          "image": "../assets/uploads/c.-story-1.png"
         },
         {
           "caption": "شريحة قصة 2",
-          "image": "/assets/uploads/c.-story-2.png"
+          "image": "../assets/uploads/c.-story-2.png"
         },
         {
           "caption": "شريحة قصة 3",
-          "image": "/assets/uploads/c.-story-3.png"
+          "image": "../assets/uploads/c.-story-3.png"
         },
         {
           "caption": "إعلان ثابت 1",
-          "image": "/assets/uploads/c.-static-ad-1.png"
+          "image": "../assets/uploads/c.-static-ad-1.png"
         },
         {
           "caption": "إعلان ثابت 2",
-          "image": "/assets/uploads/c.-static-ad-2.png"
+          "image": "../assets/uploads/c.-static-ad-2.png"
         },
         {
-          "video": "/assets/uploads/c.-campaign-video.mp4",
+          "video": "../assets/uploads/c.-campaign-video.mp4",
           "caption": "فيديو الحملة"
         },
         {
-          "video": "/assets/uploads/c.-ad-video.mp4",
+          "video": "../assets/uploads/c.-ad-video.mp4",
           "caption": "فيديو إعلاني"
         },
         {
           "caption": "نسخة مختصرة من الفيديو الإعلاني",
-          "video": "/assets/uploads/c.-ad-cutdown.mp4"
+          "video": "../assets/uploads/c.-ad-cutdown.mp4"
         }
       ],
       "status": "concept",
@@ -286,7 +286,7 @@
       "tool": "Canva — campaign layouts, graphics, video editing, animation, and vertical video exports.",
       "title": "الخط العربي — ابدأ بخطّك الأول",
       "brief": "تطوير حملة تعرّف بالخط العربي للمبتدئين المهتمين به ممن لا يعرفون من أين يبدؤون. ركز تصور الورشة على ممارسة موجّهة للضربات الأساسية وأشكال الحروف، برسائل تجعل الخطوة الأولى مشجعة مع توضيح أهمية الممارسة لتنمية المهارة.",
-      "image": "/assets/uploads/arabic-calligraphy-workshop-concept.png",
+      "image": "../assets/uploads/arabic-calligraphy-workshop-concept.png",
       "categories": [
         "pr-media-campaign"
       ],
@@ -302,44 +302,44 @@
       "outcome": "أنجزت حزمة حملة وإعلانات تربط تنوع الكتالوج برسالة ترويجية محددة. ويظهر المشروع قدرتي على تنظيم مواد مترابطة مع منح كل صيغة غرضًا واضحًا.\n\nتعلمت أن تقديم الكتالوج يصبح أسهل عندما يبرز الإعلان الرئيسي مشكلة واضحة لدى الجمهور. وعزز المشروع قدرتي على الحفاظ على الاتساق بين محتوى التوعية والترويج للموارد والدعوات لاتخاذ إجراء. وتتعلق النتائج بمواد ملف الأعمال المنجزة، دون ادعاء تحقيق مبيعات أو تفاعل فعلي.",
       "gallery": [
         {
-          "image": "/assets/uploads/evergreen-graphic-2.png",
+          "image": "../assets/uploads/evergreen-graphic-2.png",
           "caption": "تصميم 2"
         },
         {
           "caption": "تصميم 3",
-          "image": "/assets/uploads/evergreen-graphic-3.png"
+          "image": "../assets/uploads/evergreen-graphic-3.png"
         },
         {
-          "image": "/assets/uploads/evergreen-story-frame-1.png",
+          "image": "../assets/uploads/evergreen-story-frame-1.png",
           "caption": "شريحة قصة 1"
         },
         {
           "caption": "شريحة قصة 2",
-          "image": "/assets/uploads/evergreen-story-frame-2.png"
+          "image": "../assets/uploads/evergreen-story-frame-2.png"
         },
         {
           "caption": "شريحة قصة 3",
-          "image": "/assets/uploads/evergreen-story-frame-3.png"
+          "image": "../assets/uploads/evergreen-story-frame-3.png"
         },
         {
-          "image": "/assets/uploads/evergreen-static-ad-1.png",
+          "image": "../assets/uploads/evergreen-static-ad-1.png",
           "caption": "إعلان ثابت 1"
         },
         {
           "caption": "إعلان ثابت 2",
-          "image": "/assets/uploads/evergreen-static-ad-2.png"
+          "image": "../assets/uploads/evergreen-static-ad-2.png"
         },
         {
-          "video": "/assets/uploads/evergreen-promotional-video.mp4",
+          "video": "../assets/uploads/evergreen-promotional-video.mp4",
           "caption": "فيديو ترويجي"
         },
         {
-          "video": "/assets/uploads/evergreen-ad.mp4",
+          "video": "../assets/uploads/evergreen-ad.mp4",
           "caption": "فيديو إعلاني"
         },
         {
           "caption": "نسخة مختصرة من الإعلان",
-          "video": "/assets/uploads/evergreen-ad-cutdown.mp4"
+          "video": "../assets/uploads/evergreen-ad-cutdown.mp4"
         }
       ],
       "status": "concept",
@@ -347,7 +347,7 @@
       "tool": "Canva — campaign graphics, social layouts, video production, and advertising exports.",
       "title": "كتالوج إيفرغرين — اعثر على نقطة انطلاق مفيدة",
       "brief": "إعداد حملة تعرّف بكتالوج إيفرغرين بوصفه مساحة لاستكشاف نماذج من موارد الاتصال. استهدفت الحملة المبدعين المستقلين ومسؤولي الاتصال في الفرق الصغيرة. وكان المطلوب توضيح تنوع الموارد، مع تركيز الإعلانات على مورد محدد: نموذج تقويم محتوى التواصل الاجتماعي لمدة 30 يومًا.",
-      "image": "/assets/uploads/evergreen-campaign-poster.png",
+      "image": "../assets/uploads/evergreen-campaign-poster.png",
       "categories": [
         "pr-media-campaign"
       ],

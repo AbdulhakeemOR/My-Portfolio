@@ -80,6 +80,8 @@ def translate(text, messages):
 
 
 def asset_url(value):
+    if not value:
+        return value
     parsed = urlsplit(value)
     if parsed.scheme or parsed.netloc or value.startswith(('#', '/', '../')):
         return value
