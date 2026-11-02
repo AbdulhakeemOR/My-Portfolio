@@ -9,7 +9,7 @@
       "published": true,
       "date": "2026-10-13",
       "title": "لماذا يهم الاتصال أثناء الأزمات في الجامعات؟",
-      "image": "/assets/uploads/university-illustration.png",
+      "image": "/assets/uploads/university-illustration.webp",
       "category": "communication-research"
     },
     {
@@ -21,7 +21,7 @@
       "published": true,
       "date": "2026-10-31",
       "title": "من أسئلة البحث إلى الأدلة: فهم بحوث الاتصال",
-      "image": "/assets/uploads/research-end-result.png",
+      "image": "/assets/uploads/research-end-result.webp",
       "category": "communication-research"
     },
     {
@@ -33,7 +33,7 @@
       "published": true,
       "date": "2026-10-13",
       "title": "رحلتي كمبتدئ في بناء موقع باستخدام HTML وCSS وJavaScript",
-      "image": "/assets/uploads/practicing-knowledge.png",
+      "image": "/assets/uploads/practicing-knowledge.webp",
       "category": "web-development"
     },
     {
@@ -45,7 +45,7 @@
       "published": true,
       "date": "2026-10-31",
       "title": "ما وراء المظهر: بناء مواقع توصل رسالتها بوضوح",
-      "image": "/assets/uploads/learning-new-things.png",
+      "image": "/assets/uploads/learning-new-things.webp",
       "category": "web-development"
     },
     {
@@ -57,7 +57,7 @@
       "published": true,
       "date": "2026-10-13",
       "title": "التعلّم بالإبداع: تحويل الممارسة إلى مشاريع لملف الأعمال",
-      "image": "/assets/uploads/growing.png",
+      "image": "/assets/uploads/growing.webp",
       "category": "learning-growth"
     },
     {
@@ -69,7 +69,7 @@
       "published": true,
       "date": "2026-10-31",
       "title": "إحراز التقدم وأنت لا تزال مبتدئًا",
-      "image": "/assets/uploads/moving-forward.png",
+      "image": "/assets/uploads/moving-forward.webp",
       "category": "learning-growth"
     }
   ]
