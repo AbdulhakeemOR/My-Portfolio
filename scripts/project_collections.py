@@ -43,7 +43,7 @@ def generate_pages(projects, render_gallery):
         description = escape(project['description'])
         items = media_items(project)
         body = '\n'.join([
-            '<main id="main-content">', MARKER,
+            '<main id="main-content" class="project-grid">', MARKER,
             '  <section class="hero collection-intro">',
             '    <p class="page-eyebrow">Selected work</p>',
             f'    <h1>{title}</h1>', f'    <p>{description}</p>',
