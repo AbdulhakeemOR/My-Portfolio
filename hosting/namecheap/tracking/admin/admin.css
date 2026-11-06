@@ -1,0 +1,22 @@
+main { max-width:1200px; }
+.admin-layout { display:grid; grid-template-columns:minmax(220px,1fr) minmax(0,2.2fr); gap:24px; align-items:start; }
+section { margin:0; padding:24px; }
+.notice { margin:24px 0; padding:20px; background:var(--surface); border:1px solid var(--accent); border-radius:12px; overflow-wrap:anywhere; }
+.error { border-width:2px; }
+label { display:block; font-weight:600; margin:18px 0 6px; }
+input,select,textarea { display:block; width:100%; min-width:0; padding:12px; font:inherit; color:var(--ink); background:var(--bg); border:1px solid var(--border); border-radius:6px; }
+textarea { resize:vertical; }
+form > button { margin-top:24px; }
+.checkbox { display:flex; align-items:start; gap:10px; font-weight:400; }
+.checkbox input { width:auto; margin-top:7px; }
+.hint { font-size:.85rem; color:var(--muted); margin-top:6px; }
+.project-item { display:flex; flex-direction:column; gap:4px; padding:16px 8px; border-bottom:1px solid var(--border); color:var(--ink); text-decoration:none; overflow-wrap:anywhere; }
+.project-item[aria-current] { border-inline-start:3px solid var(--accent); padding-inline-start:12px; }
+.project-item span,.project-item small { color:var(--muted); }
+.new-project { display:inline-block; color:var(--accent); padding:8px 0; }
+.link-controls { border-top:1px solid var(--border); margin-top:32px; padding-top:16px; }
+.actions { display:flex; gap:12px; flex-wrap:wrap; margin-top:20px; }
+.secondary { color:var(--accent); background:transparent; border:1px solid var(--accent); }
+#copy-link { margin-top:12px; } #copy-status { margin-inline-start:12px; }
+:where(input,textarea,select,a):focus-visible { outline:3px solid var(--accent); outline-offset:3px; }
+@media(max-width:760px) { .admin-layout { grid-template-columns:1fr; } }

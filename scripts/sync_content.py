@@ -106,7 +106,7 @@ def project_card(project):
             lines.append(f'          <span class="content-tag">{value(label.replace("-", " "))}</span>')
 
     if project.get('external_url'):
-        lines.extend(['', f'          <a class="project-link" href="{value(project["external_url"])}">View project</a>'])
+        lines.extend(['', f'          <a class="project-link" href="{value(project["external_url"])}">{value(project.get("external_label", "View project"))}</a>'])
 
     case_study_fields = [
         ('Brief', 'brief'),
@@ -177,6 +177,7 @@ def article_card(article, include_body):
 
     lines.extend(['', '          <div class="article-content">', f'            <h3>{value(article["title"])}</h3>', f'            <p>{value(article["summary"])}</p>'])
     published = article.get('published', True) and bool(article.get('body', '').strip())
+    lines.append('            <div class="article-meta">')
 
     if published:
         published_date = date.fromisoformat(article['date'])
@@ -184,6 +185,7 @@ def article_card(article, include_body):
         lines.append(f'            <time datetime="{value(article["date"])}">{formatted_date}</time>')
 
     lines.append(f'            <span class="content-tag">{value(article["category"].replace("-", " "))}</span>')
+    lines.append('            </div>')
 
     if published and include_body:
         minutes = max(1, (len(article['body'].split()) + 199) // 200)
@@ -247,6 +249,8 @@ def replace_collection(text, attribute, items, render):
 
 
 def main():
+    from policy_content import generate as generate_policies
+    generate_policies(ROOT)
     projects = json.loads((ROOT / 'content/projects.json').read_text(encoding='utf-8'))['projects']
     articles = json.loads((ROOT / 'content/articles.json').read_text(encoding='utf-8'))['articles']
 
@@ -269,6 +273,8 @@ def main():
         text = replace_collection(text, 'data-articles-source', articles, article_card)
 
         if path.name == 'articles.html':
+            if 'src="assets/js/article-feedback.js"' not in text:
+                text = text.replace('</body>', '    <script src="assets/js/article-feedback.js" defer></script>\n  </body>')
             template = (ROOT / 'templates/article-feedback.html').read_text(encoding='utf-8').strip()
             template_block = f'<template id="article-feedback-template">\n{template}\n</template>'
             text = re.sub(
@@ -285,7 +291,7 @@ def main():
         if social_template.exists():
             social_links = social_template.read_text(encoding='utf-8').strip()
             text = re.sub(
-                r'<nav class="social-links"[^>]*>.*?</nav>',
+                r'<nav class="social-links(?:\s[^"\n]*)?"[^>]*>.*?</nav>',
                 lambda _: social_links,
                 text,
                 flags=re.S
@@ -295,7 +301,29 @@ def main():
 
     generate_pages(projects, project_gallery)
 
+    from launch_metadata import apply_metadata
+    apply_metadata(ROOT)
+    from image_dimensions import apply_dimensions
+    apply_dimensions(ROOT)
+
     from localize_site import build_languages
+    # Request the current stylesheet after manual cPanel uploads, even when a
+    # browser still holds an earlier copy of the same CSS path.
+    import hashlib
+    css_version = hashlib.sha256((ROOT / 'assets/css/style.css').read_bytes()).hexdigest()[:12]
+    css_name = f'site-{css_version}.css'
+    # A new filename also bypasses caches that ignore query-string versions.
+    (ROOT / 'assets/css' / css_name).write_bytes((ROOT / 'assets/css/style.css').read_bytes())
+    script_version = hashlib.sha256((ROOT / 'assets/js/script.js').read_bytes()).hexdigest()[:12]
+    script_name = f'site-script-{script_version}.js'
+    (ROOT / 'assets/js' / script_name).write_bytes((ROOT / 'assets/js/script.js').read_bytes())
+    for page in ROOT.glob('*.html'):
+        markup = page.read_text(encoding='utf-8')
+        markup = re.sub(r'href="assets/css/(?:style|site-[a-f0-9]{12})\.css(?:\?[^"\s]*)?"',
+                        f'href="assets/css/{css_name}"', markup)
+        markup = re.sub(r'src="assets/js/(?:script|site-script-[a-f0-9]{12})\.js(?:\?[^"\s]*)?"',
+                        f'src="assets/js/{script_name}"', markup)
+        page.write_text(markup, encoding='utf-8', newline='\r\n')
     build_languages()
 
     production_url = os.environ.get('URL') if os.environ.get('NETLIFY') == 'true' else None

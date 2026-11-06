@@ -14,6 +14,10 @@ PAGES = tuple(p.name for p in ROOT.glob('*.html'))
 
 def catalog():
     messages = json.loads((ROOT / 'content/i18n/ar.json').read_text(encoding='utf-8'))
+    messages.update(json.loads((ROOT / 'content/i18n/launch-ar.json').read_text(encoding='utf-8')))
+    messages.update(json.loads((ROOT / 'content/i18n/discussions-ar.json').read_text(encoding='utf-8')))
+    from policy_content import translation_pairs as policy_translations
+    messages.update(policy_translations(ROOT))
     from course_content import translation_pairs
     messages.update(translation_pairs())
     articles = json.loads((ROOT / 'content/articles.json').read_text(encoding='utf-8'))['articles']

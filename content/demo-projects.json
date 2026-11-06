@@ -1,0 +1,51 @@
+{
+  "bridgearabic": {
+    "title": "Bridge Arabic — Learning Website",
+    "title_ar": "بريدج عربي — موقع لتعلّم العربية",
+    "description": "A fictional beginner-Arabic learning website with a programme outline, a greeting recording, and a sample lesson.",
+    "description_ar": "موقع تعليمي افتراضي للمبتدئين في العربية، يتضمن خطة برنامج وتسجيلًا صوتيًا للتحية ودرسًا تجريبيًا.",
+    "tool": "HTML, CSS"
+  },
+  "calculator": {
+    "title": "Everyday Calculator",
+    "title_ar": "حاسبة للاستخدام اليومي",
+    "description": "An interactive calculator with basic and scientific modes, a larger keypad, and a currency-conversion interface.",
+    "description_ar": "حاسبة تفاعلية بوضعين أساسي وعلمي، ولوحة مفاتيح موسّعة، وواجهة لتحويل العملات.",
+    "tool": "HTML, CSS, JavaScript"
+  },
+  "evergreencatalog": {
+    "title": "Evergreen Catalog — Resource Website",
+    "title_ar": "إيفرغرين كتالوج — موقع للموارد",
+    "description": "A searchable communication-resource catalog with filters, saved items, and resource detail pages. The kits are fictional samples.",
+    "description_ar": "كتالوج قابل للبحث لموارد الاتصال، مع مرشحات وعناصر محفوظة وصفحات تفاصيل الموارد. الحزم المعروضة نماذج افتراضية.",
+    "tool": "HTML, CSS, JavaScript"
+  },
+  "framehouse": {
+    "title": "Framehouse — Poster Gallery",
+    "title_ar": "فريم هاوس — معرض الملصقات",
+    "description": "A fictional design collective’s responsive poster gallery, with category filters and dialogs for exploring each artwork and its design rationale.",
+    "description_ar": "معرض ملصقات متجاوب لاستوديو تصميم افتراضي، مع تصفية حسب الفئات ونوافذ لاستكشاف الأعمال وأفكارها التصميمية.",
+    "tool": "React, Vite, Radix UI"
+  },
+  "gatherforum": {
+    "title": "Gather Forum — Workshop Website",
+    "title_ar": "غاذر فورم — موقع ورشة عمل",
+    "description": "A fictional workshop microsite with a two-day agenda, session details, and a shortlist saved on the visitor’s device.",
+    "description_ar": "موقع مصغّر لورشة عمل افتراضية، يتضمن جدولًا ليومين وتفاصيل الجلسات وقائمة مختارة تُحفظ على جهاز الزائر.",
+    "tool": "HTML, CSS, JavaScript"
+  },
+  "scopecraft": {
+    "title": "ScopeCraft — Website Scope Calculator",
+    "title_ar": "سكوب كرافت — حاسبة نطاق المواقع",
+    "description": "An illustrative website scope calculator with selectable extras, itemised estimates, and an enquiry preview that can be copied or downloaded.",
+    "description_ar": "حاسبة توضيحية لنطاق المواقع، مع إضافات اختيارية وتقديرات مفصّلة ومعاينة استفسار قابلة للنسخ أو التنزيل.",
+    "tool": "React, HTML, CSS"
+  },
+  "signalstudio": {
+    "title": "Signal Studio — Communications Website",
+    "title_ar": "سيغنال ستوديو — موقع لخدمات الاتصال",
+    "description": "A fictional communications studio website with service pages, a campaign-work gallery, and a contact form preview.",
+    "description_ar": "موقع لاستوديو اتصال افتراضي، يتضمن صفحات للخدمات ومعرضًا لأعمال الحملات ومعاينة لنموذج التواصل.",
+    "tool": "HTML, CSS, JavaScript"
+  }
+}

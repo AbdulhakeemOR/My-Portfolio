@@ -1,13 +1,26 @@
 <section class="article-feedback" aria-labelledby="feedback-heading-__SLUG__">
-  <h4 id="feedback-heading-__SLUG__">Join the conversation</h4>
+  <h4 id="feedback-heading-__SLUG__">Article conversations</h4>
   <div class="article-actions" role="group" aria-label="Article interactions">
-    <button type="button" data-article-action="like" title="Open article reactions"><span aria-hidden="true">&#9825;</span> Like</button>
-    <button type="button" data-article-action="comment"><span aria-hidden="true">&#128172;</span> Comment</button>
+    <button type="button" data-article-action="like" aria-pressed="false"><span aria-hidden="true">&#9825;</span> Like <span data-like-count></span></button>
+    <button type="button" data-article-action="comment" aria-expanded="false" aria-controls="article-comments-__SLUG__">Comment</button>
     <button type="button" data-article-action="share"><span aria-hidden="true">&#8599;</span> Share</button>
   </div>
-  <p>Share your thoughts and reply to other readers. Comments are public. Please keep the conversation respectful.</p>
+  <p>Likes are counted per browser, not verified people.</p>
   <p class="article-action-status" role="status" aria-live="polite"></p>
   <input class="article-link-fallback" aria-label="Article link: select and copy" readonly hidden>
-  <div class="article-discussion" id="discussion-__SLUG__" tabindex="-1" hidden></div>
-  <noscript>Enable JavaScript to load public comments and reactions.</noscript>
+  <div class="article-comment-panel" id="article-comments-__SLUG__" hidden>
+    <p>Comments are reviewed before publication. Your display name and approved comment will be public. No email address is required.</p>
+    <p>Likes and comments use a functional browser cookie for up to 30 days. <a href="privacy.html#comments">Read the Privacy Policy.</a></p>
+    <ol class="article-comment-list" aria-label="Article comments"></ol>
+    <button type="button" data-comments-more hidden>Load more comments</button>
+    <form class="article-comment-form" name="comment-__SLUG__">
+      <label for="comment-name-__SLUG__">Display name</label>
+      <input id="comment-name-__SLUG__" name="name" autocomplete="nickname" maxlength="80" required>
+      <label for="comment-body-__SLUG__">Your comment</label>
+      <textarea id="comment-body-__SLUG__" name="body" rows="5" maxlength="2000" required></textarea>
+      <p class="honeypot" aria-hidden="true"><label for="comment-website-__SLUG__">Leave this field empty</label><input id="comment-website-__SLUG__" name="website" tabindex="-1" autocomplete="off"></p>
+      <button type="submit">Submit for approval</button>
+    </form>
+  </div>
+  <noscript>Enable JavaScript for likes and comments, or copy the article URL from your browser to share it.</noscript>
 </section>

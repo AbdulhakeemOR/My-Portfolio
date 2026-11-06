@@ -20,8 +20,10 @@ def remove_readonly(function, path, error):
 
 
 def main():
-    sync_content()
     from check_privacy import verify_review
+    # Do not regenerate or replace an existing package when review is incomplete.
+    verify_review()
+    sync_content()
     verify_review()
     output = ROOT / 'dist'
     # This directory is generated exclusively by this script.
@@ -36,6 +38,8 @@ def main():
         if source.exists():
             shutil.copy2(source, output / name)
     shutil.copytree(ROOT / 'assets', output / 'assets', dirs_exist_ok=True)
+    if (ROOT / 'demos').exists():
+        shutil.copytree(ROOT / 'demos', output / 'demos', dirs_exist_ok=True)
     for name in ('en', 'ar'):
         shutil.copytree(ROOT / name, output / name, ignore=shutil.ignore_patterns('__pycache__', '*.pyc'))
     (output / 'content').mkdir()

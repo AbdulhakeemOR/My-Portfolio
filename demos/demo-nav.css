@@ -1,0 +1,5 @@
+
+.aor-demo-nav{position:relative;z-index:100;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 20px;background:#18211f;color:#edf4ef;font:12px/1.5 system-ui,sans-serif;border-bottom:1px solid #3b4b42}
+.aor-demo-nav a{color:#fff!important;text-decoration:underline!important;text-underline-offset:3px;white-space:nowrap}
+.aor-demo-nav span{color:#bdc9c1;text-align:end}
+@media(max-width:420px){.aor-demo-nav{font-size:11px;padding:8px 12px;align-items:start}}

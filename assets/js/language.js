@@ -53,11 +53,11 @@
   }
   function localize(node) {
     if (node.nodeType === Node.TEXT_NODE) {
-      if (node.parentElement?.closest('script, style, [data-language], textarea, [contenteditable]')) return;
+      if (node.parentElement?.closest('script, style, [data-language], [data-user-content], textarea, [contenteditable]')) return;
       const text = translate(node.data);
       if (text !== node.data) node.data = text;
     } else if (node.nodeType === Node.ELEMENT_NODE) {
-      if (node.matches('script, style, [data-language], textarea, [contenteditable]')) return;
+      if (node.matches('script, style, [data-language], [data-user-content], textarea, [contenteditable]')) return;
       for (const name of ['aria-label', 'alt', 'title', 'placeholder']) {
         if (!node.hasAttribute(name)) continue;
         const before = node.getAttribute(name), after = translate(before);

@@ -16,7 +16,7 @@ REVIEW = ROOT / 'content/media-review.json'
 
 def hashes(root=ROOT):
     result = {}
-    for folder in ('assets/images', 'assets/certificates', 'assets/videos'):
+    for folder in ('assets/images', 'assets/certificates', 'assets/videos', 'assets/uploads', 'assets/brand'):
         for path in sorted((root / folder).rglob('*')):
             if path.is_file():
                 with path.open('rb') as file:
@@ -28,13 +28,41 @@ def hashes(root=ROOT):
 def verify_review(root=ROOT):
     expected = json.loads(REVIEW.read_text(encoding='utf-8'))['sha256']
     actual = hashes(root)
-    assert actual == expected, 'Public media changed or was added. Review it for private data before recording a new media review.'
+    added = sorted(set(actual) - set(expected))
+    changed = sorted(key for key in actual.keys() & expected.keys() if actual[key] != expected[key])
+    removed = sorted(set(expected) - set(actual))
+    if added or changed or removed:
+        details = '\n'.join(f'{label}: {", ".join(paths)}' for label, paths in (
+            ('Unreviewed', added), ('Changed', changed), ('Removed', removed)) if paths)
+        raise AssertionError('Media review required before packaging. Do not record hashes until review is complete.\n' + details)
+
+
+def write_review_queue():
+    expected = json.loads(REVIEW.read_text(encoding='utf-8'))['sha256']
+    actual = hashes()
+    pending = [name for name in sorted(actual) if actual[name] != expected.get(name)]
+    lines = ['# Public media awaiting review', '',
+             'Review each file for private information, permissions and intended public use. Video review includes its audio and relevant frames. These are pending checks, not confirmed leaks.', '',
+             'The deployment build stays blocked until this review is complete. Checking a box alone does not update the reviewed-hash manifest.', '',
+             '| Reviewed | File | Size (MiB) |', '|---|---|---|']
+    for name in pending:
+        size = (ROOT / name).stat().st_size / 1048576
+        lines.append(f'| [ ] | [{name}]({name.replace(" ", "%20")}) | {size:.2f} |')
+    target = ROOT / 'MEDIA_REVIEW_PENDING.md'
+    target.write_text('\n'.join(lines) + '\n', encoding='utf-8')
+    print(f'{len(pending)} media files await review: {target.name}')
 
 
 def check_package():
     public = ROOT / 'dist'
+    if (public / 'demos').exists():
+        for path in (public / 'demos').rglob('*'):
+            assert not any(part in ('.git', 'node_modules', 'aor-projects', 'sessions') for part in path.parts), path
+            assert path.suffix not in ('.php', '.py', '.jsx'), path
+            assert path.name not in ('.env', '.htpasswd'), path
     verify_review(public)
-    assert not (public / 'admin').exists(), 'The editor and private originals must not be deployed.'
+    if (public / 'admin').exists():
+        assert {p.name for p in (public / 'admin').iterdir()} == {'index.php', 'index.html', 'hub.css'}, 'Only the owner-only Admin Home may be deployed at /admin/.'
     assert not list(public.rglob('.tmp*'))
     assert not (public / 'scripts').exists()
     assert not (public / 'content/courses.json').exists()
@@ -104,8 +132,11 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--record-review', action='store_true', help='Record media checksums only after completing visual and OCR review.')
     parser.add_argument('--documents', action='store_true', help='Check public PDFs with PyMuPDF.')
+    parser.add_argument('--pending-review', action='store_true', help='Write the pending public-media review checklist without approving files.')
     args = parser.parse_args()
-    if args.record_review:
+    if args.pending_review:
+        write_review_queue()
+    elif args.record_review:
         REVIEW.write_text(json.dumps({'sha256': hashes()}, indent=2) + '\n', encoding='utf-8')
         print('Recorded reviewed public media checksums.')
     elif args.documents:

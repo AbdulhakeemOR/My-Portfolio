@@ -32,6 +32,8 @@ class Page(HTMLParser):
             self.headings += 1
         if tag == 'img':
             assert 'alt' in attrs, 'Image is missing alt text.'
+            assert attrs.get('width', '').isdigit() and int(attrs['width']) > 0, 'Image needs a positive width.'
+            assert attrs.get('height', '').isdigit() and int(attrs['height']) > 0, 'Image needs a positive height.'
         for name in ('href', 'src', 'poster'):
             if attrs.get(name):
                 self.links.append(attrs[name])

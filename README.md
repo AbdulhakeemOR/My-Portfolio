@@ -1,5 +1,22 @@
 # AOR Portfolio
 
+Seven public website demos are prepared under `demos/` and listed under the
+Projects page's Websites filter. See [WEBSITE_DEMOS_SETUP.md](WEBSITE_DEMOS_SETUP.md)
+for preview links, deployment, and maintenance instructions.
+
+Owner tools are gathered at `/admin/`. See [ADMIN_HOME_SETUP.md](ADMIN_HOME_SETUP.md)
+for the small upload package and its cPanel password setup.
+
+The approved services design and account-free project tracker are integrated.
+Use [SERVICES_TRACKING_UPDATE.md](SERVICES_TRACKING_UPDATE.md) for the focused
+update ZIP and deployment instructions that preserve live records and admin
+password settings.
+
+For Namecheap Stellar Plus and `abdulhakeemor.com`, follow [NAMECHEAP_SETUP.md](NAMECHEAP_SETUP.md).
+From this folder, build the upload ZIP with `python scripts/prepare_namecheap.py`.
+
+**Launch corrections are in progress.** See [CORRECTIONS_STATUS.md](CORRECTIONS_STATUS.md) for completed code fixes and owner inputs. Owner approval of the media is recorded in [MEDIA_REVIEW_PENDING.md](MEDIA_REVIEW_PENDING.md). Use the newest verified release identified in `releases/latest.json`; older ZIPs do not contain all corrections.
+
 This is my portfolio website for communication, creative design, research, and digital services.
 
 ## Preview the website

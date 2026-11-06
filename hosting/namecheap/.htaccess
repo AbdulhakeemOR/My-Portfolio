@@ -1,0 +1,26 @@
+Options -Indexes
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  # Keep certificate validation reachable before enforcing the canonical URL.
+  RewriteCond %{REQUEST_URI} !^/\.well-known/
+  RewriteCond %{HTTPS} !=on [OR]
+  RewriteCond %{HTTP_HOST} !^abdulhakeemor\.com$ [NC]
+  RewriteRule ^ https://abdulhakeemor.com%{REQUEST_URI} [R=301,L]
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "DENY"
+  Header always set Content-Security-Policy "frame-ancestors 'none'"
+  # Revalidate unchanged filenames so manual uploads do not leave stale assets.
+  # A future content-hashed asset pipeline can safely use longer cache lifetimes.
+  Header set Cache-Control "public, max-age=0, must-revalidate"
+  <FilesMatch "\.php$">
+    Header always set Cache-Control "no-store"
+    Header unset Cache-Control
+  </FilesMatch>
+</IfModule>

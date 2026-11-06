@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#eaf1ed"/>
+  <rect x="0" y="0" width="20" height="630" fill="#9b422b"/>
+  <rect x="72" y="60" width="180" height="124" rx="12" fill="#fff"/>
+  <image href="../images/aor-logo.svg" x="88" y="75" width="148" height="93"/>
+  <g font-family="Segoe UI,Arial,sans-serif" fill="#18211f">
+    <text x="72" y="272" font-size="56" font-weight="700">Abdulhakeem Oladapo Raji</text>
+    <text x="72" y="354" font-size="36">Communication. Design. Websites.</text>
+    <text x="72" y="425" font-size="26" fill="#4f5d57">English and Arabic · Jeddah, Saudi Arabia</text>
+    <text x="72" y="551" font-size="28" fill="#9b422b">abdulhakeemor.com</text>
+  </g>
+</svg>

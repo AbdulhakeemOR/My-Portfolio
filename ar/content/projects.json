@@ -353,6 +353,139 @@
       ],
       "description": "تصوّر لحملة وإعلانات تروّج لكتالوج تجريبي من حزم أدوات الاتصال للمبدعين المستقلين والفرق الصغيرة.",
       "category": "pr-media-campaign"
+    },
+    {
+      "slug": "website-bridgearabic",
+      "title": "بريدج عربي — موقع لتعلّم العربية",
+      "description": "موقع تعليمي افتراضي للمبتدئين في العربية، يتضمن خطة برنامج وتسجيلًا صوتيًا للتحية ودرسًا تجريبيًا.",
+      "category": "websites",
+      "categories": [
+        "websites"
+      ],
+      "status": "concept",
+      "featured": false,
+      "tool": "HTML, CSS",
+      "image": "../demos/previews/bridgearabic.png",
+      "image_alt": "بريدج عربي — موقع لتعلّم العربية",
+      "image_fit": "cover",
+      "external_url": "/demos/bridgearabic/",
+      "external_label": "جرّب الموقع",
+      "repository_url": "https://github.com/AbdulhakeemOR/bridgearabic",
+      "thumbnail_link": false
+    },
+    {
+      "slug": "website-calculator",
+      "title": "حاسبة للاستخدام اليومي",
+      "description": "حاسبة تفاعلية بوضعين أساسي وعلمي، ولوحة مفاتيح موسّعة، وواجهة لتحويل العملات.",
+      "category": "websites",
+      "categories": [
+        "websites"
+      ],
+      "status": "concept",
+      "featured": false,
+      "tool": "HTML, CSS, JavaScript",
+      "image": "../demos/previews/calculator.png",
+      "image_alt": "حاسبة للاستخدام اليومي",
+      "image_fit": "cover",
+      "external_url": "/demos/calculator/",
+      "external_label": "جرّب الموقع",
+      "repository_url": "https://github.com/AbdulhakeemOR/calculator",
+      "thumbnail_link": false
+    },
+    {
+      "slug": "website-evergreencatalog",
+      "title": "إيفرغرين كتالوج — موقع للموارد",
+      "description": "كتالوج قابل للبحث لموارد الاتصال، مع مرشحات وعناصر محفوظة وصفحات تفاصيل الموارد. الحزم المعروضة نماذج افتراضية.",
+      "category": "websites",
+      "categories": [
+        "websites"
+      ],
+      "status": "concept",
+      "featured": false,
+      "tool": "HTML, CSS, JavaScript",
+      "image": "../demos/previews/evergreencatalog.png",
+      "image_alt": "إيفرغرين كتالوج — موقع للموارد",
+      "image_fit": "cover",
+      "external_url": "/demos/evergreencatalog/",
+      "external_label": "جرّب الموقع",
+      "repository_url": "https://github.com/AbdulhakeemOR/evergreencatalog",
+      "thumbnail_link": false
+    },
+    {
+      "slug": "website-framehouse",
+      "title": "فريم هاوس — معرض الملصقات",
+      "description": "معرض ملصقات متجاوب لاستوديو تصميم افتراضي، مع تصفية حسب الفئات ونوافذ لاستكشاف الأعمال وأفكارها التصميمية.",
+      "category": "websites",
+      "categories": [
+        "websites"
+      ],
+      "status": "concept",
+      "featured": false,
+      "tool": "React, Vite, Radix UI",
+      "image": "../demos/previews/framehouse.png",
+      "image_alt": "فريم هاوس — معرض الملصقات",
+      "image_fit": "cover",
+      "external_url": "/demos/framehouse/",
+      "external_label": "جرّب الموقع",
+      "repository_url": "https://github.com/AbdulhakeemOR/framehouse",
+      "thumbnail_link": false
+    },
+    {
+      "slug": "website-gatherforum",
+      "title": "غاذر فورم — موقع ورشة عمل",
+      "description": "موقع مصغّر لورشة عمل افتراضية، يتضمن جدولًا ليومين وتفاصيل الجلسات وقائمة مختارة تُحفظ على جهاز الزائر.",
+      "category": "websites",
+      "categories": [
+        "websites"
+      ],
+      "status": "concept",
+      "featured": false,
+      "tool": "HTML, CSS, JavaScript",
+      "image": "../demos/previews/gatherforum.png",
+      "image_alt": "غاذر فورم — موقع ورشة عمل",
+      "image_fit": "cover",
+      "external_url": "/demos/gatherforum/",
+      "external_label": "جرّب الموقع",
+      "repository_url": "https://github.com/AbdulhakeemOR/gatherforum",
+      "thumbnail_link": false
+    },
+    {
+      "slug": "website-scopecraft",
+      "title": "سكوب كرافت — حاسبة نطاق المواقع",
+      "description": "حاسبة توضيحية لنطاق المواقع، مع إضافات اختيارية وتقديرات مفصّلة ومعاينة استفسار قابلة للنسخ أو التنزيل.",
+      "category": "websites",
+      "categories": [
+        "websites"
+      ],
+      "status": "concept",
+      "featured": false,
+      "tool": "React, HTML, CSS",
+      "image": "../demos/previews/scopecraft.png",
+      "image_alt": "سكوب كرافت — حاسبة نطاق المواقع",
+      "image_fit": "cover",
+      "external_url": "/demos/scopecraft/",
+      "external_label": "جرّب الموقع",
+      "repository_url": "https://github.com/AbdulhakeemOR/scopecraft",
+      "thumbnail_link": false
+    },
+    {
+      "slug": "website-signalstudio",
+      "title": "سيغنال ستوديو — موقع لخدمات الاتصال",
+      "description": "موقع لاستوديو اتصال افتراضي، يتضمن صفحات للخدمات ومعرضًا لأعمال الحملات ومعاينة لنموذج التواصل.",
+      "category": "websites",
+      "categories": [
+        "websites"
+      ],
+      "status": "concept",
+      "featured": false,
+      "tool": "HTML, CSS, JavaScript",
+      "image": "../demos/previews/signalstudio.png",
+      "image_alt": "سيغنال ستوديو — موقع لخدمات الاتصال",
+      "image_fit": "cover",
+      "external_url": "/demos/signalstudio/",
+      "external_label": "جرّب الموقع",
+      "repository_url": "https://github.com/AbdulhakeemOR/signalstudio",
+      "thumbnail_link": false
     }
   ]
 }

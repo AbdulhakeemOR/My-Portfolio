@@ -1,0 +1,8 @@
+Existing photo sources from the original repository; local copies for demo reliability.
+https://images.unsplash.com/photo-1454165804606-c3d57bc86b40
+https://images.unsplash.com/photo-1455390582262-044cdead277a
+https://images.unsplash.com/photo-1456324504439-367cee3b3c32
+https://images.unsplash.com/photo-1478737270239-2f02b77fc618
+https://images.unsplash.com/photo-1497215842964-222b430dc094
+https://images.unsplash.com/photo-1505373877841-8d25f7d46678
+https://images.unsplash.com/photo-1516321318423-f06f85e504b3

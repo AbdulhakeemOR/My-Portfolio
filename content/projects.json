@@ -353,6 +353,139 @@
       ],
       "description": "A campaign and advertising concept promoting a demonstration catalog of communication kits for solo creators and small teams.",
       "category": "pr-media-campaign"
+    },
+    {
+      "slug": "website-bridgearabic",
+      "title": "Bridge Arabic — Learning Website",
+      "description": "A fictional beginner-Arabic learning website with a programme outline, a greeting recording, and a sample lesson.",
+      "category": "websites",
+      "categories": [
+        "websites"
+      ],
+      "status": "concept",
+      "featured": false,
+      "tool": "HTML, CSS",
+      "image": "demos/previews/bridgearabic.png",
+      "image_alt": "Bridge Arabic — Learning Website",
+      "image_fit": "cover",
+      "external_url": "/demos/bridgearabic/",
+      "external_label": "Try live demo",
+      "repository_url": "https://github.com/AbdulhakeemOR/bridgearabic",
+      "thumbnail_link": false
+    },
+    {
+      "slug": "website-calculator",
+      "title": "Everyday Calculator",
+      "description": "An interactive calculator with basic and scientific modes, a larger keypad, and a currency-conversion interface.",
+      "category": "websites",
+      "categories": [
+        "websites"
+      ],
+      "status": "concept",
+      "featured": false,
+      "tool": "HTML, CSS, JavaScript",
+      "image": "demos/previews/calculator.png",
+      "image_alt": "Everyday Calculator",
+      "image_fit": "cover",
+      "external_url": "/demos/calculator/",
+      "external_label": "Try live demo",
+      "repository_url": "https://github.com/AbdulhakeemOR/calculator",
+      "thumbnail_link": false
+    },
+    {
+      "slug": "website-evergreencatalog",
+      "title": "Evergreen Catalog — Resource Website",
+      "description": "A searchable communication-resource catalog with filters, saved items, and resource detail pages. The kits are fictional samples.",
+      "category": "websites",
+      "categories": [
+        "websites"
+      ],
+      "status": "concept",
+      "featured": false,
+      "tool": "HTML, CSS, JavaScript",
+      "image": "demos/previews/evergreencatalog.png",
+      "image_alt": "Evergreen Catalog — Resource Website",
+      "image_fit": "cover",
+      "external_url": "/demos/evergreencatalog/",
+      "external_label": "Try live demo",
+      "repository_url": "https://github.com/AbdulhakeemOR/evergreencatalog",
+      "thumbnail_link": false
+    },
+    {
+      "slug": "website-framehouse",
+      "title": "Framehouse — Poster Gallery",
+      "description": "A fictional design collective’s responsive poster gallery, with category filters and dialogs for exploring each artwork and its design rationale.",
+      "category": "websites",
+      "categories": [
+        "websites"
+      ],
+      "status": "concept",
+      "featured": false,
+      "tool": "React, Vite, Radix UI",
+      "image": "demos/previews/framehouse.png",
+      "image_alt": "Framehouse — Poster Gallery",
+      "image_fit": "cover",
+      "external_url": "/demos/framehouse/",
+      "external_label": "Try live demo",
+      "repository_url": "https://github.com/AbdulhakeemOR/framehouse",
+      "thumbnail_link": false
+    },
+    {
+      "slug": "website-gatherforum",
+      "title": "Gather Forum — Workshop Website",
+      "description": "A fictional workshop microsite with a two-day agenda, session details, and a shortlist saved on the visitor’s device.",
+      "category": "websites",
+      "categories": [
+        "websites"
+      ],
+      "status": "concept",
+      "featured": false,
+      "tool": "HTML, CSS, JavaScript",
+      "image": "demos/previews/gatherforum.png",
+      "image_alt": "Gather Forum — Workshop Website",
+      "image_fit": "cover",
+      "external_url": "/demos/gatherforum/",
+      "external_label": "Try live demo",
+      "repository_url": "https://github.com/AbdulhakeemOR/gatherforum",
+      "thumbnail_link": false
+    },
+    {
+      "slug": "website-scopecraft",
+      "title": "ScopeCraft — Website Scope Calculator",
+      "description": "An illustrative website scope calculator with selectable extras, itemised estimates, and an enquiry preview that can be copied or downloaded.",
+      "category": "websites",
+      "categories": [
+        "websites"
+      ],
+      "status": "concept",
+      "featured": false,
+      "tool": "React, HTML, CSS",
+      "image": "demos/previews/scopecraft.png",
+      "image_alt": "ScopeCraft — Website Scope Calculator",
+      "image_fit": "cover",
+      "external_url": "/demos/scopecraft/",
+      "external_label": "Try live demo",
+      "repository_url": "https://github.com/AbdulhakeemOR/scopecraft",
+      "thumbnail_link": false
+    },
+    {
+      "slug": "website-signalstudio",
+      "title": "Signal Studio — Communications Website",
+      "description": "A fictional communications studio website with service pages, a campaign-work gallery, and a contact form preview.",
+      "category": "websites",
+      "categories": [
+        "websites"
+      ],
+      "status": "concept",
+      "featured": false,
+      "tool": "HTML, CSS, JavaScript",
+      "image": "demos/previews/signalstudio.png",
+      "image_alt": "Signal Studio — Communications Website",
+      "image_fit": "cover",
+      "external_url": "/demos/signalstudio/",
+      "external_label": "Try live demo",
+      "repository_url": "https://github.com/AbdulhakeemOR/signalstudio",
+      "thumbnail_link": false
     }
   ]
 }

@@ -1,0 +1,299 @@
+{
+  "updated": "2026-11-05",
+  "pages": [
+    {
+      "slug": "privacy",
+      "title": "Privacy Policy",
+      "title_ar": "سياسة الخصوصية",
+      "description": "How Abdulhakeem Oladapo Raji handles website visits, contact inquiries and personal information.",
+      "description_ar": "كيف يتعامل عبد الحكيم أولادابو راجي مع زيارات الموقع واستفسارات التواصل والمعلومات الشخصية.",
+      "intro": "This notice explains how I handle information when you visit abdulhakeemor.com or contact me about my services.",
+      "intro_ar": "يوضح هذا الإشعار كيفية تعاملي مع المعلومات عند زيارتك لموقع abdulhakeemor.com أو تواصلك معي بشأن خدماتي.",
+      "sections": [
+        {
+          "id": "operator",
+          "heading": "Who I am and how to contact me",
+          "heading_ar": "من أنا وكيف تتواصل معي",
+          "paragraphs": [
+            [
+              "I am Abdulhakeem Oladapo Raji, based in Jeddah, Saudi Arabia. I operate this portfolio and services website and am responsible for the personal information I collect through it.",
+              "أنا عبد الحكيم أولادابو راجي، ومقر إقامتي جدة بالمملكة العربية السعودية. أدير هذا الموقع لعرض أعمالي وخدماتي، وأتحمل مسؤولية المعلومات الشخصية التي أجمعها من خلاله."
+            ],
+            [
+              "For privacy questions or requests, email abdulhakeemoladaporaji@gmail.com.",
+              "للاستفسارات أو الطلبات المتعلقة بالخصوصية، راسلني على abdulhakeemoladaporaji@gmail.com."
+            ]
+          ]
+        },
+        {
+          "id": "information",
+          "heading": "Information you provide",
+          "heading_ar": "المعلومات التي تقدمها",
+          "paragraphs": [
+            [
+              "The contact form collects your name, email address, subject and message. You may also provide a service preference and preferred timeline. Direct emails may include information and attachments you choose to send.",
+              "يجمع نموذج التواصل اسمك وعنوان بريدك الإلكتروني وموضوع الرسالة ومحتواها. ويمكنك أيضًا تحديد الخدمة المطلوبة والموعد المفضل. وقد تتضمن الرسائل المباشرة معلومات ومرفقات تختار إرسالها."
+            ],
+            [
+              "Please send only what is relevant to your inquiry. Do not use the public form to send passwords, payment-card details, identity documents or confidential records belonging to someone else. Without a contact address and enough detail, I may be unable to respond.",
+              "يُرجى إرسال ما يتعلق باستفسارك فقط. لا تستخدم النموذج العام لإرسال كلمات المرور أو بيانات بطاقات الدفع أو وثائق الهوية أو السجلات السرية الخاصة بغيرك. وقد لا أتمكن من الرد دون عنوان للتواصل وتفاصيل كافية."
+            ]
+          ]
+        },
+        {
+          "id": "technical-data",
+          "heading": "Technical information and preferences",
+          "heading_ar": "المعلومات التقنية والتفضيلات",
+          "paragraphs": [
+            [
+              "Namecheap hosting records server access information, which can include IP addresses, requested pages or files, timestamps, browser information, referring pages and response status. Hosting-provided statistics may be derived from these logs.",
+              "تسجل استضافة Namecheap معلومات الوصول إلى الخادم، وقد تشمل عناوين IP والصفحات أو الملفات المطلوبة والأوقات ومعلومات المتصفح والصفحات المُحيلة وحالة الاستجابة. وقد تُستخرج إحصاءات الاستضافة من هذه السجلات."
+            ],
+            [
+              "The contact form's anti-spam limiter stores a hashed IP identifier, attempt counter and expiry time, not the message text. It counts attempts within a one-hour window. Expired records are removed when a later submission processes the file; deletion is not guaranteed exactly one hour after an attempt.",
+              "يخزن محدد محاولات الإرسال لمنع الرسائل المزعجة مُعرّفًا مُجزّأً لعنوان IP وعدّاد المحاولات ووقت انتهاء الصلاحية، ولا يخزن نص الرسالة. ويحسب المحاولات ضمن فترة ساعة واحدة. تُزال السجلات المنتهية عند معالجة إرسال لاحق للملف؛ ولا يُضمن حذفها بعد ساعة بالضبط من المحاولة."
+            ],
+            [
+              "Your language and appearance selections can be saved in local storage in your browser until cleared or removed by the browser. The website does not set advertising or analytics cookies and has no separate client-side analytics service or newsletter. Article discussions use the functional cookie described below.",
+              "قد تُحفظ اختيارات اللغة والمظهر في التخزين المحلي بمتصفحك حتى تمسحها أو يزيلها المتصفح. لا يضع الموقع ملفات تعريف ارتباط للإعلانات أو التحليلات، ولا يستخدم خدمة مستقلة لتحليلات المتصفح أو نشرة بريدية. وتستخدم مناقشات المقالات ملف تعريف الارتباط الوظيفي الموضح أدناه."
+            ]
+          ]
+        },
+        {
+          "id": "purposes",
+          "heading": "How I use information",
+          "heading_ar": "كيف أستخدم المعلومات",
+          "paragraphs": [
+            [
+              "I use inquiry information to reply, assess a request and discuss possible work. Technical information helps deliver and secure the website, limit spam and diagnose problems. Browser preferences remember your choices on that device.",
+              "أستخدم معلومات الاستفسارات للرد وتقييم الطلب ومناقشة العمل المحتمل. وتساعد المعلومات التقنية في تشغيل الموقع وحمايته والحد من الرسائل المزعجة وتشخيص المشكلات. أما تفضيلات المتصفح فتُستخدم لتذكر اختياراتك على جهازك."
+            ],
+            [
+              "I do not sell your personal information or use the website to make automated decisions with legal or similarly significant effects. Automatic spam checks may limit a form submission; you can contact me directly by email instead.",
+              "لا أبيع معلوماتك الشخصية ولا أستخدم الموقع لاتخاذ قرارات آلية ذات آثار قانونية أو آثار مماثلة مهمة. وقد تحد فحوصات الرسائل المزعجة الآلية من إرسال النموذج؛ ويمكنك التواصل معي مباشرة عبر البريد الإلكتروني بدلاً من ذلك."
+            ]
+          ]
+        },
+        {
+          "id": "providers",
+          "heading": "Access and service providers",
+          "heading_ar": "الوصول ومقدمو الخدمات",
+          "paragraphs": [
+            [
+              "I am the only person within my business who manages inquiries. Namecheap provides website hosting and mail transport. The form sends inquiries to my Google Gmail inbox at abdulhakeemoladaporaji@gmail.com. These providers process information as needed to provide their services.",
+              "أنا الشخص الوحيد داخل نشاطي الذي يدير الاستفسارات. توفر Namecheap الاستضافة ونقل البريد. ويرسل النموذج الاستفسارات إلى بريدي في Google Gmail على abdulhakeemoladaporaji@gmail.com. ويعالج مقدمو الخدمات المعلومات حسب الحاجة لتقديم خدماتهم."
+            ],
+            [
+              "I operate from Saudi Arabia; hosting and email services may process information in other countries. Their processing and retention depend on the services and applicable arrangements. Contact me for information about the providers used for a particular inquiry or project.",
+              "أعمل من المملكة العربية السعودية، وقد تعالج خدمات الاستضافة والبريد المعلومات في دول أخرى. وتعتمد المعالجة والاحتفاظ على الخدمات والترتيبات المعمول بها. ويمكنك التواصل معي للاستفسار عن مقدمي الخدمات المستخدمين لاستفسار أو مشروع محدد."
+            ],
+            [
+              "Fonts, icons and portfolio media are served from this website's hosting. Following a social link or using a sharing application takes you to a separate service, whose privacy practices apply when you use it.",
+              "تُقدم الخطوط والأيقونات ووسائط الأعمال من استضافة هذا الموقع. وعند اتباع رابط اجتماعي أو استخدام تطبيق للمشاركة، تنتقل إلى خدمة مستقلة تسري ممارساتها الخاصة بالخصوصية عند استخدامها."
+            ]
+          ]
+        },
+        {
+          "id": "retention",
+          "heading": "Retention and deletion",
+          "heading_ar": "الاحتفاظ والحذف",
+          "paragraphs": [
+            [
+              "I keep inquiry correspondence for up to 12 months after the inquiry closes, for recordkeeping, and then delete it. This is a mailbox-management commitment, not an automatic function of the contact form.",
+              "أحتفظ بمراسلات الاستفسارات لمدة تصل إلى 12 شهرًا بعد إغلاق الاستفسار لأغراض حفظ السجلات، ثم أحذفها. وهذا التزام بإدارة البريد، وليس وظيفة تلقائية لنموذج التواصل."
+            ],
+            [
+              "Records needed for an agreed project or a legal obligation may require a separate retention schedule. Hosting logs, email-provider systems and backups have their own retention arrangements; deleting a message from an inbox does not necessarily erase all provider-held copies immediately.",
+              "قد تتطلب سجلات مشروع متفق عليه أو التزام نظامي جدول احتفاظ منفصلاً. ولسجلات الاستضافة وأنظمة مزود البريد والنسخ الاحتياطية ترتيبات احتفاظ خاصة؛ ولا يعني حذف الرسالة من صندوق الوارد بالضرورة إزالة جميع النسخ لدى مقدمي الخدمات فورًا."
+            ]
+          ]
+        },
+        {
+          "id": "requests",
+          "heading": "Your requests and choices",
+          "heading_ar": "طلباتك وخياراتك",
+          "paragraphs": [
+            [
+              "Depending on the law that applies, you may have rights to information about processing, access or a copy, correction, deletion and other available protections. Where processing relies on consent, withdrawal of that consent may be available. Applicable exceptions and recordkeeping obligations may affect a request.",
+              "بحسب النظام المنطبق، قد تكون لك حقوق في معرفة تفاصيل المعالجة أو الوصول إلى المعلومات أو الحصول على نسخة منها أو تصحيحها أو حذفها، وغير ذلك من الضمانات المتاحة. وحيث تعتمد المعالجة على الموافقة، قد يتاح سحبها. وقد تؤثر الاستثناءات والالتزامات النظامية لحفظ السجلات في الطلب."
+            ],
+            [
+              "Email your request to abdulhakeemoladaporaji@gmail.com, preferably from the address used for your inquiry. I may need information to verify the request. Do not send identity documents unless a necessary verification process has been explained. Where applicable, you may also complain to the relevant data-protection authority.",
+              "أرسل طلبك إلى abdulhakeemoladaporaji@gmail.com، ويُفضل من البريد الذي استخدمته للاستفسار. وقد أحتاج إلى معلومات للتحقق من الطلب. لا ترسل وثائق الهوية ما لم تُشرح لك إجراءات التحقق الضرورية. ويجوز لك أيضًا، حيث ينطبق ذلك، تقديم شكوى إلى الجهة المختصة بحماية البيانات."
+            ]
+          ]
+        },
+        {
+          "id": "comments",
+          "heading": "Comments and reactions",
+          "heading_ar": "التعليقات والتفاعلات",
+          "paragraphs": [
+            [
+              "Article comments use a display name and comment text; no email address is required. Comments are stored on Namecheap hosting and reviewed before publication. An approved name, comment and date become public. Do not include private information or material you are not entitled to publish.",
+              "تستخدم تعليقات المقالات اسم عرض ونص التعليق، ولا تتطلب عنوان بريد إلكتروني. تُحفظ التعليقات على استضافة Namecheap وتُراجع قبل النشر. وبعد الموافقة، يظهر الاسم والتعليق والتاريخ للعموم. لا تدرج معلومات خاصة أو مواد لا تملك حق نشرها."
+            ],
+            [
+              "Opening the comment panel or liking an article creates a functional cookie for up to 30 days. Its random browser identifier helps prevent duplicate reactions, protect submissions and recognize your own comments. It is not an advertising identifier. Clearing the cookie may remove your ability to manage an existing comment from that browser.",
+              "يؤدي فتح لوحة التعليقات أو الإعجاب بمقال إلى إنشاء ملف تعريف ارتباط وظيفي لمدة تصل إلى 30 يومًا. ويساعد مُعرّف المتصفح العشوائي في منع تكرار التفاعلات وحماية الإرسال والتعرف على تعليقاتك. وهو ليس مُعرّفًا إعلانيًا. وقد يؤدي مسح الملف إلى فقدان إمكانية إدارة تعليق سابق من ذلك المتصفح."
+            ],
+            [
+              "Approved comments remain until removed. You can delete your own comment while the original browser identifier is available, or request removal by email. Pending comments older than 30 days are removed when discussion cleanup next runs. Anonymous aggregate like totals may remain after browser-identifying reaction records expire.",
+              "تبقى التعليقات الموافق عليها حتى تُحذف. ويمكنك حذف تعليقك ما دام مُعرّف المتصفح الأصلي متاحًا، أو طلب الحذف عبر البريد الإلكتروني. وتُحذف التعليقات المعلقة لأكثر من 30 يومًا عند تشغيل التنظيف التالي للمناقشات. وقد تبقى إجماليات الإعجاب المجمعة غير المحدِّدة للهوية بعد انتهاء سجلات التفاعل المرتبطة بالمتصفح."
+            ],
+            [
+              "Abuse prevention uses keyed hashes of IP addresses with attempt counters and one-hour expiry times. Expired limits and reaction records are removed on a later write/cleanup request. These pseudonymous records and private pending comments are kept outside the public website folder; ordinary hosting logs are separate.",
+              "يستخدم منع إساءة الاستخدام تجزئات محمية بمفتاح لعناوين IP، مع عدادات محاولات وفترات صلاحية مدتها ساعة. وتُحذف الحدود المنتهية وسجلات التفاعل عند طلب كتابة أو تنظيف لاحق. وتُحفظ هذه السجلات المستعارة والتعليقات الخاصة المعلقة خارج مجلد الموقع العام؛ وتبقى سجلات الاستضافة العادية منفصلة."
+            ]
+          ]
+        },
+        {
+          "id": "security",
+          "heading": "Security and changes",
+          "heading_ar": "الأمان والتحديثات",
+          "paragraphs": [
+            [
+              "The website is configured for HTTPS, and the form validates fields and limits repeated submissions. Two-factor authentication is enabled on my Namecheap account. No online service can guarantee absolute security.",
+              "الموقع مهيأ لاستخدام HTTPS، ويتحقق النموذج من الحقول ويحد من تكرار الإرسال. والمصادقة الثنائية مفعلة على حسابي في Namecheap. ولا يمكن لأي خدمة عبر الإنترنت ضمان الأمان المطلق."
+            ],
+            [
+              "I will update this notice when the website or its information handling changes and provide additional notice or choices where required.",
+              "سأحدث هذا الإشعار عند تغير الموقع أو طريقة التعامل مع المعلومات، وسأقدم إشعارات أو خيارات إضافية حيثما يلزم."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "terms",
+      "title": "Terms & Policies",
+      "title_ar": "الشروط والسياسات",
+      "description": "Project scope, payment, revisions and service arrangements for working with Abdulhakeem Oladapo Raji.",
+      "description_ar": "نطاق المشاريع والدفع والتعديلات وترتيبات الخدمات عند العمل مع عبد الحكيم أولادابو راجي.",
+      "intro": "These policies explain the general process for working with me. Each engagement needs a written project agreement identifying its scope and terms before work begins.",
+      "intro_ar": "توضح هذه السياسات الإجراءات العامة للعمل معي. ويحتاج كل تكليف إلى اتفاق مشروع مكتوب يحدد نطاقه وشروطه قبل بدء العمل.",
+      "sections": [
+        {
+          "id": "agreement",
+          "heading": "Provider and project agreement",
+          "heading_ar": "مقدم الخدمة واتفاق المشروع",
+          "paragraphs": [
+            [
+              "The service provider is Abdulhakeem Oladapo Raji. Contact: abdulhakeemoladaporaji@gmail.com. Browsing the website or sending an inquiry does not by itself order a service or create a payment obligation.",
+              "مقدم الخدمة هو عبد الحكيم أولادابو راجي. للتواصل: abdulhakeemoladaporaji@gmail.com. لا يُعد تصفح الموقع أو إرسال استفسار وحده طلبًا لخدمة أو التزامًا بالدفع."
+            ],
+            [
+              "The project agreement identifies the policy version supplied to the client. Expressly agreed project-specific provisions take priority over these general policies, subject to mandatory legal rights. Later website updates do not automatically change an accepted agreement.",
+              "يحدد اتفاق المشروع نسخة السياسات المقدمة للعميل. وتُقدم الشروط الخاصة بالمشروع والمتفق عليها صراحة على هذه السياسات العامة، مع مراعاة الحقوق النظامية الملزمة. ولا تغير تحديثات الموقع اللاحقة الاتفاق المقبول تلقائيًا."
+            ]
+          ]
+        },
+        {
+          "id": "scope",
+          "heading": "Scope, quotes and changes",
+          "heading_ar": "النطاق وعروض الأسعار والتغييرات",
+          "paragraphs": [
+            [
+              "The written scope lists deliverables, exclusions, responsibilities, fees and timing. Hosting, domains, advertising spend, subscriptions, third-party licenses, printing and ongoing maintenance are included only when listed.",
+              "يحدد النطاق المكتوب المخرجات والاستثناءات والمسؤوليات والرسوم والتوقيت. ولا تشمل الخدمة الاستضافة أو النطاقات أو الإنفاق الإعلاني أو الاشتراكات أو تراخيص الأطراف الأخرى أو الطباعة أو الصيانة المستمرة إلا إذا ذُكرت."
+            ],
+            [
+              "Quotes are valid for 14 calendar days unless stated otherwise. Extra work requires written agreement on its price and timing before it starts. A project slot and start conditions are confirmed in writing.",
+              "تسري عروض الأسعار لمدة 14 يومًا تقويميًا ما لم يُذكر خلاف ذلك. ويتطلب العمل الإضافي اتفاقًا مكتوبًا على سعره وتوقيته قبل بدئه. ويُؤكد حجز المشروع وشروط البدء كتابيًا."
+            ]
+          ]
+        },
+        {
+          "id": "payment",
+          "heading": "Fees and payment",
+          "heading_ar": "الرسوم والدفع",
+          "paragraphs": [
+            [
+              "USD is the default currency unless another currency is agreed. The agreement and invoice identify the total price, applicable taxes and agreed charges, payment method and due dates. PayPal or Wise may be used where available for the transaction and identified on the invoice.",
+              "الدولار الأمريكي هو العملة الافتراضية ما لم تُتفق عملة أخرى. ويحدد الاتفاق والفاتورة السعر الإجمالي والضرائب والرسوم المتفق عليها وطريقة الدفع ومواعيد الاستحقاق. ويمكن استخدام PayPal أو Wise إذا كانت متاحة للمعاملة ومحددة في الفاتورة."
+            ],
+            [
+              "Unless a different milestone or session schedule is agreed, project payments are 50% before work begins and 50% before final handover or a new website's public launch. The advance payment counts toward the total fee. Invoices are due within 7 calendar days; required advance payment must still be received before work starts.",
+              "ما لم يُتفق جدول مختلف للمراحل أو الجلسات، تكون دفعات المشروع 50% قبل بدء العمل و50% قبل التسليم النهائي أو الإطلاق العام لموقع جديد. وتُحتسب الدفعة المقدمة ضمن إجمالي الأتعاب. وتستحق الفواتير خلال 7 أيام تقويمية؛ ومع ذلك يجب استلام الدفعة المقدمة المطلوبة قبل بدء العمل."
+            ],
+            [
+              "There are no undisclosed payment-method surcharges. The client's bank or payment provider may separately charge its own transfer or conversion fees. Any required taxes or deductions must be addressed according to law and reflected in the agreed billing arrangements.",
+              "لا توجد رسوم إضافية غير معلنة بسبب طريقة الدفع. وقد يفرض بنك العميل أو مزود الدفع رسوم تحويل أو صرف خاصة به بصورة منفصلة. ويجب معالجة الضرائب أو الاستقطاعات المطلوبة وفقًا للنظام وإظهارها في ترتيبات الفوترة المتفق عليها."
+            ]
+          ]
+        },
+        {
+          "id": "revisions",
+          "heading": "Revisions and corrections",
+          "heading_ar": "التعديلات والتصحيحات",
+          "paragraphs": [
+            [
+              "The default project allowance is two rounds of revisions within the approved scope. Each round is one consolidated set of feedback. New pages, features, formats or a new direction may require a separate quote. An extra-work rate is not assumed if none has been agreed.",
+              "يتضمن المشروع افتراضيًا جولتين من التعديلات ضمن النطاق المعتمد. وكل جولة هي مجموعة موحدة من الملاحظات. وقد تتطلب صفحات أو خصائص أو صيغ جديدة أو تغيير الاتجاه عرض سعر منفصلاً. ولا يُفترض سعر للعمل الإضافي إذا لم يُتفق عليه."
+            ],
+            [
+              "A failure to meet the agreed specification is different from a discretionary revision. The revision allowance does not remove applicable rights to correction or other remedies.",
+              "يختلف عدم الوفاء بالمواصفات المتفق عليها عن التعديل الاختياري. ولا يلغي عدد جولات التعديل الحقوق المنطبقة في التصحيح أو وسائل المعالجة الأخرى."
+            ]
+          ]
+        },
+        {
+          "id": "timing",
+          "heading": "Materials, timing and pauses",
+          "heading_ar": "المواد والتوقيت وإيقاف العمل مؤقتًا",
+          "paragraphs": [
+            [
+              "Clients provide accurate materials, necessary permissions and feedback by the agreed dates. Delivery dates depend on the written scope and its dependencies. I will explain material delays and propose an updated plan rather than silently changing deadlines.",
+              "يقدم العملاء المواد الدقيقة والأذونات اللازمة والملاحظات في المواعيد المتفق عليها. وتعتمد مواعيد التسليم على النطاق المكتوب ومتطلباته. وسأوضح التأخيرات المؤثرة وأقترح خطة محدثة بدلاً من تغيير المواعيد دون إشعار."
+            ],
+            [
+              "After a reminder, I may give written notice that a project is paused if a required client response has been missing for 30 calendar days. An overdue required payment may also lead to a notified pause. Restart timing and any scope change must be confirmed; a pause does not automatically forfeit every payment.",
+              "بعد إرسال تذكير، قد أُخطر العميل كتابيًا بإيقاف المشروع مؤقتًا إذا غاب الرد المطلوب لمدة 30 يومًا تقويميًا. وقد يؤدي تأخر دفعة مطلوبة أيضًا إلى إيقاف العمل بعد الإشعار. ويجب تأكيد موعد الاستئناف وأي تغيير في النطاق؛ ولا يعني الإيقاف فقدان جميع المبالغ المدفوعة تلقائيًا."
+            ],
+            [
+              "I aim to reply to inquiries within one business day. Project working days, review periods, delivery criteria and support are set in the agreement. Business results such as sales, rankings or campaign reach are not guaranteed merely by purchasing a service.",
+              "أسعى للرد على الاستفسارات خلال يوم عمل واحد. ويحدد الاتفاق أيام عمل المشروع وفترات المراجعة ومعايير التسليم والدعم. ولا يضمن شراء الخدمة وحده نتائج تجارية مثل المبيعات أو ترتيب البحث أو وصول الحملة."
+            ]
+          ]
+        },
+        {
+          "id": "rights",
+          "heading": "Ownership, confidentiality and portfolio use",
+          "heading_ar": "الملكية والسرية واستخدام الأعمال في المعرض",
+          "paragraphs": [
+            [
+              "The agreement states what rights in original final work transfer after full payment and which source files are included. Client-supplied materials remain the client's. Background tools and third-party material do not automatically transfer ownership; necessary licenses and restrictions must be identified.",
+              "يوضح الاتفاق الحقوق التي تنتقل في العمل النهائي الأصلي بعد السداد الكامل والملفات المصدرية المشمولة. وتبقى مواد العميل ملكًا له. ولا تنتقل ملكية الأدوات السابقة أو مواد الأطراف الأخرى تلقائيًا؛ ويجب تحديد التراخيص والقيود اللازمة."
+            ],
+            [
+              "Non-public project information is used for the agreed engagement, with confidentiality and any necessary provider/access arrangements set out in the agreement. Project records involving personal data may require additional handling terms.",
+              "تُستخدم معلومات المشروع غير العامة للتكليف المتفق عليه، مع بيان السرية وأي ترتيبات لازمة لمقدمي الخدمات أو الوصول في الاتفاق. وقد تتطلب سجلات المشروع التي تتضمن بيانات شخصية شروط معالجة إضافية."
+            ],
+            [
+              "The agreement records whether the client permits portfolio or social-media display, what may be shown and when. Confidential information, personal data and credentials are not automatically cleared for publication by general portfolio permission.",
+              "يسجل الاتفاق ما إذا كان العميل يسمح بعرض العمل في معرض الأعمال أو وسائل التواصل، وما يجوز عرضه وتوقيته. ولا يتيح الإذن العام بعرض الأعمال نشر المعلومات السرية أو البيانات الشخصية أو بيانات الدخول تلقائيًا."
+            ]
+          ]
+        },
+        {
+          "id": "cancellation",
+          "heading": "Cancellation, refunds and disputes",
+          "heading_ar": "الإلغاء والاسترداد والنزاعات",
+          "paragraphs": [
+            [
+              "The project agreement must explain cancellation, valuation of completed work, approved external commitments and refund arrangements before acceptance. Payments already received must be accounted for when calculating any settlement. No blanket no-refund rule is adopted here.",
+              "يجب أن يوضح اتفاق المشروع الإلغاء وتقييم العمل المنجز والالتزامات الخارجية المعتمدة وترتيبات الاسترداد قبل القبول. ويجب احتساب المبالغ المستلمة عند حساب أي تسوية. ولا تُقرر هنا قاعدة عامة تمنع الاسترداد في جميع الحالات."
+            ],
+            [
+              "Please contact me promptly about concerns so we can try to resolve them directly. This does not remove payment-provider dispute rights or applicable legal remedies and deadlines.",
+              "يُرجى التواصل معي سريعًا بشأن أي ملاحظات لمحاولة حلها مباشرة. ولا يلغي ذلك حقوق الاعتراض لدى مزود الدفع أو وسائل المعالجة والمواعيد النظامية المنطبقة."
+            ],
+            [
+              "These general website policies do not select a particular country's law, an exclusive court or mandatory arbitration. Applicable law and mandatory rights continue to apply. Any project-specific choice of law or dispute process must be expressly agreed and appropriate to that engagement.",
+              "لا تختار هذه السياسات العامة للموقع قانون دولة معينة أو محكمة حصرية أو تحكيمًا إلزاميًا. وتظل الأنظمة والحقوق الملزمة المنطبقة سارية. ويجب الاتفاق صراحة على أي قانون أو إجراء نزاع خاص بالمشروع بما يناسب التكليف."
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

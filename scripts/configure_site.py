@@ -8,7 +8,7 @@ import re
 
 
 ROOT = Path(__file__).resolve().parent.parent
-PAGES = ('index.html', 'projects.html', 'services.html', 'articles.html', 'about.html', 'contact.html') + tuple(sorted(p.name for p in ROOT.glob('project-*.html')))
+PAGES = ('index.html', 'projects.html', 'services.html', 'articles.html', 'about.html', 'contact.html', 'privacy.html', 'terms.html') + tuple(sorted(p.name for p in ROOT.glob('project-*.html')))
 
 
 def configure(url):
@@ -19,7 +19,7 @@ def configure(url):
     base = url.rstrip('/')
     locations = []
 
-    for name in PAGES:
+    for name in sorted(path.name for path in ROOT.glob('*.html')):
         for folder in ('', 'en', 'ar'):
             path = ROOT / folder / name
             if not path.exists():
@@ -27,7 +27,7 @@ def configure(url):
             language = folder or 'en'
             text = path.read_text(encoding='utf-8')
             location = f'{base}/{language}/{name}'
-            if folder:
+            if folder and name in PAGES:
                 locations.append(location)
             text = re.sub(r'\s*<link rel="(?:canonical|alternate)"[^>]*>', '', text)
             text = re.sub(r'\s*<meta property="og:url"[^>]*>', '', text)
@@ -43,7 +43,7 @@ def configure(url):
                     image = base + '/' + image.removeprefix('../').lstrip('/')
                 return match[1] + escape(image, quote=True) + match[3]
 
-            text = re.sub(r'(<meta property="og:image" content=")([^"]+)("[^>]*>)', social_image, text)
+            text = re.sub(r'(<meta (?:property="og:image"|name="twitter:image") content=")([^"]+)("[^>]*>)', social_image, text)
             path.write_text(text, encoding='utf-8', newline='\r\n')
 
     entries = '\n'.join(f'  <url>\n    <loc>{escape(location)}</loc>\n  </url>' for location in locations)

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="referrer" content="no-referrer">
+  <title>Project progress | AOR</title>
+  <link rel="stylesheet" href="tracking.css">
+  <script src="tracking.js" defer></script>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">AOR · Project progress</p>
+    <h1>Your project, at a glance.</h1>
+    <p id="status" role="status">Open the private link shared with you to view your project. No account or sign-in needed.</p>
+    <section id="project" hidden aria-labelledby="project-title">
+      <h2 id="project-title"></h2>
+      <ol id="stages" aria-label="Project stages"></ol>
+      <dl>
+        <dt>Latest update</dt><dd id="update"></dd>
+        <dt>Your next step</dt><dd id="next_step"></dd>
+        <dt>Next milestone date</dt><dd id="milestone_date"></dd>
+        <dt>Last updated</dt><dd id="updated_at"></dd>
+      </dl>
+      <button id="refresh" type="button">Refresh progress</button>
+    </section>
+    <p class="privacy">Keep your link private. Anyone with the link can view this status. Contact AOR if you need a replacement link.</p>
+  </main>
+</body>
+</html>

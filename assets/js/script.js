@@ -175,6 +175,14 @@ function safeMediaUrl(path) {
 	}
 }
 
+function setImageDimensions(image, source) {
+	const pathname = new URL(source, document.baseURI).pathname;
+	const marker = pathname.includes("/assets/") ? "/assets/" : "/demos/";
+	const assetPath = pathname.slice(pathname.indexOf(marker));
+	const size = window.AOR_IMAGE_SIZES?.[assetPath];
+	if (size) [image.width, image.height] = size;
+}
+
 function createFeaturedProjectList(projects) {
 	const list = document.createElement("ul");
 	list.className = "home-fan-list";
@@ -226,11 +234,12 @@ function createProjectCard(project) {
 		const image = document.createElement("img");
 		image.src = imageUrl;
 		image.alt = project.image_alt || `${project.title || "Project"} cover image`;
+		setImageDimensions(image, imageUrl);
 		image.loading = "lazy";
 		image.decoding = "async";
 		image.className = project.image_fit === "cover" ? "media-cover" : "media-contain";
 
-		if (projectUrl) {
+		if (projectUrl && project.thumbnail_link !== false) {
 			const link = document.createElement("a");
 			link.href = projectUrl;
 			if (new URL(projectUrl).origin !== window.location.origin) {
@@ -277,7 +286,7 @@ function createProjectCard(project) {
 		const link = document.createElement("a");
 		link.className = "project-link";
 		link.href = projectUrl;
-		link.textContent = "View project";
+		link.textContent = project.external_label || "View project";
 		card.append(link);
 	}
 
@@ -351,6 +360,7 @@ function createProjectGallery(items) {
 			const image = document.createElement("img");
 			image.src = imageUrl;
 			image.alt = item.image_alt || item.caption || "Design sample";
+			setImageDimensions(image, imageUrl);
 			image.loading = "lazy";
 			image.decoding = "async";
 			link.append(image);
@@ -487,6 +497,7 @@ function createArticleCard(article, includeBody) {
 		const image = document.createElement("img");
 		image.src = imageUrl;
 		image.alt = article.image_alt || `${article.title || "Article"} cover image`;
+		setImageDimensions(image, imageUrl);
 		image.loading = "lazy";
 		image.decoding = "async";
 		card.append(image);
@@ -506,6 +517,8 @@ function createArticleCard(article, includeBody) {
 
 	const body = String(article.body || "").trim();
 	const isPublished = article.published !== false && Boolean(body);
+	const metadata = document.createElement("div");
+	metadata.className = "article-meta";
 
 	if (article.date && isPublished) {
 		const date = new Date(`${article.date}T00:00:00`);
@@ -513,7 +526,7 @@ function createArticleCard(article, includeBody) {
 			const time = document.createElement("time");
 			time.dateTime = article.date;
 			time.textContent = new Intl.DateTimeFormat(root.lang, { dateStyle: "long" }).format(date);
-			content.append(time);
+			metadata.append(time);
 		}
 	}
 
@@ -521,8 +534,9 @@ function createArticleCard(article, includeBody) {
 		const category = document.createElement("span");
 		category.className = "content-tag";
 		category.textContent = article.category.replaceAll("-", " ");
-		content.append(category);
+		metadata.append(category);
 	}
+	content.append(metadata);
 
 	if (includeBody && isPublished) {
 		const details = document.createElement("details");
@@ -543,8 +557,8 @@ function createArticleCard(article, includeBody) {
 			const feedback = feedbackTemplate.content.cloneNode(true);
 			const slug = contentSlug(article);
 
-			feedback.querySelectorAll("[id], [for], [aria-labelledby], [aria-describedby], form").forEach((element) => {
-				["id", "for", "aria-labelledby", "aria-describedby", "name"].forEach((attribute) => {
+			feedback.querySelectorAll("[id], [for], [aria-labelledby], [aria-describedby], [aria-controls], form").forEach((element) => {
+				["id", "for", "aria-labelledby", "aria-describedby", "aria-controls", "name"].forEach((attribute) => {
 					const value = element.getAttribute(attribute);
 					if (value) element.setAttribute(attribute, value.replaceAll("__SLUG__", slug));
 				});
@@ -667,10 +681,6 @@ document.addEventListener("click", async (event) => {
 	link.hash = article.id;
 	const title = article.querySelector("h3").textContent;
 	status.textContent = "";
-	if (["like", "comment"].includes(button.dataset.articleAction)) {
-		await openArticleDiscussion(article, section, link.href, title);
-		return;
-	}
 
 	if (button.dataset.articleAction !== "share") return;
 	if (navigator.share) {
@@ -694,34 +704,6 @@ document.addEventListener("click", async (event) => {
 	}
 });
 
-// Set this public site identifier after registering at Disqus. Never add an API key.
-const disqusShortname = "";
-
-async function openArticleDiscussion(article, section, url, title) {
-	const status = section.querySelector(".article-action-status");
-	const container = section.querySelector(".article-discussion");
-	if (!/^[a-z0-9][a-z0-9-]*$/.test(disqusShortname)) {
-		status.textContent = "Public comments and reactions are not connected yet. Please check back soon.";
-		return;
-	}
-	if (window.location.protocol === "file:") {
-		status.textContent = "Open the website through a web server to use public comments.";
-		return;
-	}
-	container.hidden = false;
-	if (!container.querySelector("iframe")) {
-		const frame = document.createElement("iframe");
-		frame.title = `Comments and reactions: ${title}`;
-		frame.className = "article-discussion-frame";
-		// A separate document lets every article keep its own Disqus discussion.
-		const encode = (value) => JSON.stringify(value).replaceAll("<", "\\u003c");
-		frame.srcdoc = `<!doctype html><html><head><meta name="viewport" content="width=device-width, initial-scale=1"><style>body{margin:0;font-family:system-ui}</style></head><body><div id="disqus_thread"></div><script>var disqus_config = function () { this.page.url = ${encode(url)}; this.page.identifier = ${encode(article.id)}; this.page.title = ${encode(title)}; }; var script = document.createElement('script'); script.src = 'https://${disqusShortname}.disqus.com/embed.js'; script.onerror = function () { document.getElementById('disqus_thread').textContent = 'Comments could not load. Please try again later.'; }; document.body.appendChild(script);<\/script></body></html>`;
-		container.append(frame);
-	}
-	status.textContent = "Use the discussion below to react, comment, or reply. Guest commenting is available when enabled by the site owner.";
-	container.focus();
-}
-
 const contactForm = document.querySelector("#email-contact-form");
 const subjectInput = document.querySelector("#subject");
 const messageInput = document.querySelector("#message");
@@ -730,13 +712,22 @@ const contactFormStatus = document.querySelector("#contact-form-status");
 
 if (contactForm) {
 	const requestedService = new URLSearchParams(window.location.search).get("service");
-	if (requestedService && subjectInput && !subjectInput.value) {
-		subjectInput.value = `Inquiry about ${requestedService}`;
-	}
-
+	const serviceAliases = {
+		web: "Website Development & Care",
+		creative: "Creative Design & Video",
+		pr: "PR, Writing & Communications",
+		"Website Development": "Website Development & Care",
+		"Ad Design & Video": "Creative Design & Video",
+		"PR & Media Campaigns": "PR, Writing & Communications"
+	};
+	const resolvedService = Object.prototype.hasOwnProperty.call(serviceAliases, requestedService)
+		? serviceAliases[requestedService] : requestedService;
 	const serviceInput = contactForm.querySelector("#service");
-	if (serviceInput && Array.from(serviceInput.options).some((option) => option.value === requestedService)) {
-		serviceInput.value = requestedService;
+	if (serviceInput && Array.from(serviceInput.options).some((option) => option.value === resolvedService)) {
+		serviceInput.value = resolvedService;
+		if (resolvedService && subjectInput && !subjectInput.value) {
+			subjectInput.value = `Inquiry about ${resolvedService}`;
+		}
 	}
 
 	const isLocalPreview = window.location.protocol === "file:"
@@ -771,6 +762,7 @@ if (contactForm) {
 
 	contactForm.addEventListener("submit", async (event) => {
 		event.preventDefault();
+		if (submitButton.disabled) return;
 		if (!contactForm.reportValidity()) return;
 
 		const formData = new FormData(contactForm);
@@ -783,19 +775,36 @@ if (contactForm) {
 			contactFormStatus.textContent = "Sending your message.";
 
 			try {
+				const phpBackend = contactForm.dataset.contactBackend === "php";
 				const response = await fetch(contactForm.action, {
 					method: "POST",
-					headers: { "Content-Type": "application/x-www-form-urlencoded" },
+					headers: { "Content-Type": "application/x-www-form-urlencoded", "Accept": phpBackend ? "application/json" : "text/html" },
 					body: new URLSearchParams(formData).toString(),
 					signal: AbortSignal.timeout(15000)
 				});
 
-				if (!response.ok) throw new Error("Message submission failed.");
+				if (!response.ok) {
+					const failure = new Error("Message submission failed.");
+					failure.status = response.status;
+					throw failure;
+				}
+				if (phpBackend && (await response.json()).ok !== true) throw new Error("Unexpected contact response.");
 				contactForm.reset();
 				updateMessageCounter();
 				contactFormStatus.textContent = "Thank you. Your message has been submitted.";
-			} catch {
-				contactFormStatus.textContent = "Your message could not be sent. Please try again or use the email link below. Your message is still here.";
+				if (phpBackend) window.location.assign(new URL("contact-success.html", window.location.href).href);
+			} catch (error) {
+				if (error.status === 429) {
+					contactFormStatus.textContent = "Too many attempts. Please wait up to an hour or use the email link below. Your message is still here.";
+				} else if ([413, 422].includes(error.status)) {
+					contactFormStatus.textContent = "Please check your details and message length. Your message is still here.";
+				} else if (error.status >= 500) {
+					contactFormStatus.textContent = "The contact service is temporarily unavailable. Please use the email link below. Your message is still here.";
+				} else if (["TimeoutError", "AbortError"].includes(error.name)) {
+					contactFormStatus.textContent = "Delivery could not be confirmed. Please keep your message and use the email link below; retrying may send it twice.";
+				} else {
+					contactFormStatus.textContent = "Your message could not be sent. Please try again or use the email link below. Your message is still here.";
+				}
 			} finally {
 				submitButton.disabled = false;
 				submitButton.textContent = "Send message";
