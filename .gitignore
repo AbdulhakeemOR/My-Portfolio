@@ -6,3 +6,6 @@ certificate-extraction.json
 dist/
 abdulhakeemor-namecheap.zip
 releases/
+
+# Private full-resolution originals (never publish)
+admin/project-originals/about/

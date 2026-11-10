@@ -15,8 +15,14 @@ form > button { margin-top:24px; }
 .project-item span,.project-item small { color:var(--muted); }
 .new-project { display:inline-block; color:var(--accent); padding:8px 0; }
 .link-controls { border-top:1px solid var(--border); margin-top:32px; padding-top:16px; }
+.enquiry-history { margin-top:32px; padding:20px; background:var(--surface); border:1px solid var(--border); border-radius:14px; }
+.enquiry-message { padding:18px 0; border-top:1px solid var(--border); }
+.enquiry-message:first-of-type { border-top:0; }
+.enquiry-message h4 { margin-bottom:4px; }
+.enquiry-message p:last-child { white-space:normal; overflow-wrap:anywhere; }
 .actions { display:flex; gap:12px; flex-wrap:wrap; margin-top:20px; }
 .secondary { color:var(--accent); background:transparent; border:1px solid var(--accent); }
 #copy-link { margin-top:12px; } #copy-status { margin-inline-start:12px; }
 :where(input,textarea,select,a):focus-visible { outline:3px solid var(--accent); outline-offset:3px; }
 @media(max-width:760px) { .admin-layout { grid-template-columns:1fr; } }
+.project-ref { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: .85em; letter-spacing: .02em; color: var(--muted); }

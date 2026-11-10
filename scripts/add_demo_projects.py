@@ -12,7 +12,7 @@ def main():
     translations_path = ROOT / 'content/i18n/ar.json'
     translations = json.loads(translations_path.read_text(encoding='utf-8'))
     translations.update({'Try live demo': 'جرّب الموقع', 'Website demo': 'نموذج موقع', 'Portfolio website sample': 'نموذج موقع لملف الأعمال'})
-    translations.update({'HTML, CSS': 'HTML وCSS', 'HTML, CSS, JavaScript': 'HTML وCSS وJavaScript', 'React, Vite, Radix UI': 'React وVite وRadix UI', 'React, HTML, CSS': 'React وHTML وCSS'})
+    translations.update({'HTML, CSS': 'HTML وCSS', 'HTML, CSS, JavaScript': 'HTML وCSS وJavaScript', 'React, Vite, Radix UI': 'React وVite وRadix UI', 'React, HTML, CSS': 'React وHTML وCSS', 'React, Vite': 'React وVite', 'Next.js, React, Tailwind CSS': 'Next.js وReact وTailwind CSS'})
     for name, data in demos.items():
         image = f'demos/previews/{name}.png'
         if not (ROOT / image).exists():
@@ -33,7 +33,7 @@ def main():
         translations[data['description']] = data['description_ar']
     project_path.write_text(json.dumps(catalog, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
     translations_path.write_text(json.dumps(translations, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
-    print('Added seven website demo records and Arabic descriptions; campaign records preserved.')
+    print(f'Added {len(demos)} website demo records and Arabic descriptions; campaign records preserved.')
 
 
 if __name__ == '__main__': main()

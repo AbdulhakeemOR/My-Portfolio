@@ -19,6 +19,7 @@
   header.append(close);
   const image = document.createElement('img');
   image.decoding = 'async';
+  image.alt = ''; // replaced with the picture's description when one is opened
   const footer = document.createElement('div');
   footer.className = 'gallery-lightbox-footer';
   const previous = makeButton(rtl ? '→' : '←', arabic ? 'الصورة السابقة' : 'Previous image');

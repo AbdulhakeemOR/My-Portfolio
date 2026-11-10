@@ -1,0 +1,4 @@
+# Library code only: never reachable from a browser (PHP loads it from disk).
+<IfModule mod_authz_core.c>
+  Require all denied
+</IfModule>

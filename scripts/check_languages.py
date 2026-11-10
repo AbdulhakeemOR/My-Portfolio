@@ -95,7 +95,7 @@ def main():
         'JavaScript', 'JavaScript.', 'Launch Quality Pass', 'LinkedIn',
         'Microsoft Office', 'Poster Type Studio', 'Power BI.', 'Reddit',
         'Signal Studio', 'Snapchat', 'Threads', 'TikTok',
-        'abdulhakeemoladaporaji@gmail.com',
+        'contact@abdulhakeemor.com',
     }
     assert not missing - allowed, f'Missing Arabic translations: {missing - allowed}'
     with (ROOT / 'netlify.toml').open('rb') as file:

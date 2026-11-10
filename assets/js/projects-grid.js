@@ -89,6 +89,5 @@
   }
   enhance();document.addEventListener('aor:projects-updated',enhance);
   new MutationObserver(enhance).observe(list,{childList:true});
-  const showWebsites=()=>document.querySelector('[data-filter="websites"]')?.click();
-  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',showWebsites,{once:true});else showWebsites();
+  list.classList.add('pg-ready'); // styled and filtered: safe to show
 })();

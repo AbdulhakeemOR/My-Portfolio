@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Explore original React components, understand their behaviour, and build thoughtful websites."
+    />
+
+    <meta name="theme-color" content="#0e1116" />
+
+    <title>Webcraft Atlas — The Interface Workshop</title>
+
+    <script>
+      (() => {
+        let preference = "system";
+    
+        try {
+          const saved = localStorage.getItem("webcraft-theme");
+    
+          if (["system", "light", "dark"].includes(saved)) {
+            preference = saved;
+          }
+        } catch {
+          // Use the device preference if storage is unavailable.
+        }
+    
+        const systemDark = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+    
+        const theme =
+          preference === "system"
+            ? systemDark
+              ? "dark"
+              : "light"
+            : preference;
+    
+        document.documentElement.dataset.theme = theme;
+    
+        document
+          .querySelector('meta[name="theme-color"]')
+          ?.setAttribute(
+            "content",
+            theme === "dark" ? "#0e1116" : "#f5f3ee"
+          );
+      })();
+    </script>
+
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./favicon.svg"
+    />
+    <script type="module" crossorigin src="./assets/index-BnpvQcKd.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BjzOExrL.css">
+  <link rel="stylesheet" href="../demo-nav.css">
+<script src="../demo-nav.js" defer></script>
+</head>
+
+  <body>
+<aside class="aor-demo-nav" data-aor-demo aria-label="Portfolio demo"><a href="/en/projects.html">AOR · Back to projects</a><span>Portfolio sample · Forms do not send messages</span></aside>
+    <div id="root"></div>
+
+  </body>
+</html>

@@ -355,6 +355,649 @@
       "category": "pr-media-campaign"
     },
     {
+      "slug": "brightfold",
+      "title": "Brightfold Learning Hub — Tutoring Centre Communication Kit",
+      "description": "A sample communication kit for a fictional tutoring centre in Lagos that prepares SS3 students for the UTME: brand board, poster, parent deck, press release, campaign and crisis plans, Arabic proofreading and two short videos.",
+      "details": "Project type: Sample communication kit for a fictional client.\n\nPieces: brand board, poster, presentation deck, press materials, messaging, campaign calendar, crisis plan, communication audit, Arabic proofreading and two short videos.\n\nCopywriting: the matching web page copy is in the copywriting samples.",
+      "category": "pr-media-campaign",
+      "categories": [
+        "pr-media-campaign"
+      ],
+      "status": "concept",
+      "featured": false,
+      "image": "../assets/images/brightfold/poster.webp",
+      "image_alt": "Brightfold — Poster",
+      "image_fit": "contain",
+      "external_url": "/demos/copywriting-samples/#utme",
+      "external_label": "Read the copywriting sample",
+      "gallery": [
+        {
+          "image": "../assets/images/brightfold/brand.webp",
+          "caption": "Brightfold — Brand board — logo, palette, type and tone of voice"
+        },
+        {
+          "image": "../assets/images/brightfold/messaging.webp",
+          "caption": "Brightfold — Messaging — message house"
+        },
+        {
+          "image": "../assets/images/brightfold/slide-1.webp",
+          "caption": "Brightfold — Term welcome deck for parents — slide 1 of 8"
+        },
+        {
+          "image": "../assets/images/brightfold/slide-2.webp",
+          "caption": "Brightfold — Term welcome deck for parents — slide 2 of 8"
+        },
+        {
+          "image": "../assets/images/brightfold/slide-3.webp",
+          "caption": "Brightfold — Term welcome deck for parents — slide 3 of 8"
+        },
+        {
+          "image": "../assets/images/brightfold/slide-4.webp",
+          "caption": "Brightfold — Term welcome deck for parents — slide 4 of 8"
+        },
+        {
+          "image": "../assets/images/brightfold/slide-5.webp",
+          "caption": "Brightfold — Term welcome deck for parents — slide 5 of 8"
+        },
+        {
+          "image": "../assets/images/brightfold/slide-6.webp",
+          "caption": "Brightfold — Term welcome deck for parents — slide 6 of 8"
+        },
+        {
+          "image": "../assets/images/brightfold/slide-7.webp",
+          "caption": "Brightfold — Term welcome deck for parents — slide 7 of 8"
+        },
+        {
+          "image": "../assets/images/brightfold/slide-8.webp",
+          "caption": "Brightfold — Term welcome deck for parents — slide 8 of 8"
+        },
+        {
+          "image": "../assets/images/brightfold/release-1.webp",
+          "caption": "Brightfold — Press release — 45 full scholarships for public school students (page 1 of 2)"
+        },
+        {
+          "image": "../assets/images/brightfold/release-2.webp",
+          "caption": "Brightfold — Press release — 45 full scholarships for public school students (page 2 of 2)"
+        },
+        {
+          "image": "../assets/images/brightfold/calendar.webp",
+          "caption": "Brightfold — Campaign calendar — “Last Intake” enrolment campaign"
+        },
+        {
+          "image": "../assets/images/brightfold/crisis.webp",
+          "caption": "Brightfold — Crisis plan — student injury on site: decision tree"
+        },
+        {
+          "image": "../assets/images/brightfold/audit.webp",
+          "caption": "Brightfold — Communication audit — student safety readiness scorecard"
+        },
+        {
+          "image": "../assets/images/brightfold/proofreading.webp",
+          "caption": "Brightfold — Arabic proofreading — Arabic course flyer, before and after"
+        },
+        {
+          "video": "../assets/videos/brightfold/brightfold-countdown.mp4",
+          "poster": "../assets/images/brightfold/brightfold-countdown-poster.webp",
+          "caption": "Brightfold — Countdown animation — 58 days to the UTME"
+        },
+        {
+          "video": "../assets/videos/brightfold/brightfold-saturday-1080x1920-sound.mp4",
+          "poster": "../assets/images/brightfold/brightfold-saturday-1080x1920-sound-poster.webp",
+          "caption": "Brightfold — Vertical video — a Saturday at Brightfold (with sound)"
+        }
+      ]
+    },
+    {
+      "slug": "northpine",
+      "title": "Northpine Mobility Clinic — Physiotherapy Communication Kit",
+      "description": "A sample communication kit for a fictional physiotherapy clinic in Toronto: brand board, poster, a workplace-talk deck, a media statement, campaign and crisis plans, a privacy audit, Arabic proofreading and two short videos.",
+      "details": "Project type: Sample communication kit for a fictional client.\n\nPieces: brand board, poster, presentation deck, press materials, messaging, campaign calendar, crisis plan, communication audit, Arabic proofreading and two short videos.\n\nCopywriting: the matching web page copy is in the copywriting samples.",
+      "category": "pr-media-campaign",
+      "categories": [
+        "pr-media-campaign"
+      ],
+      "status": "concept",
+      "featured": false,
+      "image": "../assets/images/northpine/poster.webp",
+      "image_alt": "Northpine — Poster",
+      "image_fit": "contain",
+      "external_url": "/demos/copywriting-samples/#northpine",
+      "external_label": "Read the copywriting sample",
+      "gallery": [
+        {
+          "image": "../assets/images/northpine/brand.webp",
+          "caption": "Northpine — Brand board — logo, palette, type and tone of voice"
+        },
+        {
+          "image": "../assets/images/northpine/messaging.webp",
+          "caption": "Northpine — Messaging — claims guardrail: what we say, and what we never say"
+        },
+        {
+          "image": "../assets/images/northpine/slide-1.webp",
+          "caption": "Northpine — “Desk to Done” workplace talk — slide 1 of 9"
+        },
+        {
+          "image": "../assets/images/northpine/slide-2.webp",
+          "caption": "Northpine — “Desk to Done” workplace talk — slide 2 of 9"
+        },
+        {
+          "image": "../assets/images/northpine/slide-3.webp",
+          "caption": "Northpine — “Desk to Done” workplace talk — slide 3 of 9"
+        },
+        {
+          "image": "../assets/images/northpine/slide-4.webp",
+          "caption": "Northpine — “Desk to Done” workplace talk — slide 4 of 9"
+        },
+        {
+          "image": "../assets/images/northpine/slide-5.webp",
+          "caption": "Northpine — “Desk to Done” workplace talk — slide 5 of 9"
+        },
+        {
+          "image": "../assets/images/northpine/slide-6.webp",
+          "caption": "Northpine — “Desk to Done” workplace talk — slide 6 of 9"
+        },
+        {
+          "image": "../assets/images/northpine/slide-7.webp",
+          "caption": "Northpine — “Desk to Done” workplace talk — slide 7 of 9"
+        },
+        {
+          "image": "../assets/images/northpine/slide-8.webp",
+          "caption": "Northpine — “Desk to Done” workplace talk — slide 8 of 9"
+        },
+        {
+          "image": "../assets/images/northpine/slide-9.webp",
+          "caption": "Northpine — “Desk to Done” workplace talk — slide 9 of 9"
+        },
+        {
+          "image": "../assets/images/northpine/statement.webp",
+          "caption": "Northpine — Media statement — temporary clinic closure"
+        },
+        {
+          "image": "../assets/images/northpine/calendar.webp",
+          "caption": "Northpine — Campaign calendar — “Desk to Done” workplace campaign"
+        },
+        {
+          "image": "../assets/images/northpine/crisis.webp",
+          "caption": "Northpine — Crisis plan — viral treatment complaint: decision tree"
+        },
+        {
+          "image": "../assets/images/northpine/audit.webp",
+          "caption": "Northpine — Communication audit — patient privacy and complaints (RAG rating)"
+        },
+        {
+          "image": "../assets/images/northpine/proofreading.webp",
+          "caption": "Northpine — Arabic proofreading — patient leaflet, before and after"
+        },
+        {
+          "video": "../assets/videos/northpine/northpine-infographic.mp4",
+          "poster": "../assets/images/northpine/northpine-infographic-poster.webp",
+          "caption": "Northpine — Infographic animation — move every 30 minutes"
+        },
+        {
+          "video": "../assets/videos/northpine/northpine-myths-1080x1920-sound.mp4",
+          "poster": "../assets/images/northpine/northpine-myths-1080x1920-sound-poster.webp",
+          "caption": "Northpine — Vertical video — running injury myths (with sound)"
+        }
+      ]
+    },
+    {
+      "slug": "qanater",
+      "title": "Qanater Foundation — Non-Profit Communication Kit",
+      "description": "A sample bilingual communication kit for a fictional non-profit in Amman that trains young people in digital skills: brand board, poster, impact-report deck, press release, donor campaign and crisis plans, Arabic proofreading and two short videos.",
+      "details": "Project type: Sample communication kit for a fictional client.\n\nPieces: brand board, poster, presentation deck, press materials, messaging, campaign calendar, crisis plan, communication audit, Arabic proofreading and two short videos.\n\nCopywriting: the matching web page copy is in the copywriting samples.",
+      "category": "pr-media-campaign",
+      "categories": [
+        "pr-media-campaign"
+      ],
+      "status": "concept",
+      "featured": false,
+      "image": "../assets/images/qanater/poster.webp",
+      "image_alt": "Qanater — Poster",
+      "image_fit": "contain",
+      "external_url": "/demos/copywriting-samples/#qanater",
+      "external_label": "Read the copywriting sample",
+      "gallery": [
+        {
+          "image": "../assets/images/qanater/brand.webp",
+          "caption": "Qanater — Brand board — logo, palette, type and tone of voice"
+        },
+        {
+          "image": "../assets/images/qanater/messaging.webp",
+          "caption": "Qanater — Messaging — two audiences, one organisation"
+        },
+        {
+          "image": "../assets/images/qanater/slide-1.webp",
+          "caption": "Qanater — 2026 bilingual impact report — slide 1 of 6"
+        },
+        {
+          "image": "../assets/images/qanater/slide-2.webp",
+          "caption": "Qanater — 2026 bilingual impact report — slide 2 of 6"
+        },
+        {
+          "image": "../assets/images/qanater/slide-3.webp",
+          "caption": "Qanater — 2026 bilingual impact report — slide 3 of 6"
+        },
+        {
+          "image": "../assets/images/qanater/slide-4.webp",
+          "caption": "Qanater — 2026 bilingual impact report — slide 4 of 6"
+        },
+        {
+          "image": "../assets/images/qanater/slide-5.webp",
+          "caption": "Qanater — 2026 bilingual impact report — slide 5 of 6"
+        },
+        {
+          "image": "../assets/images/qanater/slide-6.webp",
+          "caption": "Qanater — 2026 bilingual impact report — slide 6 of 6"
+        },
+        {
+          "image": "../assets/images/qanater/release-1.webp",
+          "caption": "Qanater — Press release — three-year training partnership (page 1 of 2)"
+        },
+        {
+          "image": "../assets/images/qanater/release-2.webp",
+          "caption": "Qanater — Press release — three-year training partnership (page 2 of 2)"
+        },
+        {
+          "image": "../assets/images/qanater/calendar.webp",
+          "caption": "Qanater — Campaign calendar — year-end donor appeal"
+        },
+        {
+          "image": "../assets/images/qanater/crisis.webp",
+          "caption": "Qanater — Crisis plan — misuse-of-funds allegation: decision tree"
+        },
+        {
+          "image": "../assets/images/qanater/audit.webp",
+          "caption": "Qanater — Communication audit — donor scrutiny stress test"
+        },
+        {
+          "image": "../assets/images/qanater/proofreading.webp",
+          "caption": "Qanater — Arabic proofreading — donor report summary, before and after"
+        },
+        {
+          "video": "../assets/videos/qanater/qanater-41.mp4",
+          "poster": "../assets/images/qanater/qanater-41-poster.webp",
+          "caption": "Qanater — Animated statistic — 41% found work or an internship"
+        },
+        {
+          "video": "../assets/videos/qanater/qanater-six-months-1080x1350.mp4",
+          "poster": "../assets/images/qanater/qanater-six-months-1080x1350-poster.webp",
+          "caption": "Qanater — Portrait video — six months from classroom to first payslip"
+        }
+      ]
+    },
+    {
+      "slug": "shiftcove",
+      "title": "Shiftcove — Software Launch Communication Kit",
+      "description": "A sample communication kit for a fictional Dublin rota app for cafés and salons: brand board, social ad, sales deck template, press release, launch campaign and crisis plans, a data-breach readiness audit, Arabic proofreading and two short videos.",
+      "details": "Project type: Sample communication kit for a fictional client.\n\nPieces: brand board, poster, presentation deck, press materials, messaging, campaign calendar, crisis plan, communication audit, Arabic proofreading and two short videos.\n\nCopywriting: the matching web page copy is in the copywriting samples.",
+      "category": "pr-media-campaign",
+      "categories": [
+        "pr-media-campaign"
+      ],
+      "status": "concept",
+      "featured": false,
+      "image": "../assets/images/shiftcove/poster.webp",
+      "image_alt": "Shiftcove — Social media ad",
+      "image_fit": "contain",
+      "external_url": "/demos/copywriting-samples/#shiftcove",
+      "external_label": "Read the copywriting sample",
+      "gallery": [
+        {
+          "image": "../assets/images/shiftcove/brand.webp",
+          "caption": "Shiftcove — Brand board — logo, palette, type and tone of voice"
+        },
+        {
+          "image": "../assets/images/shiftcove/messaging.webp",
+          "caption": "Shiftcove — Messaging — persona matrix: three people, three reasons to say yes"
+        },
+        {
+          "image": "../assets/images/shiftcove/slide-1.webp",
+          "caption": "Shiftcove — Sales deck template — slide 1 of 10"
+        },
+        {
+          "image": "../assets/images/shiftcove/slide-2.webp",
+          "caption": "Shiftcove — Sales deck template — slide 2 of 10"
+        },
+        {
+          "image": "../assets/images/shiftcove/slide-3.webp",
+          "caption": "Shiftcove — Sales deck template — slide 3 of 10"
+        },
+        {
+          "image": "../assets/images/shiftcove/slide-4.webp",
+          "caption": "Shiftcove — Sales deck template — slide 4 of 10"
+        },
+        {
+          "image": "../assets/images/shiftcove/slide-5.webp",
+          "caption": "Shiftcove — Sales deck template — slide 5 of 10"
+        },
+        {
+          "image": "../assets/images/shiftcove/slide-6.webp",
+          "caption": "Shiftcove — Sales deck template — slide 6 of 10"
+        },
+        {
+          "image": "../assets/images/shiftcove/slide-7.webp",
+          "caption": "Shiftcove — Sales deck template — slide 7 of 10"
+        },
+        {
+          "image": "../assets/images/shiftcove/slide-8.webp",
+          "caption": "Shiftcove — Sales deck template — slide 8 of 10"
+        },
+        {
+          "image": "../assets/images/shiftcove/slide-9.webp",
+          "caption": "Shiftcove — Sales deck template — slide 9 of 10"
+        },
+        {
+          "image": "../assets/images/shiftcove/slide-10.webp",
+          "caption": "Shiftcove — Sales deck template — slide 10 of 10"
+        },
+        {
+          "image": "../assets/images/shiftcove/release-1.webp",
+          "caption": "Shiftcove — Press release — Arabic version launch for Gulf cafés and salons (page 1 of 2)"
+        },
+        {
+          "image": "../assets/images/shiftcove/release-2.webp",
+          "caption": "Shiftcove — Press release — Arabic version launch for Gulf cafés and salons (page 2 of 2)"
+        },
+        {
+          "image": "../assets/images/shiftcove/calendar.webp",
+          "caption": "Shiftcove — Campaign calendar — Gulf launch campaign"
+        },
+        {
+          "image": "../assets/images/shiftcove/crisis.webp",
+          "caption": "Shiftcove — Crisis plan — customer data exposure: decision tree"
+        },
+        {
+          "image": "../assets/images/shiftcove/audit.webp",
+          "caption": "Shiftcove — Communication audit — data-breach communication maturity"
+        },
+        {
+          "image": "../assets/images/shiftcove/proofreading.webp",
+          "caption": "Shiftcove — Arabic proofreading — help article, before and after"
+        },
+        {
+          "video": "../assets/videos/shiftcove/shiftcove-loop.mp4",
+          "poster": "../assets/images/shiftcove/shiftcove-loop-poster.webp",
+          "caption": "Shiftcove — Product loop — a shift swap approved"
+        },
+        {
+          "video": "../assets/videos/shiftcove/shiftcove-rota-1080x1080.mp4",
+          "poster": "../assets/images/shiftcove/shiftcove-rota-1080x1080-poster.webp",
+          "caption": "Shiftcove — Square video — building the rota"
+        }
+      ]
+    },
+    {
+      "slug": "wahat-qamar",
+      "title": "Wahat Qamar — Coffee and Dates Communication Kit",
+      "description": "A sample Arabic-first communication kit for a fictional coffee and dates brand in Riyadh: brand board, Ramadan poster, corporate gifts deck, Arabic press release, gifting campaign and crisis plans, a recall drill audit, Arabic proofreading and two short videos.",
+      "details": "Project type: Sample communication kit for a fictional client.\n\nPieces: brand board, poster, presentation deck, press materials, messaging, campaign calendar, crisis plan, communication audit, Arabic proofreading and two short videos.\n\nCopywriting: the matching web page copy is in the copywriting samples.",
+      "category": "pr-media-campaign",
+      "categories": [
+        "pr-media-campaign"
+      ],
+      "status": "concept",
+      "featured": false,
+      "image": "../assets/images/wahat-qamar/poster.webp",
+      "image_alt": "Wahat Qamar — Ramadan corporate gifts poster",
+      "image_fit": "contain",
+      "external_url": "/demos/copywriting-samples/#wahat",
+      "external_label": "Read the copywriting sample",
+      "gallery": [
+        {
+          "image": "../assets/images/wahat-qamar/brand.webp",
+          "caption": "Wahat Qamar — Brand board — logo, palette, type and tone of voice"
+        },
+        {
+          "image": "../assets/images/wahat-qamar/messaging.webp",
+          "caption": "Wahat Qamar — Messaging — one idea, two audiences"
+        },
+        {
+          "image": "../assets/images/wahat-qamar/slide-1.webp",
+          "caption": "Wahat Qamar — Corporate gifts deck (Arabic) — slide 1 of 7"
+        },
+        {
+          "image": "../assets/images/wahat-qamar/slide-2.webp",
+          "caption": "Wahat Qamar — Corporate gifts deck (Arabic) — slide 2 of 7"
+        },
+        {
+          "image": "../assets/images/wahat-qamar/slide-3.webp",
+          "caption": "Wahat Qamar — Corporate gifts deck (Arabic) — slide 3 of 7"
+        },
+        {
+          "image": "../assets/images/wahat-qamar/slide-4.webp",
+          "caption": "Wahat Qamar — Corporate gifts deck (Arabic) — slide 4 of 7"
+        },
+        {
+          "image": "../assets/images/wahat-qamar/slide-5.webp",
+          "caption": "Wahat Qamar — Corporate gifts deck (Arabic) — slide 5 of 7"
+        },
+        {
+          "image": "../assets/images/wahat-qamar/slide-6.webp",
+          "caption": "Wahat Qamar — Corporate gifts deck (Arabic) — slide 6 of 7"
+        },
+        {
+          "image": "../assets/images/wahat-qamar/slide-7.webp",
+          "caption": "Wahat Qamar — Corporate gifts deck (Arabic) — slide 7 of 7"
+        },
+        {
+          "image": "../assets/images/wahat-qamar/release-1.webp",
+          "caption": "Wahat Qamar — Press release — first store opening in Jeddah (Arabic) (page 1 of 2)"
+        },
+        {
+          "image": "../assets/images/wahat-qamar/release-2.webp",
+          "caption": "Wahat Qamar — Press release — first store opening in Jeddah (Arabic) (page 2 of 2)"
+        },
+        {
+          "image": "../assets/images/wahat-qamar/calendar.webp",
+          "caption": "Wahat Qamar — Campaign calendar — Ramadan corporate gifting campaign"
+        },
+        {
+          "image": "../assets/images/wahat-qamar/crisis.webp",
+          "caption": "Wahat Qamar — Crisis plan — allergen recall: decision tree"
+        },
+        {
+          "image": "../assets/images/wahat-qamar/audit.webp",
+          "caption": "Wahat Qamar — Communication audit — product recall drill: four-hour test"
+        },
+        {
+          "image": "../assets/images/wahat-qamar/proofreading.webp",
+          "caption": "Wahat Qamar — Arabic proofreading — “About us” web page, before and after"
+        },
+        {
+          "video": "../assets/videos/wahat-qamar/wahat-sting.mp4",
+          "poster": "../assets/images/wahat-qamar/wahat-sting-poster.webp",
+          "caption": "Wahat Qamar — Logo sting animation"
+        },
+        {
+          "video": "../assets/videos/wahat-qamar/wahat-dawn-1080x1920-sound.mp4",
+          "poster": "../assets/images/wahat-qamar/wahat-dawn-1080x1920-sound-poster.webp",
+          "caption": "Wahat Qamar — Vertical video — Ramadan dawn (with sound)"
+        }
+      ]
+    },
+    {
+      "slug": "chargeup-hub",
+      "title": "ChargeUp Hub — Phone Accessories Ad Set",
+      "description": "A sample ad set for a fictional phone-accessories shop in Lagos, Nigeria: three landscape display ads for power banks, charging cables and wall adapters, and a short vertical reel.",
+      "details": "Project type: Sample advertising set for a fictional brand.\n\nPieces: three landscape display ads and a vertical reel.",
+      "category": "ad-design-video",
+      "categories": [
+        "ad-design-video"
+      ],
+      "status": "concept",
+      "featured": false,
+      "image": "../assets/images/chargeup-hub/ad-1.webp",
+      "image_alt": "ChargeUp Hub — Introduction ad — “Power through your day.”",
+      "image_fit": "contain",
+      "gallery": [
+        {
+          "image": "../assets/images/chargeup-hub/ad-2.webp",
+          "caption": "ChargeUp Hub — Product ad — “Find your charge.” Power banks and cables"
+        },
+        {
+          "image": "../assets/images/chargeup-hub/ad-3.webp",
+          "caption": "ChargeUp Hub — Call-to-action ad — “Stay charged, wherever today takes you.”"
+        },
+        {
+          "video": "../assets/videos/chargeup-hub/reel.mp4",
+          "poster": "../assets/images/chargeup-hub/reel-poster.webp",
+          "caption": "ChargeUp Hub — Vertical reel — from low battery to fully charged"
+        }
+      ]
+    },
+    {
+      "slug": "crunchlab",
+      "title": "CrunchLab — Student Snack Ad Campaign",
+      "description": "A sample ad campaign for a fictional coated-peanut snack sold to university students in two pack sizes: four social feed ads, a price poster, a story frame, a packaging label and a short vertical reel.",
+      "details": "Project type: Sample advertising set for a fictional brand.\n\nPieces: four social feed ads, a price poster, a story frame, a packaging label and a vertical reel.",
+      "category": "ad-design-video",
+      "categories": [
+        "ad-design-video"
+      ],
+      "status": "concept",
+      "featured": false,
+      "image": "../assets/images/crunchlab/ad-1.webp",
+      "image_alt": "CrunchLab — Feed ad — “Meet CrunchLab. Study smarter. Snack smarter.”",
+      "image_fit": "contain",
+      "gallery": [
+        {
+          "image": "../assets/images/crunchlab/ad-2.webp",
+          "caption": "CrunchLab — Feed ad — “Crunch-tested for study breaks.”"
+        },
+        {
+          "image": "../assets/images/crunchlab/ad-3.webp",
+          "caption": "CrunchLab — Feed ad — “Pick your study-session size.” 25 g and 150 g packs"
+        },
+        {
+          "image": "../assets/images/crunchlab/ad-4.webp",
+          "caption": "CrunchLab — Feed ad — “Ready for a crunchy break?”"
+        },
+        {
+          "image": "../assets/images/crunchlab/ad-5.webp",
+          "caption": "CrunchLab — Price poster — 25 g for 1 riyal, 150 g for 5 riyals"
+        },
+        {
+          "image": "../assets/images/crunchlab/ad-6.webp",
+          "caption": "CrunchLab — Story frame — vertical price ad"
+        },
+        {
+          "image": "../assets/images/crunchlab/ad-7.webp",
+          "caption": "CrunchLab — Packaging label — coated peanuts with allergen note"
+        },
+        {
+          "video": "../assets/videos/crunchlab/reel.mp4",
+          "poster": "../assets/images/crunchlab/reel-poster.webp",
+          "caption": "CrunchLab — Vertical reel — a study-break snack"
+        }
+      ]
+    },
+    {
+      "slug": "pagepal",
+      "title": "PagePal — Student Planner Ad Campaign",
+      "description": "A sample ad campaign for a fictional weekly planner for students in Toronto, Canada: a print poster, three social feed ads, a story frame and a short vertical reel.",
+      "details": "Project type: Sample advertising set for a fictional brand.\n\nPieces: a print poster, three social feed ads, a story frame and a vertical reel.",
+      "category": "ad-design-video",
+      "categories": [
+        "ad-design-video"
+      ],
+      "status": "concept",
+      "featured": false,
+      "image": "../assets/images/pagepal/ad-1.webp",
+      "image_alt": "PagePal — Poster — “Your week, sorted.” From $14.99 CAD",
+      "image_fit": "contain",
+      "gallery": [
+        {
+          "image": "../assets/images/pagepal/ad-2.webp",
+          "caption": "PagePal — Feed ad — “Your week, sorted. Plan it like you mean it.”"
+        },
+        {
+          "image": "../assets/images/pagepal/ad-3.webp",
+          "caption": "PagePal — Feed ad — “One week, all of real life.”"
+        },
+        {
+          "image": "../assets/images/pagepal/ad-4.webp",
+          "caption": "PagePal — Feed ad — “A plan doesn’t have to be perfect.”"
+        },
+        {
+          "image": "../assets/images/pagepal/ad-5.webp",
+          "caption": "PagePal — Story frame — vertical planner ad"
+        },
+        {
+          "video": "../assets/videos/pagepal/reel.mp4",
+          "poster": "../assets/images/pagepal/reel-poster.webp",
+          "caption": "PagePal — Vertical reel — planning the week"
+        }
+      ]
+    },
+    {
+      "slug": "thriftthread",
+      "title": "ThriftThread — Pre-Loved Fashion Ad Set",
+      "description": "A sample ad set for a fictional second-hand clothing shop in Nairobi, Kenya: three landscape display ads, a story frame and a short vertical reel.",
+      "details": "Project type: Sample advertising set for a fictional brand.\n\nPieces: three landscape display ads, a story frame and a vertical reel.",
+      "category": "ad-design-video",
+      "categories": [
+        "ad-design-video"
+      ],
+      "status": "concept",
+      "featured": false,
+      "image": "../assets/images/thriftthread/ad-1.webp",
+      "image_alt": "ThriftThread — Introduction ad — “Refresh your style, responsibly.”",
+      "image_fit": "contain",
+      "gallery": [
+        {
+          "image": "../assets/images/thriftthread/ad-2.webp",
+          "caption": "ThriftThread — Product ad — “Good finds. New stories.”"
+        },
+        {
+          "image": "../assets/images/thriftthread/ad-3.webp",
+          "caption": "ThriftThread — Call-to-action ad — “Give great clothes another go.”"
+        },
+        {
+          "image": "../assets/images/thriftthread/ad-4.webp",
+          "caption": "ThriftThread — Story frame — vertical shop ad, from KSh 500"
+        },
+        {
+          "video": "../assets/videos/thriftthread/reel.mp4",
+          "poster": "../assets/images/thriftthread/reel-poster.webp",
+          "caption": "ThriftThread — Vertical reel — a pre-loved find, styled"
+        }
+      ]
+    },
+    {
+      "slug": "tutorloop",
+      "title": "TutorLoop — Private Tutoring Ad Set",
+      "description": "A sample ad set for a fictional one-to-one tutoring service in Amman, Jordan, covering maths, science and English: three landscape display ads, a story frame and a short vertical reel.",
+      "details": "Project type: Sample advertising set for a fictional brand.\n\nPieces: three landscape display ads, a story frame and a vertical reel.",
+      "category": "ad-design-video",
+      "categories": [
+        "ad-design-video"
+      ],
+      "status": "concept",
+      "featured": false,
+      "image": "../assets/images/tutorloop/ad-1.webp",
+      "image_alt": "TutorLoop — Introduction ad — “Learning, one step at a time.”",
+      "image_fit": "contain",
+      "gallery": [
+        {
+          "image": "../assets/images/tutorloop/ad-2.webp",
+          "caption": "TutorLoop — Subjects ad — “Make the next lesson click.”"
+        },
+        {
+          "image": "../assets/images/tutorloop/ad-3.webp",
+          "caption": "TutorLoop — Call-to-action ad — “Ready to learn with confidence?”"
+        },
+        {
+          "image": "../assets/images/tutorloop/ad-4.webp",
+          "caption": "TutorLoop — Story frame — vertical ad, from JOD 10 per session"
+        },
+        {
+          "video": "../assets/videos/tutorloop/reel.mp4",
+          "poster": "../assets/images/tutorloop/reel-poster.webp",
+          "caption": "TutorLoop — Vertical reel — a focused study session"
+        }
+      ]
+    },
+    {
       "slug": "website-bridgearabic",
       "title": "Bridge Arabic — Learning Website",
       "description": "A fictional beginner-Arabic learning website with a programme outline, a greeting recording, and a sample lesson.",
@@ -486,6 +1129,44 @@
       "external_label": "Try live demo",
       "repository_url": "https://github.com/AbdulhakeemOR/signalstudio",
       "thumbnail_link": false
+    },
+    {
+      "slug": "website-webcraft",
+      "title": "Webcraft Atlas — Interface Workshop",
+      "description": "A React interface workshop for exploring components, page sections and complete templates, with search, live previews, saved favourites and source code to copy.",
+      "category": "websites",
+      "categories": [
+        "websites"
+      ],
+      "status": "concept",
+      "featured": false,
+      "tool": "React, Vite",
+      "image": "../demos/previews/webcraft.png",
+      "image_alt": "Webcraft Atlas — Interface Workshop",
+      "image_fit": "cover",
+      "external_url": "/demos/webcraft/",
+      "external_label": "Try live demo",
+      "thumbnail_link": false,
+      "repository_url": "https://github.com/AbdulhakeemOR/webcraft"
+    },
+    {
+      "slug": "website-shiftcove",
+      "title": "Shiftcove — Salon Rota App",
+      "description": "A fictional rota product for salons: a marketing page plus a working prototype for schedules, shift swaps, timesheets and payroll-ready hours.",
+      "category": "websites",
+      "categories": [
+        "websites"
+      ],
+      "status": "concept",
+      "featured": false,
+      "tool": "Next.js, React, Tailwind CSS",
+      "image": "../demos/previews/shiftcove.png",
+      "image_alt": "Shiftcove — Salon Rota App",
+      "image_fit": "cover",
+      "external_url": "/demos/shiftcove/",
+      "external_label": "Try live demo",
+      "thumbnail_link": false,
+      "repository_url": "https://github.com/AbdulhakeemOR/shiftcove"
     }
   ]
 }

@@ -355,6 +355,649 @@
       "category": "pr-media-campaign"
     },
     {
+      "slug": "brightfold",
+      "title": "مركز برايتفولد التعليمي — حزمة اتصال لمركز دروس تقوية",
+      "description": "حزمة اتصال نموذجية لمركز دروس تقوية خيالي في لاغوس يُعدّ طلاب الصف الثالث الثانوي لاختبار القبول الجامعي (UTME): لوحة الهوية والملصق وعرض تقديمي لأولياء الأمور وبيان صحفي وخطتا الحملة والأزمات وتدقيق لغوي عربي ومقطعا فيديو قصيران.",
+      "details": "نوع المشروع: حزمة اتصال نموذجية لعميل خيالي.\n\nالمحتوى: لوحة الهوية والملصق والعرض التقديمي والمواد الصحفية وإطار الرسائل وتقويم الحملة وخطة الأزمات وتدقيق الاتصال والتدقيق اللغوي العربي ومقطعا فيديو قصيران.\n\nكتابة المحتوى: نصوص صفحة الويب المرتبطة متاحة ضمن نماذج كتابة المحتوى.",
+      "category": "pr-media-campaign",
+      "categories": [
+        "pr-media-campaign"
+      ],
+      "status": "concept",
+      "featured": false,
+      "image": "../assets/images/brightfold/poster.webp",
+      "image_alt": "مركز برايتفولد التعليمي — الملصق",
+      "image_fit": "contain",
+      "external_url": "/demos/copywriting-samples/#utme",
+      "external_label": "اقرأ نموذج كتابة المحتوى",
+      "gallery": [
+        {
+          "image": "../assets/images/brightfold/brand.webp",
+          "caption": "مركز برايتفولد التعليمي — لوحة الهوية — الشعار والألوان والخطوط ونبرة الصوت"
+        },
+        {
+          "image": "../assets/images/brightfold/messaging.webp",
+          "caption": "مركز برايتفولد التعليمي — إطار الرسائل — بيت الرسائل"
+        },
+        {
+          "image": "../assets/images/brightfold/slide-1.webp",
+          "caption": "مركز برايتفولد التعليمي — عرض الترحيب بالفصل الدراسي لأولياء الأمور — الشريحة 1 من 8"
+        },
+        {
+          "image": "../assets/images/brightfold/slide-2.webp",
+          "caption": "مركز برايتفولد التعليمي — عرض الترحيب بالفصل الدراسي لأولياء الأمور — الشريحة 2 من 8"
+        },
+        {
+          "image": "../assets/images/brightfold/slide-3.webp",
+          "caption": "مركز برايتفولد التعليمي — عرض الترحيب بالفصل الدراسي لأولياء الأمور — الشريحة 3 من 8"
+        },
+        {
+          "image": "../assets/images/brightfold/slide-4.webp",
+          "caption": "مركز برايتفولد التعليمي — عرض الترحيب بالفصل الدراسي لأولياء الأمور — الشريحة 4 من 8"
+        },
+        {
+          "image": "../assets/images/brightfold/slide-5.webp",
+          "caption": "مركز برايتفولد التعليمي — عرض الترحيب بالفصل الدراسي لأولياء الأمور — الشريحة 5 من 8"
+        },
+        {
+          "image": "../assets/images/brightfold/slide-6.webp",
+          "caption": "مركز برايتفولد التعليمي — عرض الترحيب بالفصل الدراسي لأولياء الأمور — الشريحة 6 من 8"
+        },
+        {
+          "image": "../assets/images/brightfold/slide-7.webp",
+          "caption": "مركز برايتفولد التعليمي — عرض الترحيب بالفصل الدراسي لأولياء الأمور — الشريحة 7 من 8"
+        },
+        {
+          "image": "../assets/images/brightfold/slide-8.webp",
+          "caption": "مركز برايتفولد التعليمي — عرض الترحيب بالفصل الدراسي لأولياء الأمور — الشريحة 8 من 8"
+        },
+        {
+          "image": "../assets/images/brightfold/release-1.webp",
+          "caption": "مركز برايتفولد التعليمي — بيان صحفي — ٤٥ منحة كاملة لطلاب المدارس الحكومية (الصفحة 1 من ٢)"
+        },
+        {
+          "image": "../assets/images/brightfold/release-2.webp",
+          "caption": "مركز برايتفولد التعليمي — بيان صحفي — ٤٥ منحة كاملة لطلاب المدارس الحكومية (الصفحة 2 من ٢)"
+        },
+        {
+          "image": "../assets/images/brightfold/calendar.webp",
+          "caption": "مركز برايتفولد التعليمي — تقويم الحملة — حملة التسجيل «الدفعة الأخيرة»"
+        },
+        {
+          "image": "../assets/images/brightfold/crisis.webp",
+          "caption": "مركز برايتفولد التعليمي — خطة الأزمات — إصابة طالب في المركز: شجرة القرار"
+        },
+        {
+          "image": "../assets/images/brightfold/audit.webp",
+          "caption": "مركز برايتفولد التعليمي — تدقيق الاتصال — بطاقة جاهزية سلامة الطلاب"
+        },
+        {
+          "image": "../assets/images/brightfold/proofreading.webp",
+          "caption": "مركز برايتفولد التعليمي — التدقيق اللغوي العربي — منشور دورة اللغة العربية قبل التدقيق وبعده"
+        },
+        {
+          "video": "../assets/videos/brightfold/brightfold-countdown.mp4",
+          "poster": "../assets/images/brightfold/brightfold-countdown-poster.webp",
+          "caption": "مركز برايتفولد التعليمي — رسوم متحركة للعدّ التنازلي — ٥٨ يومًا على الاختبار"
+        },
+        {
+          "video": "../assets/videos/brightfold/brightfold-saturday-1080x1920-sound.mp4",
+          "poster": "../assets/images/brightfold/brightfold-saturday-1080x1920-sound-poster.webp",
+          "caption": "مركز برايتفولد التعليمي — فيديو عمودي — يوم سبت في برايتفولد (مع الصوت)"
+        }
+      ]
+    },
+    {
+      "slug": "northpine",
+      "title": "عيادة نورث باين للحركة — حزمة اتصال لعيادة علاج طبيعي",
+      "description": "حزمة اتصال نموذجية لعيادة علاج طبيعي خيالية في تورونتو: لوحة الهوية والملصق وعرض لمحاضرة في بيئة العمل وبيان إعلامي وخطتا الحملة والأزمات وتدقيق للخصوصية وتدقيق لغوي عربي ومقطعا فيديو قصيران.",
+      "details": "نوع المشروع: حزمة اتصال نموذجية لعميل خيالي.\n\nالمحتوى: لوحة الهوية والملصق والعرض التقديمي والمواد الصحفية وإطار الرسائل وتقويم الحملة وخطة الأزمات وتدقيق الاتصال والتدقيق اللغوي العربي ومقطعا فيديو قصيران.\n\nكتابة المحتوى: نصوص صفحة الويب المرتبطة متاحة ضمن نماذج كتابة المحتوى.",
+      "category": "pr-media-campaign",
+      "categories": [
+        "pr-media-campaign"
+      ],
+      "status": "concept",
+      "featured": false,
+      "image": "../assets/images/northpine/poster.webp",
+      "image_alt": "عيادة نورث باين للحركة — الملصق",
+      "image_fit": "contain",
+      "external_url": "/demos/copywriting-samples/#northpine",
+      "external_label": "اقرأ نموذج كتابة المحتوى",
+      "gallery": [
+        {
+          "image": "../assets/images/northpine/brand.webp",
+          "caption": "عيادة نورث باين للحركة — لوحة الهوية — الشعار والألوان والخطوط ونبرة الصوت"
+        },
+        {
+          "image": "../assets/images/northpine/messaging.webp",
+          "caption": "عيادة نورث باين للحركة — إطار الرسائل — ضوابط الادعاءات: ما نقوله وما لا نقوله أبدًا"
+        },
+        {
+          "image": "../assets/images/northpine/slide-1.webp",
+          "caption": "عيادة نورث باين للحركة — محاضرة «من المكتب إلى الإنجاز» في بيئة العمل — الشريحة 1 من 9"
+        },
+        {
+          "image": "../assets/images/northpine/slide-2.webp",
+          "caption": "عيادة نورث باين للحركة — محاضرة «من المكتب إلى الإنجاز» في بيئة العمل — الشريحة 2 من 9"
+        },
+        {
+          "image": "../assets/images/northpine/slide-3.webp",
+          "caption": "عيادة نورث باين للحركة — محاضرة «من المكتب إلى الإنجاز» في بيئة العمل — الشريحة 3 من 9"
+        },
+        {
+          "image": "../assets/images/northpine/slide-4.webp",
+          "caption": "عيادة نورث باين للحركة — محاضرة «من المكتب إلى الإنجاز» في بيئة العمل — الشريحة 4 من 9"
+        },
+        {
+          "image": "../assets/images/northpine/slide-5.webp",
+          "caption": "عيادة نورث باين للحركة — محاضرة «من المكتب إلى الإنجاز» في بيئة العمل — الشريحة 5 من 9"
+        },
+        {
+          "image": "../assets/images/northpine/slide-6.webp",
+          "caption": "عيادة نورث باين للحركة — محاضرة «من المكتب إلى الإنجاز» في بيئة العمل — الشريحة 6 من 9"
+        },
+        {
+          "image": "../assets/images/northpine/slide-7.webp",
+          "caption": "عيادة نورث باين للحركة — محاضرة «من المكتب إلى الإنجاز» في بيئة العمل — الشريحة 7 من 9"
+        },
+        {
+          "image": "../assets/images/northpine/slide-8.webp",
+          "caption": "عيادة نورث باين للحركة — محاضرة «من المكتب إلى الإنجاز» في بيئة العمل — الشريحة 8 من 9"
+        },
+        {
+          "image": "../assets/images/northpine/slide-9.webp",
+          "caption": "عيادة نورث باين للحركة — محاضرة «من المكتب إلى الإنجاز» في بيئة العمل — الشريحة 9 من 9"
+        },
+        {
+          "image": "../assets/images/northpine/statement.webp",
+          "caption": "عيادة نورث باين للحركة — بيان إعلامي — الإغلاق المؤقت للعيادة"
+        },
+        {
+          "image": "../assets/images/northpine/calendar.webp",
+          "caption": "عيادة نورث باين للحركة — تقويم الحملة — حملة «من المكتب إلى الإنجاز» في بيئة العمل"
+        },
+        {
+          "image": "../assets/images/northpine/crisis.webp",
+          "caption": "عيادة نورث باين للحركة — خطة الأزمات — شكوى علاج منتشرة على الإنترنت: شجرة القرار"
+        },
+        {
+          "image": "../assets/images/northpine/audit.webp",
+          "caption": "عيادة نورث باين للحركة — تدقيق الاتصال — خصوصية المرضى والشكاوى (تقييم بالألوان)"
+        },
+        {
+          "image": "../assets/images/northpine/proofreading.webp",
+          "caption": "عيادة نورث باين للحركة — التدقيق اللغوي العربي — نشرة المرضى قبل التدقيق وبعده"
+        },
+        {
+          "video": "../assets/videos/northpine/northpine-infographic.mp4",
+          "poster": "../assets/images/northpine/northpine-infographic-poster.webp",
+          "caption": "عيادة نورث باين للحركة — رسوم معلوماتية متحركة — تحرّك كل ٣٠ دقيقة"
+        },
+        {
+          "video": "../assets/videos/northpine/northpine-myths-1080x1920-sound.mp4",
+          "poster": "../assets/images/northpine/northpine-myths-1080x1920-sound-poster.webp",
+          "caption": "عيادة نورث باين للحركة — فيديو عمودي — خرافات حول إصابات الجري (مع الصوت)"
+        }
+      ]
+    },
+    {
+      "slug": "qanater",
+      "title": "مؤسسة قناطر — حزمة اتصال لمؤسسة غير ربحية",
+      "description": "حزمة اتصال نموذجية ثنائية اللغة لمؤسسة غير ربحية خيالية في عمّان تدرّب الشباب على المهارات الرقمية: لوحة الهوية والملصق وعرض تقرير الأثر وبيان صحفي وخطتا حملة المانحين والأزمات وتدقيق لغوي عربي ومقطعا فيديو قصيران.",
+      "details": "نوع المشروع: حزمة اتصال نموذجية لعميل خيالي.\n\nالمحتوى: لوحة الهوية والملصق والعرض التقديمي والمواد الصحفية وإطار الرسائل وتقويم الحملة وخطة الأزمات وتدقيق الاتصال والتدقيق اللغوي العربي ومقطعا فيديو قصيران.\n\nكتابة المحتوى: نصوص صفحة الويب المرتبطة متاحة ضمن نماذج كتابة المحتوى.",
+      "category": "pr-media-campaign",
+      "categories": [
+        "pr-media-campaign"
+      ],
+      "status": "concept",
+      "featured": false,
+      "image": "../assets/images/qanater/poster.webp",
+      "image_alt": "مؤسسة قناطر — الملصق",
+      "image_fit": "contain",
+      "external_url": "/demos/copywriting-samples/#qanater",
+      "external_label": "اقرأ نموذج كتابة المحتوى",
+      "gallery": [
+        {
+          "image": "../assets/images/qanater/brand.webp",
+          "caption": "مؤسسة قناطر — لوحة الهوية — الشعار والألوان والخطوط ونبرة الصوت"
+        },
+        {
+          "image": "../assets/images/qanater/messaging.webp",
+          "caption": "مؤسسة قناطر — إطار الرسائل — جمهوران ومؤسسة واحدة"
+        },
+        {
+          "image": "../assets/images/qanater/slide-1.webp",
+          "caption": "مؤسسة قناطر — تقرير الأثر ثنائي اللغة لعام ٢٠٢٦ — الشريحة 1 من 6"
+        },
+        {
+          "image": "../assets/images/qanater/slide-2.webp",
+          "caption": "مؤسسة قناطر — تقرير الأثر ثنائي اللغة لعام ٢٠٢٦ — الشريحة 2 من 6"
+        },
+        {
+          "image": "../assets/images/qanater/slide-3.webp",
+          "caption": "مؤسسة قناطر — تقرير الأثر ثنائي اللغة لعام ٢٠٢٦ — الشريحة 3 من 6"
+        },
+        {
+          "image": "../assets/images/qanater/slide-4.webp",
+          "caption": "مؤسسة قناطر — تقرير الأثر ثنائي اللغة لعام ٢٠٢٦ — الشريحة 4 من 6"
+        },
+        {
+          "image": "../assets/images/qanater/slide-5.webp",
+          "caption": "مؤسسة قناطر — تقرير الأثر ثنائي اللغة لعام ٢٠٢٦ — الشريحة 5 من 6"
+        },
+        {
+          "image": "../assets/images/qanater/slide-6.webp",
+          "caption": "مؤسسة قناطر — تقرير الأثر ثنائي اللغة لعام ٢٠٢٦ — الشريحة 6 من 6"
+        },
+        {
+          "image": "../assets/images/qanater/release-1.webp",
+          "caption": "مؤسسة قناطر — بيان صحفي — شراكة تدريبية لثلاث سنوات (الصفحة 1 من ٢)"
+        },
+        {
+          "image": "../assets/images/qanater/release-2.webp",
+          "caption": "مؤسسة قناطر — بيان صحفي — شراكة تدريبية لثلاث سنوات (الصفحة 2 من ٢)"
+        },
+        {
+          "image": "../assets/images/qanater/calendar.webp",
+          "caption": "مؤسسة قناطر — تقويم الحملة — نداء المانحين في نهاية العام"
+        },
+        {
+          "image": "../assets/images/qanater/crisis.webp",
+          "caption": "مؤسسة قناطر — خطة الأزمات — ادعاء بإساءة استخدام الأموال: شجرة القرار"
+        },
+        {
+          "image": "../assets/images/qanater/audit.webp",
+          "caption": "مؤسسة قناطر — تدقيق الاتصال — اختبار الجاهزية لتدقيق المانحين"
+        },
+        {
+          "image": "../assets/images/qanater/proofreading.webp",
+          "caption": "مؤسسة قناطر — التدقيق اللغوي العربي — ملخص تقرير المانحين قبل التدقيق وبعده"
+        },
+        {
+          "video": "../assets/videos/qanater/qanater-41.mp4",
+          "poster": "../assets/images/qanater/qanater-41-poster.webp",
+          "caption": "مؤسسة قناطر — إحصائية متحركة — ٤١٪ حصلوا على عمل أو تدريب"
+        },
+        {
+          "video": "../assets/videos/qanater/qanater-six-months-1080x1350.mp4",
+          "poster": "../assets/images/qanater/qanater-six-months-1080x1350-poster.webp",
+          "caption": "مؤسسة قناطر — فيديو طولي — ستة أشهر من قاعة التدريب إلى أول راتب"
+        }
+      ]
+    },
+    {
+      "slug": "shiftcove",
+      "title": "شيفت كوف — حزمة اتصال لإطلاق برنامج",
+      "description": "حزمة اتصال نموذجية لتطبيق خيالي لجدولة المناوبات من دبلن مخصّص للمقاهي والصالونات: لوحة الهوية وإعلان للتواصل الاجتماعي وقالب عرض مبيعات وبيان صحفي وخطتا حملة الإطلاق والأزمات وتدقيق الجاهزية لاختراق البيانات وتدقيق لغوي عربي ومقطعا فيديو قصيران.",
+      "details": "نوع المشروع: حزمة اتصال نموذجية لعميل خيالي.\n\nالمحتوى: لوحة الهوية والملصق والعرض التقديمي والمواد الصحفية وإطار الرسائل وتقويم الحملة وخطة الأزمات وتدقيق الاتصال والتدقيق اللغوي العربي ومقطعا فيديو قصيران.\n\nكتابة المحتوى: نصوص صفحة الويب المرتبطة متاحة ضمن نماذج كتابة المحتوى.",
+      "category": "pr-media-campaign",
+      "categories": [
+        "pr-media-campaign"
+      ],
+      "status": "concept",
+      "featured": false,
+      "image": "../assets/images/shiftcove/poster.webp",
+      "image_alt": "شيفت كوف — إعلان للتواصل الاجتماعي",
+      "image_fit": "contain",
+      "external_url": "/demos/copywriting-samples/#shiftcove",
+      "external_label": "اقرأ نموذج كتابة المحتوى",
+      "gallery": [
+        {
+          "image": "../assets/images/shiftcove/brand.webp",
+          "caption": "شيفت كوف — لوحة الهوية — الشعار والألوان والخطوط ونبرة الصوت"
+        },
+        {
+          "image": "../assets/images/shiftcove/messaging.webp",
+          "caption": "شيفت كوف — إطار الرسائل — مصفوفة الشخصيات: ثلاثة أشخاص وثلاثة أسباب للموافقة"
+        },
+        {
+          "image": "../assets/images/shiftcove/slide-1.webp",
+          "caption": "شيفت كوف — قالب عرض المبيعات — الشريحة 1 من 10"
+        },
+        {
+          "image": "../assets/images/shiftcove/slide-2.webp",
+          "caption": "شيفت كوف — قالب عرض المبيعات — الشريحة 2 من 10"
+        },
+        {
+          "image": "../assets/images/shiftcove/slide-3.webp",
+          "caption": "شيفت كوف — قالب عرض المبيعات — الشريحة 3 من 10"
+        },
+        {
+          "image": "../assets/images/shiftcove/slide-4.webp",
+          "caption": "شيفت كوف — قالب عرض المبيعات — الشريحة 4 من 10"
+        },
+        {
+          "image": "../assets/images/shiftcove/slide-5.webp",
+          "caption": "شيفت كوف — قالب عرض المبيعات — الشريحة 5 من 10"
+        },
+        {
+          "image": "../assets/images/shiftcove/slide-6.webp",
+          "caption": "شيفت كوف — قالب عرض المبيعات — الشريحة 6 من 10"
+        },
+        {
+          "image": "../assets/images/shiftcove/slide-7.webp",
+          "caption": "شيفت كوف — قالب عرض المبيعات — الشريحة 7 من 10"
+        },
+        {
+          "image": "../assets/images/shiftcove/slide-8.webp",
+          "caption": "شيفت كوف — قالب عرض المبيعات — الشريحة 8 من 10"
+        },
+        {
+          "image": "../assets/images/shiftcove/slide-9.webp",
+          "caption": "شيفت كوف — قالب عرض المبيعات — الشريحة 9 من 10"
+        },
+        {
+          "image": "../assets/images/shiftcove/slide-10.webp",
+          "caption": "شيفت كوف — قالب عرض المبيعات — الشريحة 10 من 10"
+        },
+        {
+          "image": "../assets/images/shiftcove/release-1.webp",
+          "caption": "شيفت كوف — بيان صحفي — إطلاق النسخة العربية للمقاهي والصالونات في الخليج (الصفحة 1 من ٢)"
+        },
+        {
+          "image": "../assets/images/shiftcove/release-2.webp",
+          "caption": "شيفت كوف — بيان صحفي — إطلاق النسخة العربية للمقاهي والصالونات في الخليج (الصفحة 2 من ٢)"
+        },
+        {
+          "image": "../assets/images/shiftcove/calendar.webp",
+          "caption": "شيفت كوف — تقويم الحملة — حملة الإطلاق في الخليج"
+        },
+        {
+          "image": "../assets/images/shiftcove/crisis.webp",
+          "caption": "شيفت كوف — خطة الأزمات — كشف بيانات العملاء: شجرة القرار"
+        },
+        {
+          "image": "../assets/images/shiftcove/audit.webp",
+          "caption": "شيفت كوف — تدقيق الاتصال — نضج الاتصال عند اختراق البيانات"
+        },
+        {
+          "image": "../assets/images/shiftcove/proofreading.webp",
+          "caption": "شيفت كوف — التدقيق اللغوي العربي — مقالة المساعدة قبل التدقيق وبعده"
+        },
+        {
+          "video": "../assets/videos/shiftcove/shiftcove-loop.mp4",
+          "poster": "../assets/images/shiftcove/shiftcove-loop-poster.webp",
+          "caption": "شيفت كوف — حلقة المنتج — الموافقة على تبديل مناوبة"
+        },
+        {
+          "video": "../assets/videos/shiftcove/shiftcove-rota-1080x1080.mp4",
+          "poster": "../assets/images/shiftcove/shiftcove-rota-1080x1080-poster.webp",
+          "caption": "شيفت كوف — فيديو مربع — إعداد جدول المناوبات"
+        }
+      ]
+    },
+    {
+      "slug": "wahat-qamar",
+      "title": "واحة قمر — حزمة اتصال لمتجر قهوة وتمور",
+      "description": "حزمة اتصال نموذجية تبدأ بالعربية لعلامة قهوة وتمور خيالية في الرياض: لوحة الهوية وملصق رمضان وعرض هدايا الشركات وبيان صحفي عربي وخطتا حملة الهدايا والأزمات وتدقيق لتمرين سحب المنتج وتدقيق لغوي عربي ومقطعا فيديو قصيران.",
+      "details": "نوع المشروع: حزمة اتصال نموذجية لعميل خيالي.\n\nالمحتوى: لوحة الهوية والملصق والعرض التقديمي والمواد الصحفية وإطار الرسائل وتقويم الحملة وخطة الأزمات وتدقيق الاتصال والتدقيق اللغوي العربي ومقطعا فيديو قصيران.\n\nكتابة المحتوى: نصوص صفحة الويب المرتبطة متاحة ضمن نماذج كتابة المحتوى.",
+      "category": "pr-media-campaign",
+      "categories": [
+        "pr-media-campaign"
+      ],
+      "status": "concept",
+      "featured": false,
+      "image": "../assets/images/wahat-qamar/poster.webp",
+      "image_alt": "واحة قمر — ملصق هدايا رمضان للشركات",
+      "image_fit": "contain",
+      "external_url": "/demos/copywriting-samples/#wahat",
+      "external_label": "اقرأ نموذج كتابة المحتوى",
+      "gallery": [
+        {
+          "image": "../assets/images/wahat-qamar/brand.webp",
+          "caption": "واحة قمر — لوحة الهوية — الشعار والألوان والخطوط ونبرة الصوت"
+        },
+        {
+          "image": "../assets/images/wahat-qamar/messaging.webp",
+          "caption": "واحة قمر — إطار الرسائل — فكرة واحدة لجمهورين"
+        },
+        {
+          "image": "../assets/images/wahat-qamar/slide-1.webp",
+          "caption": "واحة قمر — عرض هدايا الشركات (بالعربية) — الشريحة 1 من 7"
+        },
+        {
+          "image": "../assets/images/wahat-qamar/slide-2.webp",
+          "caption": "واحة قمر — عرض هدايا الشركات (بالعربية) — الشريحة 2 من 7"
+        },
+        {
+          "image": "../assets/images/wahat-qamar/slide-3.webp",
+          "caption": "واحة قمر — عرض هدايا الشركات (بالعربية) — الشريحة 3 من 7"
+        },
+        {
+          "image": "../assets/images/wahat-qamar/slide-4.webp",
+          "caption": "واحة قمر — عرض هدايا الشركات (بالعربية) — الشريحة 4 من 7"
+        },
+        {
+          "image": "../assets/images/wahat-qamar/slide-5.webp",
+          "caption": "واحة قمر — عرض هدايا الشركات (بالعربية) — الشريحة 5 من 7"
+        },
+        {
+          "image": "../assets/images/wahat-qamar/slide-6.webp",
+          "caption": "واحة قمر — عرض هدايا الشركات (بالعربية) — الشريحة 6 من 7"
+        },
+        {
+          "image": "../assets/images/wahat-qamar/slide-7.webp",
+          "caption": "واحة قمر — عرض هدايا الشركات (بالعربية) — الشريحة 7 من 7"
+        },
+        {
+          "image": "../assets/images/wahat-qamar/release-1.webp",
+          "caption": "واحة قمر — بيان صحفي — افتتاح أول متجر في جدة (بالعربية) (الصفحة 1 من ٢)"
+        },
+        {
+          "image": "../assets/images/wahat-qamar/release-2.webp",
+          "caption": "واحة قمر — بيان صحفي — افتتاح أول متجر في جدة (بالعربية) (الصفحة 2 من ٢)"
+        },
+        {
+          "image": "../assets/images/wahat-qamar/calendar.webp",
+          "caption": "واحة قمر — تقويم الحملة — حملة هدايا رمضان للشركات"
+        },
+        {
+          "image": "../assets/images/wahat-qamar/crisis.webp",
+          "caption": "واحة قمر — خطة الأزمات — سحب منتج بسبب مسبّبات الحساسية: شجرة القرار"
+        },
+        {
+          "image": "../assets/images/wahat-qamar/audit.webp",
+          "caption": "واحة قمر — تدقيق الاتصال — تمرين سحب المنتج: اختبار الساعات الأربع"
+        },
+        {
+          "image": "../assets/images/wahat-qamar/proofreading.webp",
+          "caption": "واحة قمر — التدقيق اللغوي العربي — صفحة «من نحن» قبل التدقيق وبعده"
+        },
+        {
+          "video": "../assets/videos/wahat-qamar/wahat-sting.mp4",
+          "poster": "../assets/images/wahat-qamar/wahat-sting-poster.webp",
+          "caption": "واحة قمر — رسوم متحركة قصيرة للشعار"
+        },
+        {
+          "video": "../assets/videos/wahat-qamar/wahat-dawn-1080x1920-sound.mp4",
+          "poster": "../assets/images/wahat-qamar/wahat-dawn-1080x1920-sound-poster.webp",
+          "caption": "واحة قمر — فيديو عمودي — فجر رمضان (مع الصوت)"
+        }
+      ]
+    },
+    {
+      "slug": "chargeup-hub",
+      "title": "تشارج أب هب — مجموعة إعلانات لملحقات الهواتف",
+      "description": "مجموعة إعلانات نموذجية لمتجر خيالي لملحقات الهواتف في لاغوس بنيجيريا: ثلاثة إعلانات عرضية أفقية لبنوك الطاقة وكابلات الشحن ومحولات الجدار، ومقطع فيديو عمودي قصير.",
+      "details": "نوع المشروع: مجموعة إعلانات نموذجية لعلامة تجارية خيالية.\n\nالمحتوى: ثلاثة إعلانات عرضية أفقية ومقطع فيديو عمودي.",
+      "category": "ad-design-video",
+      "categories": [
+        "ad-design-video"
+      ],
+      "status": "concept",
+      "featured": false,
+      "image": "../assets/images/chargeup-hub/ad-1.webp",
+      "image_alt": "تشارج أب هب — إعلان تعريفي — «طاقة تكفي يومك»",
+      "image_fit": "contain",
+      "gallery": [
+        {
+          "image": "../assets/images/chargeup-hub/ad-2.webp",
+          "caption": "تشارج أب هب — إعلان المنتجات — «اعثر على شحنك» بنوك الطاقة والكابلات"
+        },
+        {
+          "image": "../assets/images/chargeup-hub/ad-3.webp",
+          "caption": "تشارج أب هب — إعلان الدعوة إلى الإجراء — «ابقَ مشحونًا أينما أخذك يومك»"
+        },
+        {
+          "video": "../assets/videos/chargeup-hub/reel.mp4",
+          "poster": "../assets/images/chargeup-hub/reel-poster.webp",
+          "caption": "تشارج أب هب — مقطع عمودي — من بطارية منخفضة إلى شحن كامل"
+        }
+      ]
+    },
+    {
+      "slug": "crunchlab",
+      "title": "كرنش لاب — حملة إعلانية لوجبة خفيفة للطلاب",
+      "description": "حملة إعلانية نموذجية لوجبة فول سوداني مغلف خيالية موجهة لطلاب الجامعات بحجمين: أربعة إعلانات لمنصات التواصل وملصق للأسعار وإطار قصة وملصق للعبوة ومقطع فيديو عمودي قصير.",
+      "details": "نوع المشروع: مجموعة إعلانات نموذجية لعلامة تجارية خيالية.\n\nالمحتوى: أربعة إعلانات لمنصات التواصل وملصق للأسعار وإطار قصة وملصق للعبوة ومقطع فيديو عمودي.",
+      "category": "ad-design-video",
+      "categories": [
+        "ad-design-video"
+      ],
+      "status": "concept",
+      "featured": false,
+      "image": "../assets/images/crunchlab/ad-1.webp",
+      "image_alt": "كرنش لاب — إعلان للمنصات — «تعرّف على كرنش لاب: ذاكر بذكاء، وتناول وجبتك بذكاء»",
+      "image_fit": "contain",
+      "gallery": [
+        {
+          "image": "../assets/images/crunchlab/ad-2.webp",
+          "caption": "كرنش لاب — إعلان للمنصات — «مجرّبة لاستراحات المذاكرة»"
+        },
+        {
+          "image": "../assets/images/crunchlab/ad-3.webp",
+          "caption": "كرنش لاب — إعلان للمنصات — «اختر حجم جلسة مذاكرتك» عبوتا ٢٥ و١٥٠ غرامًا"
+        },
+        {
+          "image": "../assets/images/crunchlab/ad-4.webp",
+          "caption": "كرنش لاب — إعلان للمنصات — «مستعد لاستراحة مقرمشة؟»"
+        },
+        {
+          "image": "../assets/images/crunchlab/ad-5.webp",
+          "caption": "كرنش لاب — ملصق الأسعار — ٢٥ غرامًا بريال واحد و١٥٠ غرامًا بخمسة ريالات"
+        },
+        {
+          "image": "../assets/images/crunchlab/ad-6.webp",
+          "caption": "كرنش لاب — إطار قصة — إعلان عمودي للأسعار"
+        },
+        {
+          "image": "../assets/images/crunchlab/ad-7.webp",
+          "caption": "كرنش لاب — ملصق العبوة — فول سوداني مغلف مع تنبيه مسببات الحساسية"
+        },
+        {
+          "video": "../assets/videos/crunchlab/reel.mp4",
+          "poster": "../assets/images/crunchlab/reel-poster.webp",
+          "caption": "كرنش لاب — مقطع عمودي — وجبة خفيفة لاستراحة المذاكرة"
+        }
+      ]
+    },
+    {
+      "slug": "pagepal",
+      "title": "بيج بال — حملة إعلانية لمفكرة تخطيط للطلاب",
+      "description": "حملة إعلانية نموذجية لمفكرة أسبوعية خيالية للطلاب في تورونتو بكندا: ملصق مطبوع وثلاثة إعلانات لمنصات التواصل وإطار قصة ومقطع فيديو عمودي قصير.",
+      "details": "نوع المشروع: مجموعة إعلانات نموذجية لعلامة تجارية خيالية.\n\nالمحتوى: ملصق مطبوع وثلاثة إعلانات لمنصات التواصل وإطار قصة ومقطع فيديو عمودي.",
+      "category": "ad-design-video",
+      "categories": [
+        "ad-design-video"
+      ],
+      "status": "concept",
+      "featured": false,
+      "image": "../assets/images/pagepal/ad-1.webp",
+      "image_alt": "بيج بال — ملصق — «أسبوعك منظّم» ابتداءً من ١٤٫٩٩ دولارًا كنديًا",
+      "image_fit": "contain",
+      "gallery": [
+        {
+          "image": "../assets/images/pagepal/ad-2.webp",
+          "caption": "بيج بال — إعلان للمنصات — «أسبوعك منظّم: خطّط بجدية»"
+        },
+        {
+          "image": "../assets/images/pagepal/ad-3.webp",
+          "caption": "بيج بال — إعلان للمنصات — «أسبوع واحد يتسع لحياتك كلها»"
+        },
+        {
+          "image": "../assets/images/pagepal/ad-4.webp",
+          "caption": "بيج بال — إعلان للمنصات — «لا يلزم أن تكون الخطة مثالية»"
+        },
+        {
+          "image": "../assets/images/pagepal/ad-5.webp",
+          "caption": "بيج بال — إطار قصة — إعلان عمودي للمفكرة"
+        },
+        {
+          "video": "../assets/videos/pagepal/reel.mp4",
+          "poster": "../assets/images/pagepal/reel-poster.webp",
+          "caption": "بيج بال — مقطع عمودي — التخطيط للأسبوع"
+        }
+      ]
+    },
+    {
+      "slug": "thriftthread",
+      "title": "ثريفت ثريد — مجموعة إعلانات لأزياء مستعملة",
+      "description": "مجموعة إعلانات نموذجية لمتجر ملابس مستعملة خيالي في نيروبي بكينيا: ثلاثة إعلانات عرضية أفقية وإطار قصة ومقطع فيديو عمودي قصير.",
+      "details": "نوع المشروع: مجموعة إعلانات نموذجية لعلامة تجارية خيالية.\n\nالمحتوى: ثلاثة إعلانات عرضية أفقية وإطار قصة ومقطع فيديو عمودي.",
+      "category": "ad-design-video",
+      "categories": [
+        "ad-design-video"
+      ],
+      "status": "concept",
+      "featured": false,
+      "image": "../assets/images/thriftthread/ad-1.webp",
+      "image_alt": "ثريفت ثريد — إعلان تعريفي — «جدّد أسلوبك بمسؤولية»",
+      "image_fit": "contain",
+      "gallery": [
+        {
+          "image": "../assets/images/thriftthread/ad-2.webp",
+          "caption": "ثريفت ثريد — إعلان المنتجات — «قطع جميلة وقصص جديدة»"
+        },
+        {
+          "image": "../assets/images/thriftthread/ad-3.webp",
+          "caption": "ثريفت ثريد — إعلان الدعوة إلى الإجراء — «امنح الملابس الجيدة فرصة أخرى»"
+        },
+        {
+          "image": "../assets/images/thriftthread/ad-4.webp",
+          "caption": "ثريفت ثريد — إطار قصة — إعلان عمودي للمتجر ابتداءً من ٥٠٠ شلن كيني"
+        },
+        {
+          "video": "../assets/videos/thriftthread/reel.mp4",
+          "poster": "../assets/images/thriftthread/reel-poster.webp",
+          "caption": "ثريفت ثريد — مقطع عمودي — قطعة مستعملة بإطلالة جديدة"
+        }
+      ]
+    },
+    {
+      "slug": "tutorloop",
+      "title": "توتور لوب — مجموعة إعلانات للدروس الخصوصية",
+      "description": "مجموعة إعلانات نموذجية لخدمة دروس خصوصية فردية خيالية في عمّان بالأردن تشمل الرياضيات والعلوم واللغة الإنجليزية: ثلاثة إعلانات عرضية أفقية وإطار قصة ومقطع فيديو عمودي قصير.",
+      "details": "نوع المشروع: مجموعة إعلانات نموذجية لعلامة تجارية خيالية.\n\nالمحتوى: ثلاثة إعلانات عرضية أفقية وإطار قصة ومقطع فيديو عمودي.",
+      "category": "ad-design-video",
+      "categories": [
+        "ad-design-video"
+      ],
+      "status": "concept",
+      "featured": false,
+      "image": "../assets/images/tutorloop/ad-1.webp",
+      "image_alt": "توتور لوب — إعلان تعريفي — «التعلّم خطوة بخطوة»",
+      "image_fit": "contain",
+      "gallery": [
+        {
+          "image": "../assets/images/tutorloop/ad-2.webp",
+          "caption": "توتور لوب — إعلان المواد — «اجعل الدرس القادم أوضح»"
+        },
+        {
+          "image": "../assets/images/tutorloop/ad-3.webp",
+          "caption": "توتور لوب — إعلان الدعوة إلى الإجراء — «مستعد للتعلّم بثقة؟»"
+        },
+        {
+          "image": "../assets/images/tutorloop/ad-4.webp",
+          "caption": "توتور لوب — إطار قصة — إعلان عمودي ابتداءً من ١٠ دنانير أردنية للحصة"
+        },
+        {
+          "video": "../assets/videos/tutorloop/reel.mp4",
+          "poster": "../assets/images/tutorloop/reel-poster.webp",
+          "caption": "توتور لوب — مقطع عمودي — جلسة مذاكرة مركّزة"
+        }
+      ]
+    },
+    {
       "slug": "website-bridgearabic",
       "title": "بريدج عربي — موقع لتعلّم العربية",
       "description": "موقع تعليمي افتراضي للمبتدئين في العربية، يتضمن خطة برنامج وتسجيلًا صوتيًا للتحية ودرسًا تجريبيًا.",
@@ -486,6 +1129,44 @@
       "external_label": "جرّب الموقع",
       "repository_url": "https://github.com/AbdulhakeemOR/signalstudio",
       "thumbnail_link": false
+    },
+    {
+      "slug": "website-webcraft",
+      "title": "ويب كرافت أطلس — ورشة الواجهات",
+      "description": "ورشة واجهات مبنية بـReact لاستكشاف المكوّنات وأقسام الصفحات والقوالب الكاملة، مع البحث والمعاينة الحية وحفظ المفضّلة ونسخ الشيفرة المصدرية.",
+      "category": "websites",
+      "categories": [
+        "websites"
+      ],
+      "status": "concept",
+      "featured": false,
+      "tool": "React, Vite",
+      "image": "../demos/previews/webcraft.png",
+      "image_alt": "ويب كرافت أطلس — ورشة الواجهات",
+      "image_fit": "cover",
+      "external_url": "/demos/webcraft/",
+      "external_label": "جرّب الموقع",
+      "thumbnail_link": false,
+      "repository_url": "https://github.com/AbdulhakeemOR/webcraft"
+    },
+    {
+      "slug": "website-shiftcove",
+      "title": "شيفت كوف — تطبيق جداول المناوبات للصالونات",
+      "description": "منتج خيالي لجدولة المناوبات في الصالونات: صفحة تسويقية ونموذج أولي عملي للجداول وتبديل المناوبات وسجلات الدوام والساعات الجاهزة للرواتب.",
+      "category": "websites",
+      "categories": [
+        "websites"
+      ],
+      "status": "concept",
+      "featured": false,
+      "tool": "Next.js, React, Tailwind CSS",
+      "image": "../demos/previews/shiftcove.png",
+      "image_alt": "شيفت كوف — تطبيق جداول المناوبات للصالونات",
+      "image_fit": "cover",
+      "external_url": "/demos/shiftcove/",
+      "external_label": "جرّب الموقع",
+      "thumbnail_link": false,
+      "repository_url": "https://github.com/AbdulhakeemOR/shiftcove"
     }
   ]
 }

@@ -68,6 +68,8 @@ def check_package():
     assert not (public / 'content/courses.json').exists()
     assert not (public / 'content/privacy.json').exists()
     assert not (public / 'A-intro.mp4').exists()
+    assert not (public / 'private').exists()
+    assert not list(public.rglob('config.php'))
     assert not list((public / 'admin').rglob('*.pdf'))
     assert not list((public / 'admin').rglob('*.mp4'))
     references = 0

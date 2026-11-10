@@ -16,7 +16,7 @@ abdulhakeemor.com · Last updated: **[FINAL REVISION DATE]**
 
 I am Abdulhakeem Oladapo Raji, based in Jeddah, Saudi Arabia. I operate abdulhakeemor.com as a portfolio and a way to discuss my communication, creative design and digital services.
 
-I am responsible for the personal information I collect through this website. For privacy questions or requests, contact me at **abdulhakeemoladaporaji@gmail.com**.
+I am responsible for the personal information I collect through this website. For privacy questions or requests, contact me at **contact@abdulhakeemor.com**.
 
 ## 2. What this policy covers
 
@@ -62,7 +62,7 @@ I do not sell your personal information. I do not use this website to make autom
 The corrected website uses:
 
 - **Namecheap:** website hosting, server/mail transport, and domain registration. The contact form runs on the hosting server and uses its mail transport to submit inquiries.
-- **Google Gmail:** the destination mailbox where I receive and manage inquiries at abdulhakeemoladaporaji@gmail.com.
+- **Namecheap business mailbox:** the destination mailbox where I receive and manage inquiries at contact@abdulhakeemor.com.
 
 The contact form does not currently use Formspree, Netlify Forms or another external form-delivery platform. Website fonts, icons, images and portfolio videos are served from the website's own hosting rather than loaded as third-party social/video embeds.
 
@@ -113,7 +113,7 @@ Browser preferences remain on your device until cleared or removed by your brows
 
 Depending on the law that applies to your information, you may be entitled to information about its processing, access or a copy, correction, deletion, or other available rights. Where processing relies on consent, you may be able to withdraw that consent.
 
-Send requests to **abdulhakeemoladaporaji@gmail.com**. Explain what you are requesting and use the email address associated with the inquiry where possible. I may need enough information to verify the request and avoid disclosing information to the wrong person. Do not send identity documents unless a necessary verification process has been explained.
+Send requests to **contact@abdulhakeemor.com**. Explain what you are requesting and use the email address associated with the inquiry where possible. I may need enough information to verify the request and avoid disclosing information to the wrong person. Do not send identity documents unless a necessary verification process has been explained.
 
 Some requests may be subject to applicable exceptions or recordkeeping requirements. Where a right to complain applies, you may contact the relevant data-protection authority, including the Saudi authority where applicable.
 
@@ -138,7 +138,7 @@ If you believe a child's information has been submitted inappropriately, contact
 
 I may update this policy as the website or its data handling changes. The date at the top will show when it was last revised. Where applicable, I will provide any additional notice or choice required for a material change.
 
-For questions or requests, email **abdulhakeemoladaporaji@gmail.com**.
+For questions or requests, email **contact@abdulhakeemor.com**.
 
 ---
 
@@ -149,8 +149,8 @@ For questions or requests, email **abdulhakeemoladaporaji@gmail.com**.
 - [x] Owner confirmed sole business access to inquiries; provider processing is described separately.
 - [ ] Confirm hosting region, log/back-up retention and the relevant email-provider arrangements.
 - [x] Owner confirmed Namecheap two-factor authentication.
-- [ ] Confirm Google Account 2-Step Verification for the Gmail inbox; do not assume separate cPanel/Webmail settings.
-- [ ] Confirm whether Namecheap Webmail will replace Gmail as the inquiry inbox and public contact address; current code still delivers to Gmail.
+- [ ] Use a strong, unique password for the contact@abdulhakeemor.com mailbox and the cPanel account.
+- [x] contact@abdulhakeemor.com (Namecheap) replaced Gmail as the inquiry inbox and public contact address.
 - [ ] Establish applicable legal bases, transfer arrangements and rights/complaint wording.
 - [x] Tutoring excluded from the current service offering; the remaining contact-form option was removed.
 - [ ] Replace the revision-date marker when the policy is finalized.

@@ -414,6 +414,13 @@ function restoreContentAnchor() {
 	window.requestAnimationFrame(() => target.scrollIntoView({ block: "start" }));
 }
 
+function sameProjectCards(container, projects) {
+	const cards = Array.from(container.querySelectorAll(":scope > .project-card"));
+	return cards.length === projects.length && cards.every((card, index) =>
+		card.id === `project-${contentSlug(projects[index])}`
+		&& card.querySelector("h3")?.textContent.trim() === String(projects[index].title || "").trim());
+}
+
 const projectContainers = Array.from(document.querySelectorAll("[data-projects-source]"));
 if (projectContainers.length && window.location.protocol !== "file:") {
 	fetch("content/projects.json", { cache: "no-cache" })
@@ -429,6 +436,9 @@ if (projectContainers.length && window.location.protocol !== "file:") {
 					: content.projects;
 				if (container.classList.contains("home-project-fan")) {
 					container.replaceChildren(createFeaturedProjectList(projects));
+				} else if (sameProjectCards(container, projects)) {
+					// The page already holds these cards (built from the same list), so keep them:
+					// rebuilding would make the cards and images disappear and load again.
 				} else {
 					container.replaceChildren(...projects.map(createProjectCard));
 				}
@@ -632,7 +642,8 @@ document.querySelectorAll(".content-filters").forEach((filterGroup) => {
 	const filterSearch = filterGroup.querySelector(".filter-search");
 	const filterResults = document.querySelector(".filter-results");
 	const filterEmpty = document.querySelector(".filter-empty");
-	let selectedFilter = "all";
+	// Start from the filter the page marks as selected (Projects opens on Websites).
+	let selectedFilter = filterButtons.find((button) => button.getAttribute("aria-pressed") === "true")?.dataset.filter || "all";
 
 	const applyFilters = () => {
 		const query = filterSearch?.value.trim().toLocaleLowerCase() ?? "";
@@ -824,7 +835,7 @@ if (contactForm) {
 			"",
 			formData.get("message")
 		].join("\n");
-		const emailUrl = new URL("mailto:abdulhakeemoladaporaji@gmail.com");
+		const emailUrl = new URL("mailto:contact@abdulhakeemor.com");
 		emailUrl.searchParams.set("subject", String(formData.get("subject")));
 		emailUrl.searchParams.set("body", message);
 		if (contactFormStatus) contactFormStatus.textContent = "Opening your email app. Review the message there and send it to complete delivery.";

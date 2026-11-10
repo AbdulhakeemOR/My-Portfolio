@@ -35,10 +35,12 @@ def prepare_output(output, review=False):
         text = text.replace('<input type="hidden" name="form-name" value="contact">',
                             f'<input type="hidden" name="language" value="{language}">')
         text = text.replace('data-netlify="true"', '').replace('netlify-honeypot="bot-field"', '')
+        text = text.replace('</body>', f'    <script src="{base_path}/contact-turnstile.js" defer></script>\n  </body>')
         assert f'action="{base_path}/contact.php"' in text, path
         path.write_text(text, encoding='utf-8')
-    for name in ('contact.php', '.htaccess'):
+    for name in ('contact.php', 'mail-core.php', 'turnstile-config.php', 'contact-turnstile.js', '.htaccess'):
         shutil.copy2(ROOT / 'hosting/namecheap' / name, output / name)
+    shutil.copytree(ROOT / 'hosting/namecheap/lib', output / 'lib', dirs_exist_ok=True)
     for name in ('article-feedback.php', 'feedback-core.php'):
         shutil.copy2(ROOT / 'hosting/namecheap' / name, output / name)
     shutil.copytree(ROOT / 'hosting/namecheap/feedback-admin', output / 'feedback-admin', dirs_exist_ok=True)
@@ -84,7 +86,8 @@ def archive_release(output, releases, review=False):
             with path.open('rb') as stream:
                 digest = hashlib.file_digest(stream, 'sha256').hexdigest()
             files[path.relative_to(output).as_posix()] = {'sha256': digest, 'bytes': path.stat().st_size}
-    required = {'index.html', 'contact.php', 'sitemap.xml'}
+    required = {'index.html', 'contact.php', 'mail-core.php', 'turnstile-config.php',
+                'contact-turnstile.js', 'lib/phpmailer/src/PHPMailer.php', 'sitemap.xml'}
     required.add('REVIEW-ONLY.txt' if review else '.htaccess')
     if review and (output / '.htaccess').exists():
         raise ValueError('Review archives must preserve the server-managed authentication file.')

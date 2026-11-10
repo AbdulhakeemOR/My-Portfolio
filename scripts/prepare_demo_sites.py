@@ -7,7 +7,8 @@ import shutil
 ROOT = Path(__file__).resolve().parent.parent
 SAMPLES = ROOT.parent / 'samples'
 OUTPUT = ROOT / 'demos'
-NAMES = ('bridgearabic', 'calculator', 'evergreencatalog', 'framehouse', 'gatherforum', 'scopecraft', 'signalstudio')
+NAMES = ('bridgearabic', 'calculator', 'evergreencatalog', 'framehouse', 'gatherforum', 'scopecraft', 'signalstudio', 'webcraft', 'shiftcove')
+SCRIPT_BAR = ('shiftcove',)
 
 
 def copy(source, target):
@@ -31,6 +32,15 @@ def prepare():
             # Source generator and duplicate fallback images aren't needed publicly.
             for path in target.rglob('*.py'):
                 path.unlink()
+        elif name == 'webcraft':
+            if not (source / 'dist/index.html').exists():
+                raise RuntimeError('Build Webcraft with npm ci and npm run build first.')
+            shutil.copytree(source / 'dist', target, dirs_exist_ok=True)
+        elif name == 'shiftcove':
+            if not (source / 'out/index.html').exists():
+                raise RuntimeError('Export Shiftcove with next.config.portfolio-export.mjs first.')
+            # Keep the index.txt files: Next.js fetches them for in-app navigation.
+            shutil.copytree(source / 'out', target, dirs_exist_ok=True)
         elif name == 'scopecraft':
             copy(source / 'index.html', target / 'index.html')
             copy(source / 'styles.css', target / 'css/styles.css')
@@ -82,7 +92,12 @@ def prepare():
                     return tag[:-1] + ' disabled data-demo-disabled>'
                 return re.sub(r'<(?:input|select|textarea|button)\b[^>]*>', disable, match[0], flags=re.I)
             text = re.sub(r'<form\b.*?</form>', safe_form, text, flags=re.S | re.I)
-            if 'data-aor-demo' not in text:
+            if name in SCRIPT_BAR:
+                # Next.js pages sit at several folder depths and hydrate the whole <body>,
+                # so they load the bar by absolute path and demo-nav.js inserts it after load.
+                if 'demo-nav.js' not in text:
+                    text = text.replace('</head>', '<link rel="stylesheet" href="/demos/demo-nav.css"><script src="/demos/demo-nav.js" defer data-aor-bar></script></head>', 1)
+            elif 'data-aor-demo' not in text:
                 # Pages are all served one directory below demos/.
                 text = text.replace('</head>', '<link rel="stylesheet" href="../demo-nav.css">\n<script src="../demo-nav.js" defer></script>\n</head>')
                 text = re.sub(r'(<body\b[^>]*>)', r'\1\n<aside class="aor-demo-nav" data-aor-demo aria-label="Portfolio demo"><a href="/en/projects.html">AOR · Back to projects</a><span>Portfolio sample · Forms do not send messages</span></aside>', text, count=1)
@@ -92,6 +107,7 @@ def prepare():
 .aor-demo-nav a{color:#fff!important;text-decoration:underline!important;text-underline-offset:3px;white-space:nowrap}
 .aor-demo-nav span{color:#bdc9c1;text-align:end}
 @media(max-width:420px){.aor-demo-nav{font-size:11px;padding:8px 12px;align-items:start}}
+.aor-demo-nav--float{position:fixed;inset:auto 16px 16px auto;z-index:2147483000;padding:8px 14px;border:1px solid #3b4b42;border-radius:999px;box-shadow:0 8px 24px rgb(0 0 0/.25)}
 ''', encoding='utf-8')
     (OUTPUT / 'demo-nav.js').write_text('''
 // Demos never submit personal details to a server, even if their app fails.
@@ -102,8 +118,20 @@ document.querySelectorAll('[data-demo-disabled]').forEach(control => {
   control.disabled = false;
   control.removeAttribute('data-demo-disabled');
 });
+// Framework-rendered demos (see SCRIPT_BAR) get the portfolio bar once the app has started.
+if (document.querySelector('script[data-aor-bar]') && !document.querySelector('[data-aor-demo]')) {
+  window.addEventListener('load', () => {
+    const bar = document.createElement('aside');
+    // A floating pill: app layouts with fixed sidebars would sit underneath a top bar.
+    bar.className = 'aor-demo-nav aor-demo-nav--float';
+    bar.dataset.aorDemo = '';
+    bar.setAttribute('aria-label', 'Portfolio demo');
+    bar.innerHTML = '<a href="/en/projects.html">AOR · Back to projects</a><span>Portfolio sample</span>';
+    document.body.prepend(bar);
+  });
+}
 ''', encoding='utf-8')
-    print('Prepared seven static demos in demos/. Original repository snapshots preserved.')
+    print(f'Prepared {len(NAMES)} static demos in demos/. Original repository snapshots preserved.')
 
 
 if __name__ == '__main__': prepare()

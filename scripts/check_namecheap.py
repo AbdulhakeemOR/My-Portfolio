@@ -17,7 +17,7 @@ def check_mode(review=False):
             for source in (ROOT / language).glob('*.html'):
                 shutil.copy2(source, output / language / source.name)
         prepare_output(output, review=review)
-        pages = list(output.rglob('*.html'))
+        pages = list(output.glob('*.html')) + list((output / 'en').glob('*.html')) + list((output / 'ar').glob('*.html'))
         for path in pages:
             text = path.read_text(encoding='utf-8')
             assert 'property="og:image" content="https://abdulhakeemor.com/assets/brand/social-card.png"' in text, path
@@ -30,6 +30,7 @@ def check_mode(review=False):
             assert 'data-contact-backend="php"' in text
             assert f'name="language" value="{expected}"' in text
             assert 'data-netlify' not in text and 'netlify-honeypot' not in text
+            assert f'src="{base}/contact-turnstile.js"' in text
         locations = [element.text for element in ET.parse(output / 'sitemap.xml').iter() if element.tag.endswith('}loc')]
         assert locations and all(url.startswith('https://abdulhakeemor.com/') for url in locations)
         assert not any('/404.html' in url or '/contact-success.html' in url for url in locations)
@@ -37,6 +38,11 @@ def check_mode(review=False):
             for policy in ('privacy', 'terms'):
                 assert f'https://abdulhakeemor.com/{language}/{policy}.html' in locations
         assert (output / 'contact.php').is_file()
+        assert (output / 'mail-core.php').is_file()
+        assert (output / 'turnstile-config.php').is_file()
+        assert (output / 'contact-turnstile.js').is_file()
+        assert (output / 'lib/phpmailer/src/PHPMailer.php').is_file()
+        assert not (output / 'private').exists()
         assert (output / 'article-feedback.php').is_file()
         assert (output / 'feedback-admin/index.php').is_file()
         assert not (output / 'feedback-admin/.htaccess').exists()

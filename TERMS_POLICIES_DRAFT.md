@@ -8,7 +8,7 @@ Prepared for Abdulhakeem Oladapo Raji · Draft revised 4 November 2026.
 
 | Item | Proposed wording/default | Status |
 |---|---|---|
-| Provider | Abdulhakeem Oladapo Raji; abdulhakeemoladaporaji@gmail.com | Name/email already established. Confirm legal contracting status and any required business details. |
+| Provider | Abdulhakeem Oladapo Raji; contact@abdulhakeemor.com | Name/email already established. Confirm legal contracting status and any required business details. |
 | Currency | USD unless the agreement specifies another currency | Owner confirmed. |
 | Payment methods | PayPal or Wise, where available and listed on the invoice | Owner confirmed accounts; PayPal accessible on the current phone. Restore/check Wise access before issuing Wise instructions. |
 | Project payments | 50% advance payment; 50% before final handover | Owner confirmed. |
@@ -28,7 +28,7 @@ abdulhakeemor.com · Effective date/version: **[TO BE FINALIZED]**
 
 ## 1. Who these terms are for
 
-I am **Abdulhakeem Oladapo Raji**. These terms describe how I work with clients on communication, creative design and digital projects. You can contact me at **abdulhakeemoladaporaji@gmail.com**.
+I am **Abdulhakeem Oladapo Raji**. These terms describe how I work with clients on communication, creative design and digital projects. You can contact me at **contact@abdulhakeemor.com**.
 
 These terms apply when they are supplied or clearly identified as part of a written agreement that we both accept. Browsing the website or sending an inquiry does not, by itself, order a service or create a payment obligation.
 
@@ -136,7 +136,7 @@ We should first try to resolve concerns directly and in good faith. That does no
 
 Updates apply to new engagements after their effective date. Changes to an existing engagement require mutual written agreement, except where the law requires otherwise.
 
-Questions: **abdulhakeemoladaporaji@gmail.com**.
+Questions: **contact@abdulhakeemor.com**.
 
 ---
 

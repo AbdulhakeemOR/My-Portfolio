@@ -722,5 +722,11 @@
   "HTML, CSS": "HTML وCSS",
   "HTML, CSS, JavaScript": "HTML وCSS وJavaScript",
   "React, Vite, Radix UI": "React وVite وRadix UI",
-  "React, HTML, CSS": "React وHTML وCSS"
+  "React, HTML, CSS": "React وHTML وCSS",
+  "React, Vite": "React وVite",
+  "Next.js, React, Tailwind CSS": "Next.js وReact وTailwind CSS",
+  "Webcraft Atlas — Interface Workshop": "ويب كرافت أطلس — ورشة الواجهات",
+  "A React interface workshop for exploring components, page sections and complete templates, with search, live previews, saved favourites and source code to copy.": "ورشة واجهات مبنية بـReact لاستكشاف المكوّنات وأقسام الصفحات والقوالب الكاملة، مع البحث والمعاينة الحية وحفظ المفضّلة ونسخ الشيفرة المصدرية.",
+  "Shiftcove — Salon Rota App": "شيفت كوف — تطبيق جداول المناوبات للصالونات",
+  "A fictional rota product for salons: a marketing page plus a working prototype for schedules, shift swaps, timesheets and payroll-ready hours.": "منتج خيالي لجدولة المناوبات في الصالونات: صفحة تسويقية ونموذج أولي عملي للجداول وتبديل المناوبات وسجلات الدوام والساعات الجاهزة للرواتب."
 }

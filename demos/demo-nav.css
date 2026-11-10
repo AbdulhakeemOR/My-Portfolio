@@ -1,5 +1,7 @@
 
 .aor-demo-nav{position:relative;z-index:100;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 20px;background:#18211f;color:#edf4ef;font:12px/1.5 system-ui,sans-serif;border-bottom:1px solid #3b4b42}
 .aor-demo-nav a{color:#fff!important;text-decoration:underline!important;text-underline-offset:3px;white-space:nowrap}
+.aor-demo-nav a{display:inline-block;padding:4px 0;min-height:24px}.aor-demo-nav a:focus-visible{outline:3px solid #e78d70;outline-offset:3px;border-radius:4px}
 .aor-demo-nav span{color:#bdc9c1;text-align:end}
 @media(max-width:420px){.aor-demo-nav{font-size:11px;padding:8px 12px;align-items:start}}
+.aor-demo-nav--float{position:fixed;inset:auto 16px 16px auto;z-index:2147483000;padding:8px 14px;border:1px solid #3b4b42;border-radius:999px;box-shadow:0 8px 24px rgb(0 0 0/.25)}

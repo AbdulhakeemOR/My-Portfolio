@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Tajawal";
-  src: url("../fonts/tajawal/Tajawal-Regular.ttf") format("truetype");
+  src: url("../fonts/tajawal/Tajawal-Regular.woff2") format("woff2"), url("../fonts/tajawal/Tajawal-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -23,7 +23,7 @@
 
 @font-face {
   font-family: "Tajawal";
-  src: url("../fonts/tajawal/Tajawal-Bold.ttf") format("truetype");
+  src: url("../fonts/tajawal/Tajawal-Bold.woff2") format("woff2"), url("../fonts/tajawal/Tajawal-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: 700;
   font-display: swap;

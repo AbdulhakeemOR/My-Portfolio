@@ -1,53 +1,19 @@
-const token = new URLSearchParams(location.hash.slice(1)).get('key');
-const status = document.querySelector('#status');
-const project = document.querySelector('#project');
-const refresh = document.querySelector('#refresh');
-let busy = false;
-
-async function loadProject() {
-  if (busy || !token) return;
-  busy = true;
-  refresh.disabled = true;
-  status.textContent = 'Loading project progress…';
-  try {
-    const response = await fetch('status.php', {
-      method: 'POST', credentials: 'omit', cache: 'no-store',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ token })
-    });
-    if (response.status === 404) throw new Error('This project link is unavailable or has expired. Please contact AOR for a new link.');
-    if (!response.ok) throw new Error('Project updates are temporarily unavailable. Please try again later.');
-    const data = await response.json();
-    const names = ['Brief', 'Proposal', 'Creation', 'Review', 'Delivery'];
-    const current = names.indexOf(data.stage);
-    if (current < 0) throw new Error('Project updates are temporarily unavailable.');
-    document.querySelector('#project-title').textContent = data.title;
-    const stages = document.querySelector('#stages');
-    stages.replaceChildren();
-    names.forEach((name, index) => {
-      const item = document.createElement('li');
-      const completed = index < current || (data.completed && index === current);
-      item.className = completed ? 'complete' : index === current ? 'current' : '';
-      if (index === current) item.setAttribute('aria-current', 'step');
-      const label = document.createElement('strong');
-      label.textContent = name;
-      const state = document.createElement('span');
-      state.textContent = completed ? 'Completed' : index === current ? 'In progress' : 'Upcoming';
-      item.append(label, state);
-      stages.append(item);
-    });
-    for (const field of ['update', 'next_step', 'milestone_date', 'updated_at']) {
-      document.getElementById(field).textContent = data[field] || 'To be confirmed';
-    }
-    project.hidden = false;
-    status.textContent = data.completed ? 'Your project is complete.' : `Current stage: ${data.stage}`;
-  } catch (error) {
-    project.hidden = true;
-    status.textContent = error instanceof SyntaxError ? 'Project updates are temporarily unavailable.' : error.message;
-  } finally {
-    busy = false;
-    refresh.disabled = false;
-  }
-}
-refresh.addEventListener('click', loadProject);
-loadProject();
+const token=new URLSearchParams(location.hash.slice(1)).get('key');
+const status=document.querySelector('#status'),project=document.querySelector('#project'),refresh=document.querySelector('#refresh');let busy=false;
+const readable=value=>{if(!value)return'To be confirmed';const date=new Date(value);return Number.isNaN(date.valueOf())?value:new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'long',year:'numeric'}).format(date)};
+async function action(endpoint,body){const response=await fetch(endpoint,{method:'POST',credentials:'omit',cache:'no-store',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});const data=await response.json();if(!response.ok)throw new Error(data.error||'The action could not be completed.');return data;}
+async function download(type,file,name){const response=await fetch('download.php',{method:'POST',credentials:'omit',cache:'no-store',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams({token,type,file})});if(!response.ok)throw new Error('File unavailable.');const url=URL.createObjectURL(await response.blob());const link=document.createElement('a');link.href=url;link.download=name;link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
+function fileButtons(container,files,type){container.replaceChildren();files.forEach(file=>{const button=document.createElement('button');button.type='button';button.className='download';button.textContent=`Download ${file.name}`;button.addEventListener('click',()=>download(type,file.id||file.number,file.name||`${file.number}.pdf`).catch(error=>status.textContent=error.message));container.append(button);});}
+async function loadProject(){if(busy||!token)return;busy=true;refresh.disabled=true;status.textContent='Loading project progress…';try{const response=await fetch('status.php',{method:'POST',credentials:'omit',cache:'no-store',headers:{'Content-Type':'application/json'},body:JSON.stringify({token})});if(response.status===404)throw new Error('This project link is unavailable or has expired. Please contact AOR for a new link.');if(!response.ok)throw new Error('Project updates are temporarily unavailable. Please try again later.');const data=await response.json();const names=['Enquiry','Brief','Proposal','Creation','Review','Delivery'],current=names.indexOf(data.stage);if(current<0)throw new Error('Project updates are temporarily unavailable.');
+document.querySelector('#project-title').textContent=data.title;{const ref=document.querySelector('#project-reference');if(ref){ref.textContent=data.reference?(document.documentElement.lang==='ar'?'رقم المشروع: ':'Project reference: ')+data.reference:'';ref.hidden=!data.reference;}}const stages=document.querySelector('#stages');stages.replaceChildren();names.forEach((name,index)=>{const item=document.createElement('li'),completed=index<current||(data.completed&&index===current);item.className=completed?'complete':index===current?'current':'';if(index===current)item.setAttribute('aria-current','step');const label=document.createElement('strong');label.textContent=name;const state=document.createElement('span');state.textContent=completed?'Completed':index===current?'In progress':'Upcoming';item.append(label,state);stages.append(item);});
+document.querySelector('#update').textContent=data.update||'To be confirmed';document.querySelector('#next_step').textContent=data.next_step||'To be confirmed';document.querySelector('#updated_at').textContent=readable(data.updated_at);const milestone=document.querySelector('#milestone_date');milestone.textContent=data.milestone_date?readable(data.milestone_date):'To be confirmed';milestone.parentElement.style.display=data.completed?'none':'';
+const proposal=document.querySelector('#proposal');proposal.hidden=!data.proposal.sent;if(data.proposal.sent){fileButtons(document.querySelector('#proposal-files'),data.proposal.files,'proposal');const accept=document.querySelector('#accept-proposal');accept.hidden=!!data.proposal.accepted_at;document.querySelector('#proposal-status').textContent=data.proposal.accepted_at?`Accepted on ${readable(data.proposal.accepted_at)}.`:'Review the proposal files, then accept to begin the work.';}
+const review=document.querySelector('#review-tools');review.hidden=data.stage!=='Review';document.querySelector('#revision-count').textContent=`${data.revisions.used} of ${data.revisions.included} revisions used`;
+const invoicePanel=document.querySelector('#invoice-panel');invoicePanel.hidden=!data.invoices.length;const invoices=document.querySelector('#invoices');invoices.replaceChildren();data.invoices.forEach(invoice=>{const card=document.createElement('article');card.innerHTML=`<strong>${invoice.number}</strong><span>${invoice.type} · ${invoice.amount} · ${invoice.status} · Due ${readable(invoice.due_date)}</span><pre></pre>`;card.querySelector('pre').textContent=invoice.payment_details;const button=document.createElement('button');button.textContent='Download invoice PDF';button.addEventListener('click',()=>download('invoice',invoice.number,`${invoice.number}.pdf`));card.append(button);invoices.append(card);});
+const delivery=document.querySelector('#delivery-panel');delivery.hidden=data.delivery_locked||!data.delivery_files.length;if(!delivery.hidden)fileButtons(document.querySelector('#delivery-files'),data.delivery_files,'delivery');const testimonial=data.testimonial||{},testimonialPanel=document.querySelector('#testimonial-panel'),submitted=!!testimonial.submitted_at;testimonialPanel.hidden=!testimonial.open;document.querySelector('#testimonial-form').hidden=submitted;document.querySelector('#testimonial-done').hidden=!submitted;if(submitted){document.querySelector('#testimonial-thanks').textContent=`Thank you! Your testimonial was received on ${readable(testimonial.submitted_at)}.`;document.querySelector('#testimonial-quote').textContent=testimonial.text;}
+project.hidden=false;status.textContent=data.completed?'Your project is complete.':`Current stage: ${data.stage}`;
+}catch(error){project.hidden=true;status.textContent=error instanceof SyntaxError?'Project updates are temporarily unavailable.':error.message;}finally{busy=false;refresh.disabled=false;}}
+document.querySelector('#accept-proposal').addEventListener('click',async()=>{const output=document.querySelector('#proposal-status');try{await action('accept.php',{token,accept:true});output.textContent='Proposal accepted. Your project is moving to Creation.';await loadProject();}catch(error){output.textContent=error.message;}});
+document.querySelector('#request-revision').addEventListener('click',async()=>{const output=document.querySelector('#revision-status');try{await action('revision.php',{token});output.textContent='Your change request was recorded.';await loadProject();}catch(error){output.textContent=error.message;}});
+document.querySelector('#testimonial-form').addEventListener('submit',async event=>{event.preventDefault();const form=event.currentTarget,output=document.querySelector('#testimonial-status'),button=form.querySelector('button');button.disabled=true;output.textContent='Sending your testimonial…';try{await action('testimonial.php',{token,text:form.querySelector('#testimonial-text').value,rating:Number(form.querySelector('#testimonial-rating').value),display_name:form.querySelector('#testimonial-name').value,public_ok:form.querySelector('#testimonial-public').checked});output.textContent='';await loadProject();}catch(error){output.textContent=error.message;}finally{button.disabled=false;}});
+refresh.addEventListener('click',loadProject);loadProject();

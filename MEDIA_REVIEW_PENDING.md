@@ -1,79 +1,146 @@
-# Public media review ? approved
+# Public media awaiting review
 
 Review each file for private information, permissions and intended public use. Video review includes its audio and relevant frames. These are pending checks, not confirmed leaks.
 
-Owner confirmed approval of all 71 listed files in chat on 4 November 2026. Their current hashes have been recorded. Changes to these files will require a new review.
+The deployment build stays blocked until this review is complete. Checking a box alone does not update the reviewed-hash manifest.
 
 | Reviewed | File | Size (MiB) |
 |---|---|---|
-| [x] | [assets/uploads/AOR Logo.svg](assets/uploads/AOR%20Logo.svg) | 0.26 |
-| [x] | [assets/uploads/access-ad-cutdown.mp4](assets/uploads/access-ad-cutdown.mp4) | 1.96 |
-| [x] | [assets/uploads/access-ad.mp4](assets/uploads/access-ad.mp4) | 3.08 |
-| [x] | [assets/uploads/access-static-ad-1.png](assets/uploads/access-static-ad-1.png) | 1.83 |
-| [x] | [assets/uploads/access-static-ad-2.png](assets/uploads/access-static-ad-2.png) | 1.40 |
-| [x] | [assets/uploads/accessibility-checklist.png](assets/uploads/accessibility-checklist.png) | 2.21 |
-| [x] | [assets/uploads/arabic-calligraphy-workshop-concept.png](assets/uploads/arabic-calligraphy-workshop-concept.png) | 4.28 |
-| [x] | [assets/uploads/b.a-ad-a.mp4](assets/uploads/b.a-ad-a.mp4) | 1.60 |
-| [x] | [assets/uploads/b.a-ad-b.mp4](assets/uploads/b.a-ad-b.mp4) | 1.74 |
-| [x] | [assets/uploads/b.a-promotional-video.mp4](assets/uploads/b.a-promotional-video.mp4) | 12.37 |
-| [x] | [assets/uploads/b.a-static-ad-a.png](assets/uploads/b.a-static-ad-a.png) | 3.03 |
-| [x] | [assets/uploads/b.a-static-ad-b.png](assets/uploads/b.a-static-ad-b.png) | 2.71 |
-| [x] | [assets/uploads/b.a-story-frame-1.png](assets/uploads/b.a-story-frame-1.png) | 0.75 |
-| [x] | [assets/uploads/b.a-story-frame-2.png](assets/uploads/b.a-story-frame-2.png) | 1.21 |
-| [x] | [assets/uploads/b.a-story-frame-3.png](assets/uploads/b.a-story-frame-3.png) | 1.19 |
-| [x] | [assets/uploads/b.a-story-frame-4.png](assets/uploads/b.a-story-frame-4.png) | 1.60 |
-| [x] | [assets/uploads/bridge-arabic-poster.png](assets/uploads/bridge-arabic-poster.png) | 0.09 |
-| [x] | [assets/uploads/bridge-arabic-program-promotional-storyboard.mp4](assets/uploads/bridge-arabic-program-promotional-storyboard.mp4) | 3.09 |
-| [x] | [assets/uploads/bridge-arabic-program.mp4](assets/uploads/bridge-arabic-program.mp4) | 2.55 |
-| [x] | [assets/uploads/bridge-arabic-sample-lesson.mp4](assets/uploads/bridge-arabic-sample-lesson.mp4) | 1.68 |
-| [x] | [assets/uploads/c.-ad-cutdown.mp4](assets/uploads/c.-ad-cutdown.mp4) | 1.06 |
-| [x] | [assets/uploads/c.-ad-video.mp4](assets/uploads/c.-ad-video.mp4) | 2.34 |
-| [x] | [assets/uploads/c.-campaign-video.mp4](assets/uploads/c.-campaign-video.mp4) | 1.15 |
-| [x] | [assets/uploads/c.-carousel-1.png](assets/uploads/c.-carousel-1.png) | 1.34 |
-| [x] | [assets/uploads/c.-carousel-2.png](assets/uploads/c.-carousel-2.png) | 1.78 |
-| [x] | [assets/uploads/c.-carousel-3.png](assets/uploads/c.-carousel-3.png) | 1.90 |
-| [x] | [assets/uploads/c.-carousel-4.png](assets/uploads/c.-carousel-4.png) | 0.56 |
-| [x] | [assets/uploads/c.-carousel-5.png](assets/uploads/c.-carousel-5.png) | 1.16 |
-| [x] | [assets/uploads/c.-graphic-1.png](assets/uploads/c.-graphic-1.png) | 1.98 |
-| [x] | [assets/uploads/c.-graphic-2.png](assets/uploads/c.-graphic-2.png) | 0.97 |
-| [x] | [assets/uploads/c.-graphic-3.png](assets/uploads/c.-graphic-3.png) | 1.23 |
-| [x] | [assets/uploads/c.-static-ad-1.png](assets/uploads/c.-static-ad-1.png) | 0.64 |
-| [x] | [assets/uploads/c.-static-ad-2.png](assets/uploads/c.-static-ad-2.png) | 2.41 |
-| [x] | [assets/uploads/c.-story-1.png](assets/uploads/c.-story-1.png) | 2.77 |
-| [x] | [assets/uploads/c.-story-2.png](assets/uploads/c.-story-2.png) | 1.44 |
-| [x] | [assets/uploads/c.-story-3.png](assets/uploads/c.-story-3.png) | 1.89 |
-| [x] | [assets/uploads/campaign-poster.png](assets/uploads/campaign-poster.png) | 0.09 |
-| [x] | [assets/uploads/campaign-video.mp4](assets/uploads/campaign-video.mp4) | 3.84 |
-| [x] | [assets/uploads/evergreen-ad-cutdown.mp4](assets/uploads/evergreen-ad-cutdown.mp4) | 1.09 |
-| [x] | [assets/uploads/evergreen-ad.mp4](assets/uploads/evergreen-ad.mp4) | 2.01 |
-| [x] | [assets/uploads/evergreen-campaign-poster.png](assets/uploads/evergreen-campaign-poster.png) | 0.34 |
-| [x] | [assets/uploads/evergreen-graphic-2.png](assets/uploads/evergreen-graphic-2.png) | 0.32 |
-| [x] | [assets/uploads/evergreen-graphic-3.png](assets/uploads/evergreen-graphic-3.png) | 0.26 |
-| [x] | [assets/uploads/evergreen-promotional-video.mp4](assets/uploads/evergreen-promotional-video.mp4) | 21.36 |
-| [x] | [assets/uploads/evergreen-static-ad-1.png](assets/uploads/evergreen-static-ad-1.png) | 0.26 |
-| [x] | [assets/uploads/evergreen-static-ad-2.png](assets/uploads/evergreen-static-ad-2.png) | 0.35 |
-| [x] | [assets/uploads/evergreen-story-frame-1.png](assets/uploads/evergreen-story-frame-1.png) | 0.37 |
-| [x] | [assets/uploads/evergreen-story-frame-2.png](assets/uploads/evergreen-story-frame-2.png) | 0.40 |
-| [x] | [assets/uploads/evergreen-story-frame-3.png](assets/uploads/evergreen-story-frame-3.png) | 0.65 |
-| [x] | [assets/uploads/graphic-2.png](assets/uploads/graphic-2.png) | 0.22 |
-| [x] | [assets/uploads/growing.png](assets/uploads/growing.png) | 1.86 |
-| [x] | [assets/uploads/growing.webp](assets/uploads/growing.webp) | 0.04 |
-| [x] | [assets/uploads/learning-carousel-1.png](assets/uploads/learning-carousel-1.png) | 1.31 |
-| [x] | [assets/uploads/learning-carousel-2.png](assets/uploads/learning-carousel-2.png) | 1.41 |
-| [x] | [assets/uploads/learning-carousel-3.png](assets/uploads/learning-carousel-3.png) | 1.73 |
-| [x] | [assets/uploads/learning-carousel-4.png](assets/uploads/learning-carousel-4.png) | 1.57 |
-| [x] | [assets/uploads/learning-carousel-5.png](assets/uploads/learning-carousel-5.png) | 1.49 |
-| [x] | [assets/uploads/learning-new-things.png](assets/uploads/learning-new-things.png) | 2.20 |
-| [x] | [assets/uploads/learning-new-things.webp](assets/uploads/learning-new-things.webp) | 0.04 |
-| [x] | [assets/uploads/moving-forward.png](assets/uploads/moving-forward.png) | 2.22 |
-| [x] | [assets/uploads/moving-forward.webp](assets/uploads/moving-forward.webp) | 0.04 |
-| [x] | [assets/uploads/practicing-knowledge.png](assets/uploads/practicing-knowledge.png) | 2.69 |
-| [x] | [assets/uploads/practicing-knowledge.webp](assets/uploads/practicing-knowledge.webp) | 0.05 |
-| [x] | [assets/uploads/research-end-result.png](assets/uploads/research-end-result.png) | 2.23 |
-| [x] | [assets/uploads/research-end-result.webp](assets/uploads/research-end-result.webp) | 0.05 |
-| [x] | [assets/uploads/story-frame-1.png](assets/uploads/story-frame-1.png) | 1.99 |
-| [x] | [assets/uploads/story-frame-2.png](assets/uploads/story-frame-2.png) | 2.29 |
-| [x] | [assets/uploads/story-frame-3.png](assets/uploads/story-frame-3.png) | 2.07 |
-| [x] | [assets/uploads/story-frame-4.png](assets/uploads/story-frame-4.png) | 1.90 |
-| [x] | [assets/uploads/university-illustration.png](assets/uploads/university-illustration.png) | 2.78 |
-| [x] | [assets/uploads/university-illustration.webp](assets/uploads/university-illustration.webp) | 0.07 |
+| [ ] | [assets/images/about-portrait.webp](assets/images/about-portrait.webp) | 0.02 |
+| [ ] | [assets/images/brightfold/audit.webp](assets/images/brightfold/audit.webp) | 0.06 |
+| [ ] | [assets/images/brightfold/brand.webp](assets/images/brightfold/brand.webp) | 0.05 |
+| [ ] | [assets/images/brightfold/brightfold-countdown-poster.webp](assets/images/brightfold/brightfold-countdown-poster.webp) | 0.02 |
+| [ ] | [assets/images/brightfold/brightfold-saturday-1080x1920-sound-poster.webp](assets/images/brightfold/brightfold-saturday-1080x1920-sound-poster.webp) | 0.03 |
+| [ ] | [assets/images/brightfold/calendar.webp](assets/images/brightfold/calendar.webp) | 0.06 |
+| [ ] | [assets/images/brightfold/crisis.webp](assets/images/brightfold/crisis.webp) | 0.07 |
+| [ ] | [assets/images/brightfold/messaging.webp](assets/images/brightfold/messaging.webp) | 0.09 |
+| [ ] | [assets/images/brightfold/poster.webp](assets/images/brightfold/poster.webp) | 0.06 |
+| [ ] | [assets/images/brightfold/proofreading.webp](assets/images/brightfold/proofreading.webp) | 0.06 |
+| [ ] | [assets/images/brightfold/release-1.webp](assets/images/brightfold/release-1.webp) | 0.09 |
+| [ ] | [assets/images/brightfold/release-2.webp](assets/images/brightfold/release-2.webp) | 0.02 |
+| [ ] | [assets/images/brightfold/slide-1.webp](assets/images/brightfold/slide-1.webp) | 0.02 |
+| [ ] | [assets/images/brightfold/slide-2.webp](assets/images/brightfold/slide-2.webp) | 0.03 |
+| [ ] | [assets/images/brightfold/slide-3.webp](assets/images/brightfold/slide-3.webp) | 0.02 |
+| [ ] | [assets/images/brightfold/slide-4.webp](assets/images/brightfold/slide-4.webp) | 0.04 |
+| [ ] | [assets/images/brightfold/slide-5.webp](assets/images/brightfold/slide-5.webp) | 0.03 |
+| [ ] | [assets/images/brightfold/slide-6.webp](assets/images/brightfold/slide-6.webp) | 0.04 |
+| [ ] | [assets/images/brightfold/slide-7.webp](assets/images/brightfold/slide-7.webp) | 0.03 |
+| [ ] | [assets/images/brightfold/slide-8.webp](assets/images/brightfold/slide-8.webp) | 0.03 |
+| [ ] | [assets/images/chargeup-hub/ad-1.webp](assets/images/chargeup-hub/ad-1.webp) | 0.09 |
+| [ ] | [assets/images/chargeup-hub/ad-2.webp](assets/images/chargeup-hub/ad-2.webp) | 0.09 |
+| [ ] | [assets/images/chargeup-hub/ad-3.webp](assets/images/chargeup-hub/ad-3.webp) | 0.11 |
+| [ ] | [assets/images/chargeup-hub/reel-poster.webp](assets/images/chargeup-hub/reel-poster.webp) | 0.03 |
+| [ ] | [assets/images/crunchlab/ad-1.webp](assets/images/crunchlab/ad-1.webp) | 0.10 |
+| [ ] | [assets/images/crunchlab/ad-2.webp](assets/images/crunchlab/ad-2.webp) | 0.11 |
+| [ ] | [assets/images/crunchlab/ad-3.webp](assets/images/crunchlab/ad-3.webp) | 0.10 |
+| [ ] | [assets/images/crunchlab/ad-4.webp](assets/images/crunchlab/ad-4.webp) | 0.10 |
+| [ ] | [assets/images/crunchlab/ad-5.webp](assets/images/crunchlab/ad-5.webp) | 0.26 |
+| [ ] | [assets/images/crunchlab/ad-6.webp](assets/images/crunchlab/ad-6.webp) | 0.19 |
+| [ ] | [assets/images/crunchlab/ad-7.webp](assets/images/crunchlab/ad-7.webp) | 0.19 |
+| [ ] | [assets/images/crunchlab/reel-poster.webp](assets/images/crunchlab/reel-poster.webp) | 0.06 |
+| [ ] | [assets/images/northpine/audit.webp](assets/images/northpine/audit.webp) | 0.06 |
+| [ ] | [assets/images/northpine/brand.webp](assets/images/northpine/brand.webp) | 0.06 |
+| [ ] | [assets/images/northpine/calendar.webp](assets/images/northpine/calendar.webp) | 0.05 |
+| [ ] | [assets/images/northpine/crisis.webp](assets/images/northpine/crisis.webp) | 0.05 |
+| [ ] | [assets/images/northpine/messaging.webp](assets/images/northpine/messaging.webp) | 0.08 |
+| [ ] | [assets/images/northpine/northpine-infographic-poster.webp](assets/images/northpine/northpine-infographic-poster.webp) | 0.03 |
+| [ ] | [assets/images/northpine/northpine-myths-1080x1920-sound-poster.webp](assets/images/northpine/northpine-myths-1080x1920-sound-poster.webp) | 0.02 |
+| [ ] | [assets/images/northpine/poster.webp](assets/images/northpine/poster.webp) | 0.04 |
+| [ ] | [assets/images/northpine/proofreading.webp](assets/images/northpine/proofreading.webp) | 0.07 |
+| [ ] | [assets/images/northpine/slide-1.webp](assets/images/northpine/slide-1.webp) | 0.03 |
+| [ ] | [assets/images/northpine/slide-2.webp](assets/images/northpine/slide-2.webp) | 0.02 |
+| [ ] | [assets/images/northpine/slide-3.webp](assets/images/northpine/slide-3.webp) | 0.04 |
+| [ ] | [assets/images/northpine/slide-4.webp](assets/images/northpine/slide-4.webp) | 0.02 |
+| [ ] | [assets/images/northpine/slide-5.webp](assets/images/northpine/slide-5.webp) | 0.02 |
+| [ ] | [assets/images/northpine/slide-6.webp](assets/images/northpine/slide-6.webp) | 0.03 |
+| [ ] | [assets/images/northpine/slide-7.webp](assets/images/northpine/slide-7.webp) | 0.03 |
+| [ ] | [assets/images/northpine/slide-8.webp](assets/images/northpine/slide-8.webp) | 0.03 |
+| [ ] | [assets/images/northpine/slide-9.webp](assets/images/northpine/slide-9.webp) | 0.02 |
+| [ ] | [assets/images/northpine/statement.webp](assets/images/northpine/statement.webp) | 0.07 |
+| [ ] | [assets/images/pagepal/ad-1.webp](assets/images/pagepal/ad-1.webp) | 0.20 |
+| [ ] | [assets/images/pagepal/ad-2.webp](assets/images/pagepal/ad-2.webp) | 0.10 |
+| [ ] | [assets/images/pagepal/ad-3.webp](assets/images/pagepal/ad-3.webp) | 0.10 |
+| [ ] | [assets/images/pagepal/ad-4.webp](assets/images/pagepal/ad-4.webp) | 0.12 |
+| [ ] | [assets/images/pagepal/ad-5.webp](assets/images/pagepal/ad-5.webp) | 0.14 |
+| [ ] | [assets/images/pagepal/reel-poster.webp](assets/images/pagepal/reel-poster.webp) | 0.05 |
+| [ ] | [assets/images/qanater/audit.webp](assets/images/qanater/audit.webp) | 0.06 |
+| [ ] | [assets/images/qanater/brand.webp](assets/images/qanater/brand.webp) | 0.06 |
+| [ ] | [assets/images/qanater/calendar.webp](assets/images/qanater/calendar.webp) | 0.06 |
+| [ ] | [assets/images/qanater/crisis.webp](assets/images/qanater/crisis.webp) | 0.06 |
+| [ ] | [assets/images/qanater/messaging.webp](assets/images/qanater/messaging.webp) | 0.07 |
+| [ ] | [assets/images/qanater/poster.webp](assets/images/qanater/poster.webp) | 0.04 |
+| [ ] | [assets/images/qanater/proofreading.webp](assets/images/qanater/proofreading.webp) | 0.07 |
+| [ ] | [assets/images/qanater/qanater-41-poster.webp](assets/images/qanater/qanater-41-poster.webp) | 0.03 |
+| [ ] | [assets/images/qanater/qanater-six-months-1080x1350-poster.webp](assets/images/qanater/qanater-six-months-1080x1350-poster.webp) | 0.03 |
+| [ ] | [assets/images/qanater/release-1.webp](assets/images/qanater/release-1.webp) | 0.07 |
+| [ ] | [assets/images/qanater/release-2.webp](assets/images/qanater/release-2.webp) | 0.04 |
+| [ ] | [assets/images/qanater/slide-1.webp](assets/images/qanater/slide-1.webp) | 0.02 |
+| [ ] | [assets/images/qanater/slide-2.webp](assets/images/qanater/slide-2.webp) | 0.03 |
+| [ ] | [assets/images/qanater/slide-3.webp](assets/images/qanater/slide-3.webp) | 0.03 |
+| [ ] | [assets/images/qanater/slide-4.webp](assets/images/qanater/slide-4.webp) | 0.03 |
+| [ ] | [assets/images/qanater/slide-5.webp](assets/images/qanater/slide-5.webp) | 0.03 |
+| [ ] | [assets/images/qanater/slide-6.webp](assets/images/qanater/slide-6.webp) | 0.03 |
+| [ ] | [assets/images/shiftcove/audit.webp](assets/images/shiftcove/audit.webp) | 0.07 |
+| [ ] | [assets/images/shiftcove/brand.webp](assets/images/shiftcove/brand.webp) | 0.06 |
+| [ ] | [assets/images/shiftcove/calendar.webp](assets/images/shiftcove/calendar.webp) | 0.05 |
+| [ ] | [assets/images/shiftcove/crisis.webp](assets/images/shiftcove/crisis.webp) | 0.07 |
+| [ ] | [assets/images/shiftcove/messaging.webp](assets/images/shiftcove/messaging.webp) | 0.08 |
+| [ ] | [assets/images/shiftcove/poster.webp](assets/images/shiftcove/poster.webp) | 0.03 |
+| [ ] | [assets/images/shiftcove/proofreading.webp](assets/images/shiftcove/proofreading.webp) | 0.08 |
+| [ ] | [assets/images/shiftcove/release-1.webp](assets/images/shiftcove/release-1.webp) | 0.09 |
+| [ ] | [assets/images/shiftcove/release-2.webp](assets/images/shiftcove/release-2.webp) | 0.03 |
+| [ ] | [assets/images/shiftcove/shiftcove-loop-poster.webp](assets/images/shiftcove/shiftcove-loop-poster.webp) | 0.03 |
+| [ ] | [assets/images/shiftcove/shiftcove-rota-1080x1080-poster.webp](assets/images/shiftcove/shiftcove-rota-1080x1080-poster.webp) | 0.04 |
+| [ ] | [assets/images/shiftcove/slide-1.webp](assets/images/shiftcove/slide-1.webp) | 0.02 |
+| [ ] | [assets/images/shiftcove/slide-10.webp](assets/images/shiftcove/slide-10.webp) | 0.02 |
+| [ ] | [assets/images/shiftcove/slide-2.webp](assets/images/shiftcove/slide-2.webp) | 0.03 |
+| [ ] | [assets/images/shiftcove/slide-3.webp](assets/images/shiftcove/slide-3.webp) | 0.03 |
+| [ ] | [assets/images/shiftcove/slide-4.webp](assets/images/shiftcove/slide-4.webp) | 0.03 |
+| [ ] | [assets/images/shiftcove/slide-5.webp](assets/images/shiftcove/slide-5.webp) | 0.02 |
+| [ ] | [assets/images/shiftcove/slide-6.webp](assets/images/shiftcove/slide-6.webp) | 0.03 |
+| [ ] | [assets/images/shiftcove/slide-7.webp](assets/images/shiftcove/slide-7.webp) | 0.03 |
+| [ ] | [assets/images/shiftcove/slide-8.webp](assets/images/shiftcove/slide-8.webp) | 0.02 |
+| [ ] | [assets/images/shiftcove/slide-9.webp](assets/images/shiftcove/slide-9.webp) | 0.03 |
+| [ ] | [assets/images/thriftthread/ad-1.webp](assets/images/thriftthread/ad-1.webp) | 0.16 |
+| [ ] | [assets/images/thriftthread/ad-2.webp](assets/images/thriftthread/ad-2.webp) | 0.11 |
+| [ ] | [assets/images/thriftthread/ad-3.webp](assets/images/thriftthread/ad-3.webp) | 0.15 |
+| [ ] | [assets/images/thriftthread/ad-4.webp](assets/images/thriftthread/ad-4.webp) | 0.23 |
+| [ ] | [assets/images/thriftthread/reel-poster.webp](assets/images/thriftthread/reel-poster.webp) | 0.07 |
+| [ ] | [assets/images/tutorloop/ad-1.webp](assets/images/tutorloop/ad-1.webp) | 0.09 |
+| [ ] | [assets/images/tutorloop/ad-2.webp](assets/images/tutorloop/ad-2.webp) | 0.10 |
+| [ ] | [assets/images/tutorloop/ad-3.webp](assets/images/tutorloop/ad-3.webp) | 0.10 |
+| [ ] | [assets/images/tutorloop/ad-4.webp](assets/images/tutorloop/ad-4.webp) | 0.10 |
+| [ ] | [assets/images/tutorloop/reel-poster.webp](assets/images/tutorloop/reel-poster.webp) | 0.06 |
+| [ ] | [assets/images/wahat-qamar/audit.webp](assets/images/wahat-qamar/audit.webp) | 0.07 |
+| [ ] | [assets/images/wahat-qamar/brand.webp](assets/images/wahat-qamar/brand.webp) | 0.05 |
+| [ ] | [assets/images/wahat-qamar/calendar.webp](assets/images/wahat-qamar/calendar.webp) | 0.05 |
+| [ ] | [assets/images/wahat-qamar/crisis.webp](assets/images/wahat-qamar/crisis.webp) | 0.06 |
+| [ ] | [assets/images/wahat-qamar/messaging.webp](assets/images/wahat-qamar/messaging.webp) | 0.07 |
+| [ ] | [assets/images/wahat-qamar/poster.webp](assets/images/wahat-qamar/poster.webp) | 0.04 |
+| [ ] | [assets/images/wahat-qamar/proofreading.webp](assets/images/wahat-qamar/proofreading.webp) | 0.06 |
+| [ ] | [assets/images/wahat-qamar/release-1.webp](assets/images/wahat-qamar/release-1.webp) | 0.06 |
+| [ ] | [assets/images/wahat-qamar/release-2.webp](assets/images/wahat-qamar/release-2.webp) | 0.02 |
+| [ ] | [assets/images/wahat-qamar/slide-1.webp](assets/images/wahat-qamar/slide-1.webp) | 0.02 |
+| [ ] | [assets/images/wahat-qamar/slide-2.webp](assets/images/wahat-qamar/slide-2.webp) | 0.02 |
+| [ ] | [assets/images/wahat-qamar/slide-3.webp](assets/images/wahat-qamar/slide-3.webp) | 0.02 |
+| [ ] | [assets/images/wahat-qamar/slide-4.webp](assets/images/wahat-qamar/slide-4.webp) | 0.02 |
+| [ ] | [assets/images/wahat-qamar/slide-5.webp](assets/images/wahat-qamar/slide-5.webp) | 0.02 |
+| [ ] | [assets/images/wahat-qamar/slide-6.webp](assets/images/wahat-qamar/slide-6.webp) | 0.03 |
+| [ ] | [assets/images/wahat-qamar/slide-7.webp](assets/images/wahat-qamar/slide-7.webp) | 0.02 |
+| [ ] | [assets/images/wahat-qamar/wahat-dawn-1080x1920-sound-poster.webp](assets/images/wahat-qamar/wahat-dawn-1080x1920-sound-poster.webp) | 0.04 |
+| [ ] | [assets/images/wahat-qamar/wahat-sting-poster.webp](assets/images/wahat-qamar/wahat-sting-poster.webp) | 0.01 |
+| [ ] | [assets/videos/brightfold/brightfold-countdown.mp4](assets/videos/brightfold/brightfold-countdown.mp4) | 0.47 |
+| [ ] | [assets/videos/brightfold/brightfold-saturday-1080x1920-sound.mp4](assets/videos/brightfold/brightfold-saturday-1080x1920-sound.mp4) | 1.65 |
+| [ ] | [assets/videos/chargeup-hub/reel.mp4](assets/videos/chargeup-hub/reel.mp4) | 1.68 |
+| [ ] | [assets/videos/crunchlab/reel.mp4](assets/videos/crunchlab/reel.mp4) | 2.05 |
+| [ ] | [assets/videos/northpine/northpine-infographic.mp4](assets/videos/northpine/northpine-infographic.mp4) | 0.30 |
+| [ ] | [assets/videos/northpine/northpine-myths-1080x1920-sound.mp4](assets/videos/northpine/northpine-myths-1080x1920-sound.mp4) | 1.54 |
+| [ ] | [assets/videos/pagepal/reel.mp4](assets/videos/pagepal/reel.mp4) | 2.42 |
+| [ ] | [assets/videos/qanater/qanater-41.mp4](assets/videos/qanater/qanater-41.mp4) | 0.26 |
+| [ ] | [assets/videos/qanater/qanater-six-months-1080x1350.mp4](assets/videos/qanater/qanater-six-months-1080x1350.mp4) | 1.31 |
+| [ ] | [assets/videos/shiftcove/shiftcove-loop.mp4](assets/videos/shiftcove/shiftcove-loop.mp4) | 0.17 |
+| [ ] | [assets/videos/shiftcove/shiftcove-rota-1080x1080.mp4](assets/videos/shiftcove/shiftcove-rota-1080x1080.mp4) | 2.63 |
+| [ ] | [assets/videos/thriftthread/reel.mp4](assets/videos/thriftthread/reel.mp4) | 2.43 |
+| [ ] | [assets/videos/tutorloop/reel.mp4](assets/videos/tutorloop/reel.mp4) | 2.24 |
+| [ ] | [assets/videos/wahat-qamar/wahat-dawn-1080x1920-sound.mp4](assets/videos/wahat-qamar/wahat-dawn-1080x1920-sound.mp4) | 5.46 |
+| [ ] | [assets/videos/wahat-qamar/wahat-sting.mp4](assets/videos/wahat-qamar/wahat-sting.mp4) | 0.10 |

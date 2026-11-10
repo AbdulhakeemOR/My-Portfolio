@@ -30,11 +30,15 @@ for contact messages and canonical links for https://abdulhakeemor.com.
 
 1. Confirm cPanel **Domains** lists `abdulhakeemor.com` with `public_html` as its
    document root. Use the listed document root if different.
-2. Under **Email Accounts**, create `website@abdulhakeemor.com`. Its password
-   stays in cPanel; the contact script does not require it. Messages go to
-   `abdulhakeemoladaporaji@gmail.com`, with the visitor as Reply-To.
-3. Under **Email Deliverability**, check the domain's SPF and DKIM records and
-   use the suggested repair if needed.
+2. Under **Email Accounts**, create `website@abdulhakeemor.com` and open its
+   **Connect Devices** page. Copy the outgoing SMTP host, port, username and
+   encryption type into a private `aor-private/config.php` file beside
+   `public_html`, using `hosting/namecheap/private/config.example.php` as the
+   template. Never place this password in `public_html`, Git, a ZIP release or chat.
+   Messages notify `contact@abdulhakeemor.com`, with the
+   visitor as Reply-To.
+3. Under **Email Deliverability**, confirm SPF and DKIM. Add and verify a DMARC
+   record through the domain DNS controls before treating delivery as ready.
 4. Confirm the domain and `www` have a valid installed SSL certificate before
    uploading: the package redirects visitors to HTTPS and the non-www domain.
 5. Use PHP 8 or newer in cPanel's PHP selector.
@@ -51,9 +55,9 @@ for contact messages and canonical links for https://abdulhakeemor.com.
 - Open https://abdulhakeemor.com, English and Arabic pages, project galleries,
   media, and a nonexistent URL (which should show the 404 page).
 - Check that HTTP and www redirect to https://abdulhakeemor.com.
-- Submit a real contact message and confirm receipt in Gmail, including Spam.
-  Reply should address the visitor. A submitted status means the hosting mail
-  transport accepted the message; it does not prove inbox delivery.
+- Submit a real contact message and confirm the owner notification at contact@abdulhakeemor.com and
+  the acknowledgement at the customer's address, including Spam. A submitted
+  status means the enquiry was saved even if SMTP later needs investigation.
 - If delivery fails, inspect cPanel **Track Delivery** and **Email Deliverability**.
   Keep the direct email link available. Do not regard mail delivery as verified
   until the message is received.
@@ -65,7 +69,12 @@ submitted by the form. Error responses retain a copyable draft on a localized pa
 The handler validates fields, rejects a filled honeypot and foreign browser
 origins, and limits each client IP to five attempts per hour. It stores only
 hashed IPs, counters, and expiry times in one temporary file outside the website.
-This basic protection may need CAPTCHA if spam becomes a problem.
+Cloudflare Turnstile is supported but remains disabled while either key is empty
+in the private configuration. Enable it only after both keys are installed.
+
+Schedule daily cPanel backups of the private `aor-projects` folder and, once
+file uploads are enabled, its uploads directory. Keep at least one copy outside
+the hosting account and periodically verify that it can be restored.
 
 The Decap editor is excluded because its current OAuth and automatic publishing
 depend on Netlify. For this setup, edit locally, rebuild, and upload the new ZIP.
@@ -75,4 +84,4 @@ References:
 
 - https://www.namecheap.com/support/knowledgebase/article/10038/31/how-to-configure-a-contact-form-with-us/
 - https://www.namecheap.com/support/knowledgebase/article.aspx/177/27/shared-hosting-getting-started/
-- https://www.php.net/manual/en/function.mail.php
+- https://github.com/PHPMailer/PHPMailer

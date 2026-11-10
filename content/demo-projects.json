@@ -47,5 +47,19 @@
     "description": "A fictional communications studio website with service pages, a campaign-work gallery, and a contact form preview.",
     "description_ar": "موقع لاستوديو اتصال افتراضي، يتضمن صفحات للخدمات ومعرضًا لأعمال الحملات ومعاينة لنموذج التواصل.",
     "tool": "HTML, CSS, JavaScript"
+  },
+  "webcraft": {
+    "title": "Webcraft Atlas — Interface Workshop",
+    "title_ar": "ويب كرافت أطلس — ورشة الواجهات",
+    "description": "A React interface workshop for exploring components, page sections and complete templates, with search, live previews, saved favourites and source code to copy.",
+    "description_ar": "ورشة واجهات مبنية بـReact لاستكشاف المكوّنات وأقسام الصفحات والقوالب الكاملة، مع البحث والمعاينة الحية وحفظ المفضّلة ونسخ الشيفرة المصدرية.",
+    "tool": "React, Vite"
+  },
+  "shiftcove": {
+    "title": "Shiftcove — Salon Rota App",
+    "title_ar": "شيفت كوف — تطبيق جداول المناوبات للصالونات",
+    "description": "A fictional rota product for salons: a marketing page plus a working prototype for schedules, shift swaps, timesheets and payroll-ready hours.",
+    "description_ar": "منتج خيالي لجدولة المناوبات في الصالونات: صفحة تسويقية ونموذج أولي عملي للجداول وتبديل المناوبات وسجلات الدوام والساعات الجاهزة للرواتب.",
+    "tool": "Next.js, React, Tailwind CSS"
   }
 }

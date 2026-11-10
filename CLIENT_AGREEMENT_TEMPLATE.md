@@ -13,7 +13,7 @@ Agreement ID/version: **[ID / VERSION]** · Date: **[DATE]**
 ## 1. Parties and contract documents
 
 **Service provider:** Abdulhakeem Oladapo Raji  
-**Email:** abdulhakeemoladaporaji@gmail.com  
+**Email:** contact@abdulhakeemor.com  
 **Business/contact address and legally required details:** [COMPLETE APPROPRIATE DETAILS]
 
 **Client legal name:** [NAME / COMPANY]  

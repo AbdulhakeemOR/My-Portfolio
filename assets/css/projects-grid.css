@@ -126,3 +126,44 @@
 .pg-dialog .pg-dialog-tabs button[aria-selected="true"] { color:var(--on-accent)!important; background:var(--accent)!important; }
 @media(max-width:760px) { .pg-dialog { width:calc(100vw - 20px); max-height:calc(100dvh - 20px); border-radius:24px; } .pg-dialog-layout { grid-template-columns:1fr; gap:24px; padding:20px; } .pg-dialog-art { position:static; } .pg-dialog-art img { max-height:32vh; } }
 @media(max-width:420px) { .project-grid .pg-body { padding:18px; } .project-grid .pg-actions { grid-template-columns:1fr; gap:8px; } .pg-explore { min-height:42px; } }
+
+/* "Try live demo": same glossy pill finish as the site's other buttons (see style.css,
+   "Shared glossy button finish"). The shine is drawn as background layers because
+   ::after already holds the arrow. */
+.project-grid .pg-actions a.project-link,
+.pg-dialog-actions a.project-link {
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 22px;
+  border: 0;
+  border-radius: 999px;
+  color: var(--on-accent);
+  background-color: var(--accent);
+  background-image:
+    linear-gradient(180deg, rgb(255 255 255 / 22%), rgb(255 255 255 / 5%) 45%, transparent),
+    radial-gradient(ellipse at bottom, rgb(255 255 255 / 30%) 0%, rgb(255 255 255 / 10%) 25%, transparent 65%);
+  box-shadow:
+    0 0 0 6px color-mix(in srgb, var(--accent) 12%, transparent),
+    0 10px 30px color-mix(in srgb, var(--accent) 35%, transparent),
+    inset 0 2px 10px rgb(255 255 255 / 22%);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.pg-dialog-actions a.project-link { display: flex; align-items: center; }
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .project-grid .pg-actions a.project-link:hover,
+  .pg-dialog-actions a.project-link:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow:
+      0 0 0 10px color-mix(in srgb, var(--accent) 16%, transparent),
+      0 16px 40px color-mix(in srgb, var(--accent) 42%, transparent),
+      inset 0 2px 10px rgb(255 255 255 / 28%);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .project-grid .pg-actions a.project-link:active,
+  .pg-dialog-actions a.project-link:active { transform: scale(.98); }
+}
+/* Keep the plain page cards out of sight until projects-grid.js has styled and filtered them,
+ * so arriving on Projects never flashes unstyled cards. Shown after 2.5s whatever happens. */
+.js .project-grid #project-list:not(.pg-ready) { visibility: hidden; animation: pg-show 0s 2.5s forwards; }
+@keyframes pg-show { to { visibility: visible; } }

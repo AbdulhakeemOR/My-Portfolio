@@ -8,6 +8,8 @@ import json
 import hashlib
 import re
 
+from html_entities import to_entities
+
 ROOT = Path(__file__).resolve().parent.parent
 PAGES = tuple(p.name for p in ROOT.glob('*.html'))
 
@@ -194,10 +196,14 @@ def build_languages():
             localized = ''.join(parser.output)
             if language == 'ar':
                 localized = localized.replace('<script src="../assets/js/language.js"', f'<script src="../assets/js/translations-ar.js?v={translation_version}"></script>\n    <script src="../assets/js/language.js"')
+                # Start downloading the Arabic font with the stylesheet, not after it, to shorten the fallback-font flash.
+                preload = ''.join(f'<link rel="preload" href="../assets/fonts/tajawal/Tajawal-{weight}.woff2" as="font" type="font/woff2" crossorigin>\n    ' for weight in ('Regular', 'Bold'))
+                localized = localized.replace('<link rel="stylesheet"', preload + '<link rel="stylesheet"', 1)
             localized = localized.replace('src="../assets/js/language.js"', f'src="../assets/js/language.js?v={language_version}"')
-            (folder / name).write_text(localized, encoding='utf-8', newline='\r\n')
+            # Symbols are written as character entity references (&mdash;, &rsquo;, ...).
+            (folder / name).write_text(to_entities(localized), encoding='utf-8', newline='\r\n')
         text = text.replace('src="assets/js/language.js"', f'src="assets/js/language.js?v={language_version}"')
-        path.write_text(text, encoding='utf-8', newline='\r\n')
+        path.write_text(to_entities(text), encoding='utf-8', newline='\r\n')
     for language in ('en', 'ar'):
         folder = ROOT / language / 'content'
         folder.mkdir(exist_ok=True)

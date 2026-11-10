@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-require dirname(__DIR__) . '/core.php';
+require dirname(__DIR__) . '/workflow-core.php';
 trackingHeaders();
 header("Content-Security-Policy: default-src 'none'; style-src 'self'; script-src 'self'; img-src data:; form-action 'self'; frame-ancestors 'none'; base-uri 'none'");
 header('Content-Type: text/html; charset=utf-8');
@@ -65,7 +65,11 @@ try {
                 $record = trackingRead($id);
                 if (!is_string($_POST['revision'] ?? null) || !hash_equals((string)($record['revision'] ?? ''), $_POST['revision'])) throw new InvalidArgumentException('This project changed in another tab. Reload it before saving.');
                 if ($action === 'save') {
+                    $previousStage = $record['stage'] ?? '';
                     $record = array_merge($record, trackingFields($_POST));
+                    if (($record['completed'] ?? false) && !workflowBalancePaid($record)) throw new InvalidArgumentException('Mark the active balance invoice Paid before completing the project.');
+                    if ($previousStage !== $record['stage']) workflowActivity($record, 'stage_changed', $previousStage . ' → ' . $record['stage']);
+                    workflowMaybeTestimonial($record);
                     // Saving progress must not silently reactivate a disabled link.
                 } elseif ($action === 'revoke') {
                     $record['revoked'] = true;
@@ -73,12 +77,21 @@ try {
                 } elseif ($action === 'rotate') {
                     $token = bin2hex(random_bytes(32));
                     $newId = hash('sha256', $token);
+                    $record['link_token_private'] = $token; // invoice emails and proposal re-sends use this link
                     $record['revoked'] = false;
                     $record['expires_at'] = gmdate('c', time() + max(1, min(3650, (int)($record['link_days'] ?? 90))) * 86400);
                     $record['revision'] = bin2hex(random_bytes(16));
                     $record['updated_at'] = $now;
+                    workflowActivity($record, 'link_replaced', 'New customer link created; the old link no longer works.');
                     trackingWrite($newId, $record);
+                    // Private files are stored under the project id, so they move with the new link.
+                    $files = trackingDirectory() . DIRECTORY_SEPARATOR . 'files' . DIRECTORY_SEPARATOR;
+                    if (is_dir($files . $id) && !rename($files . $id, $files . $newId)) {
+                        unlink(trackingDirectory() . DIRECTORY_SEPARATOR . $newId . '.json');
+                        throw new RuntimeException('Could not move private files to the new link.');
+                    }
                     if (!unlink(trackingDirectory() . DIRECTORY_SEPARATOR . $id . '.json')) {
+                        if (is_dir($files . $newId)) rename($files . $newId, $files . $id);
                         unlink(trackingDirectory() . DIRECTORY_SEPARATOR . $newId . '.json');
                         throw new RuntimeException('Could not replace link.');
                     }
@@ -106,14 +119,9 @@ try {
 }
 $flash = $_SESSION['flash'] ?? null;
 unset($_SESSION['flash']);
-$records = [];
 try {
-    foreach (glob(trackingDirectory() . DIRECTORY_SEPARATOR . '*.json') ?: [] as $path) {
-        $id = basename($path, '.json');
-        if (!preg_match('/\A[a-f0-9]{64}\z/', $id)) continue;
-        $records[$id] = trackingRead($id);
-    }
-    uasort($records, static fn(array $a, array $b): int => strcmp($b['updated_at'] ?? '', $a['updated_at'] ?? ''));
+    trackingEnsureReferences(); // older projects get a readable reference once
+    $records = trackingRecords();
 } catch (Throwable $exception) { http_response_code(503); exit('Could not load projects. Check private storage permissions and records.'); }
 $editId = is_string($_GET['edit'] ?? null) ? $_GET['edit'] : '';
 if ($draft && isset($draft['id']) && is_string($draft['id'])) $editId = $draft['id'];
@@ -133,10 +141,11 @@ if ($draft) $values['completed'] = ($draft['completed'] ?? '') === '1';
   <div class="admin-layout"><section class="project-list" aria-labelledby="projects-heading"><h2 id="projects-heading">Projects</h2><a class="new-project" href="./">+ New project</a>
     <?php if (!$records): ?><p>No projects yet. Create your first project using the form.</p><?php endif; ?>
     <?php foreach ($records as $id => $row): ?>
-      <a class="project-item" href="?edit=<?= esc($id) ?>" <?= $id === $editId ? 'aria-current="page"' : '' ?>><strong><?= esc($row['title']) ?></strong><span><?= esc($row['stage']) ?><?= ($row['completed'] ?? false) ? ' · Complete' : '' ?></span><small><?= ($row['revoked'] ?? false) ? 'Link disabled' : ((strtotime($row['expires_at'] ?? '') ?: 0) <= time() ? 'Link expired' : 'Link active') ?></small></a>
+      <a class="project-item" href="?edit=<?= esc($id) ?>" <?= $id === $editId ? 'aria-current="page"' : '' ?>><small class="project-ref"><?= esc($row['reference'] ?? '') ?></small><strong><?= esc($row['title']) ?></strong><span><?= esc($row['stage']) ?><?= ($row['completed'] ?? false) ? ' · Complete' : '' ?></span><small><?= ($row['revoked'] ?? false) ? 'Link disabled' : ((strtotime($row['expires_at'] ?? '') ?: 0) <= time() ? 'Link expired' : 'Link active') ?></small></a>
     <?php endforeach; ?>
   </section>
-  <section aria-labelledby="edit-heading"><h2 id="edit-heading"><?= $editing ? 'Update project' : 'Create project' ?></h2>
+  <section aria-labelledby="edit-heading"><h2 id="edit-heading"><?= $editing ? 'Update project' : 'Create project' ?></h2><?php if ($editing && !empty($editing['reference'])): ?><p class="project-ref">Project reference: <strong><?= esc($editing['reference']) ?></strong></p><?php endif; ?>
+    <?php if ($editing): ?><p><a class="new-project" href="workflow.php?edit=<?= esc($editId) ?>">Open complete project workflow →</a></p><?php endif; ?>
     <form method="post" action="<?= $editing ? '?edit=' . esc($editId) : './' ?>">
       <input type="hidden" name="csrf" value="<?= esc($_SESSION['csrf']) ?>">
       <?php if ($editing): ?><input type="hidden" name="id" value="<?= esc($editId) ?>"><input type="hidden" name="revision" value="<?= esc($draft['revision'] ?? $editing['revision'] ?? '') ?>"><?php endif; ?>
@@ -149,6 +158,19 @@ if ($draft) $values['completed'] = ($draft['completed'] ?? '') === '1';
       <label class="checkbox"><input type="checkbox" name="completed" value="1" <?= ($values['completed'] ?? false) ? 'checked' : '' ?>>Project complete (Delivery stage only)</label>
       <button name="action" value="<?= $editing ? 'save' : 'create' ?>"><?= $editing ? 'Save progress' : 'Create project & get link' ?></button>
     </form>
+    <?php if ($editing && !empty($editing['enquiries']) && is_array($editing['enquiries'])): ?>
+      <section class="enquiry-history" aria-labelledby="enquiry-history-heading">
+        <h3 id="enquiry-history-heading">Enquiry messages</h3>
+        <p><strong>Client:</strong> <?= esc($editing['client_name'] ?? '') ?> &lt;<?= esc($editing['client_email'] ?? '') ?>&gt;</p>
+        <?php foreach (array_reverse($editing['enquiries']) as $enquiry): ?>
+          <article class="enquiry-message">
+            <h4><?= esc($enquiry['subject'] ?? 'Enquiry') ?></h4>
+            <p class="hint"><?= esc($enquiry['received_at'] ?? '') ?> · <?= esc($enquiry['service'] ?? 'Service not selected') ?> · <?= esc($enquiry['timeline'] ?? 'Timeline not provided') ?></p>
+            <p><?= nl2br(esc($enquiry['message'] ?? '')) ?></p>
+          </article>
+        <?php endforeach; ?>
+      </section>
+    <?php endif; ?>
     <?php if ($editing): ?><div class="link-controls"><h3>Customer link</h3><p>Expires: <?= esc($editing['expires_at'] ?? '') ?>. Lost links can be replaced; the previous link will stop working.</p>
       <form method="post" action="?edit=<?= esc($editId) ?>"><input type="hidden" name="csrf" value="<?= esc($_SESSION['csrf']) ?>"><input type="hidden" name="id" value="<?= esc($editId) ?>"><input type="hidden" name="revision" value="<?= esc($editing['revision'] ?? '') ?>">
         <label class="checkbox"><input type="checkbox" name="confirm" value="yes" required>I understand the current customer link will stop working.</label>
